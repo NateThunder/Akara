@@ -1,0 +1,230 @@
+- generic [active] [ref=f11e1]:
+  - banner [ref=f11e2]:
+    - link "Akara Bakery home" [ref=f11e3] [cursor=pointer]:
+      - /url: /
+      - img "Akara Bakery" [ref=f11e4]
+    - navigation "Main navigation" [ref=f11e5]:
+      - link "Shop" [ref=f11e6] [cursor=pointer]:
+        - /url: /shop/all
+      - link "Bespoke Cakes" [ref=f11e9] [cursor=pointer]:
+        - /url: /bespoke-cakes
+      - link "Custom Cakes" [ref=f11e10] [cursor=pointer]:
+        - /url: /custom-cakes
+      - link "Celebration Cakes" [ref=f11e11] [cursor=pointer]:
+        - /url: /shop/all?category=Cakes
+      - link "Cupcakes & Treats" [ref=f11e12] [cursor=pointer]:
+        - /url: /shop/all?category=Brownies%20%26%20Cupcakes
+      - link "About" [ref=f11e13] [cursor=pointer]:
+        - /url: /about
+      - link "Gallery" [ref=f11e14] [cursor=pointer]:
+        - /url: https://www.akarabakery.co.uk/gallery
+      - link "Contact" [ref=f11e15] [cursor=pointer]:
+        - /url: /contact
+    - generic [ref=f11e16]:
+      - button "Search (coming soon)" [disabled] [ref=f11e17]
+      - button "Account (coming soon)" [disabled] [ref=f11e21]
+      - button "Shopping bag (coming soon)" [disabled] [ref=f11e25]
+  - list "Bakery services" [ref=f11e29]:
+    - listitem [ref=f11e30]:
+      - generic [ref=f11e35]: Handmade in Glasgow
+    - listitem [ref=f11e36]:
+      - text: •
+      - generic [ref=f11e41]: Collection & local delivery
+    - listitem [ref=f11e42]:
+      - text: •
+      - generic [ref=f11e46]: Vegan & GF available
+  - complementary "Cake order lead times" [ref=f11e47]:
+    - paragraph [ref=f11e48]: Cake orders need 4 days’ notice. Order by Tuesday midnight for the same week.
+    - link "Need it sooner? Get in touch" [ref=f11e49] [cursor=pointer]:
+      - /url: /contact
+      - text: Need it sooner? Get in touch
+      - generic [aria-hidden] [ref=f11e50]: →
+  - main [ref=f11e51]:
+    - generic [ref=f11e52]:
+      - paragraph [ref=f11e53]: Akara Bakery · Made for you
+      - heading "Custom Cakes" [level=1] [ref=f11e54]
+    - generic [ref=f11e55]:
+      - generic [ref=f11e56]:
+        - group "1 Cake flavour" [ref=f11e57]:
+          - generic [ref=f11e58]:
+            - generic [ref=f11e59]: "1"
+            - generic [ref=f11e60]: Cake flavour
+          - paragraph [ref=f11e61]: Choose your favourite flavour.
+          - generic [ref=f11e62]:
+            - generic [ref=f11e63] [cursor=pointer]:
+              - radio "Vanilla Sponge Included ✓" [checked] [ref=f11e64]
+              - generic [ref=f11e65]:
+                - strong [ref=f11e74]: Vanilla Sponge
+                - generic [ref=f11e75]: Included
+                - text: ✓
+            - generic [ref=f11e76] [cursor=pointer]:
+              - radio "Chocolate Sponge +£5.00" [ref=f11e77]
+              - generic [ref=f11e78]:
+                - strong [ref=f11e87]: Chocolate Sponge
+                - generic [ref=f11e88]: +£5.00
+            - generic [ref=f11e89] [cursor=pointer]:
+              - radio "Red Velvet +£5.00" [ref=f11e90]
+              - generic [ref=f11e91]:
+                - strong [ref=f11e100]: Red Velvet
+                - generic [ref=f11e101]: +£5.00
+            - generic [ref=f11e102] [cursor=pointer]:
+              - radio "Lemon Sponge +£3.00" [ref=f11e103]
+              - generic [ref=f11e104]:
+                - strong [ref=f11e113]: Lemon Sponge
+                - generic [ref=f11e114]: +£3.00
+            - generic [ref=f11e115] [cursor=pointer]:
+              - radio "Carrot Cake +£5.00" [ref=f11e116]
+              - generic [ref=f11e117]:
+                - strong [ref=f11e126]: Carrot Cake
+                - generic [ref=f11e127]: +£5.00
+        - group "2 Size" [ref=f11e128]:
+          - generic [ref=f11e129]:
+            - generic [ref=f11e130]: "2"
+            - generic [ref=f11e131]: Size
+          - paragraph [ref=f11e132]: Select the perfect size.
+          - generic [ref=f11e133]:
+            - generic [ref=f11e134] [cursor=pointer]:
+              - radio "6″ Serves 10 £85.00 ✓" [checked] [ref=f11e135]
+              - generic [ref=f11e136]:
+                - strong [ref=f11e137]: 6″
+                - generic [ref=f11e138]: Serves 10
+                - generic [ref=f11e139]: £85.00
+                - text: ✓
+            - generic [ref=f11e140] [cursor=pointer]:
+              - radio "8″ Serves 20 £110.00" [ref=f11e141]
+              - generic [ref=f11e142]:
+                - strong [ref=f11e143]: 8″
+                - generic [ref=f11e144]: Serves 20
+                - generic [ref=f11e145]: £110.00
+            - generic [ref=f11e146] [cursor=pointer]:
+              - radio "10″ Serves 30 £140.00" [ref=f11e147]
+              - generic [ref=f11e148]:
+                - strong [ref=f11e149]: 10″
+                - generic [ref=f11e150]: Serves 30
+                - generic [ref=f11e151]: £140.00
+            - generic [ref=f11e152] [cursor=pointer]:
+              - radio "12″ Serves 40 £170.00" [ref=f11e153]
+              - generic [ref=f11e154]:
+                - strong [ref=f11e155]: 12″
+                - generic [ref=f11e156]: Serves 40
+                - generic [ref=f11e157]: £170.00
+        - group "3 Colour theme" [ref=f11e158]:
+          - generic [ref=f11e159]:
+            - generic [ref=f11e160]: "3"
+            - generic [ref=f11e161]: Colour theme
+          - paragraph [ref=f11e162]: Pick your perfect colour. Ivory selected · included.
+          - generic [ref=f11e163]:
+            - generic [ref=f11e164] [cursor=pointer]:
+              - radio "Ivory" [checked] [ref=f11e165]
+              - generic [ref=f11e167]: Ivory
+            - generic [ref=f11e168] [cursor=pointer]:
+              - radio "Blush" [ref=f11e169]
+              - generic [ref=f11e171]: Blush
+            - generic [ref=f11e172] [cursor=pointer]:
+              - radio "Sage" [ref=f11e173]
+              - generic [ref=f11e175]: Sage
+            - generic [ref=f11e176] [cursor=pointer]:
+              - radio "Dusty blue" [ref=f11e177]
+              - generic [ref=f11e179]: Dusty blue
+            - generic [ref=f11e180] [cursor=pointer]:
+              - radio "Oatmeal" [ref=f11e181]
+              - generic [ref=f11e183]: Oatmeal
+            - generic [ref=f11e184] [cursor=pointer]:
+              - radio "Terracotta" [ref=f11e185]
+              - generic [ref=f11e187]: Terracotta
+            - generic [ref=f11e188] [cursor=pointer]:
+              - radio "Charcoal" [ref=f11e189]
+              - generic [ref=f11e191]: Charcoal
+        - group "4 Personalisation" [ref=f11e192]:
+          - generic [ref=f11e193]:
+            - generic [ref=f11e194]: "4"
+            - generic [ref=f11e195]: Personalisation
+          - paragraph [ref=f11e196]: Add your personal touches.
+          - generic [ref=f11e197]:
+            - generic [ref=f11e198]:
+              - group "Writing style" [ref=f11e199]:
+                - generic [ref=f11e201]:
+                  - generic [ref=f11e202] [cursor=pointer]:
+                    - radio "Hand piped ✓" [checked] [ref=f11e203]
+                    - generic [ref=f11e204]: Hand piped ✓
+                  - generic [ref=f11e205] [cursor=pointer]:
+                    - radio "Handwritten" [ref=f11e206]
+                    - generic [ref=f11e207]: Handwritten
+              - generic [ref=f11e208]:
+                - text: Message (optional)
+                - generic [ref=f11e209]:
+                  - textbox "Message (optional)" [ref=f11e210]:
+                    - /placeholder: e.g. Happy Birthday Akara!
+                  - generic [aria-hidden] [ref=f11e211]: 0/30
+            - group "Add extras (choose as many as you like)" [ref=f11e212]:
+              - generic [ref=f11e214]:
+                - generic [ref=f11e215] [cursor=pointer]:
+                  - checkbox "Candles +£3.00" [ref=f11e216]
+                  - generic [ref=f11e217]:
+                    - generic [ref=f11e220]: Candles
+                    - generic [ref=f11e221]: +£3.00
+                - generic [ref=f11e222] [cursor=pointer]:
+                  - checkbox "Flowers +£15.00" [ref=f11e223]
+                  - generic [ref=f11e224]:
+                    - generic [ref=f11e227]: Flowers
+                    - generic [ref=f11e228]: +£15.00
+                - generic [ref=f11e229] [cursor=pointer]:
+                  - checkbox "Fruit +£8.00" [ref=f11e230]
+                  - generic [ref=f11e231]:
+                    - generic [ref=f11e234]: Fruit
+                    - generic [ref=f11e235]: +£8.00
+                - generic [ref=f11e236] [cursor=pointer]:
+                  - checkbox "Sprinkles +£4.00" [ref=f11e237]
+                  - generic [ref=f11e238]:
+                    - generic [ref=f11e241]: Sprinkles
+                    - generic [ref=f11e242]: +£4.00
+            - paragraph [ref=f11e243]: Your 6″ cake will be decorated to suit the size.
+        - group "5 Delivery or collection" [ref=f11e246]:
+          - generic [ref=f11e247]:
+            - generic [ref=f11e248]: "5"
+            - generic [ref=f11e249]: Delivery or collection
+          - paragraph [ref=f11e250]: Choose when and how you’d like your cake.
+          - generic [ref=f11e251]:
+            - generic [ref=f11e252] [cursor=pointer]:
+              - radio "Collection Collect from Akara Bakery · free ✓" [checked] [ref=f11e253]
+              - generic [ref=f11e254]:
+                - generic [ref=f11e257]:
+                  - strong [ref=f11e258]: Collection
+                  - generic [ref=f11e259]: Collect from Akara Bakery · free
+                - text: ✓
+            - generic [ref=f11e260] [cursor=pointer]:
+              - radio "Local delivery +£4.00 sample delivery fee" [ref=f11e261]
+              - generic [ref=f11e265]:
+                - strong [ref=f11e266]: Local delivery
+                - generic [ref=f11e267]: +£4.00 sample delivery fee
+          - generic [ref=f11e268]:
+            - generic [ref=f11e269]:
+              - text: Preferred date
+              - textbox "Preferred date" [ref=f11e270]
+            - generic [ref=f11e271]:
+              - text: Preferred time
+              - combobox "Preferred time" [ref=f11e272]:
+                - option "Select time" [selected]
+                - option "10:00–12:00"
+                - option "12:00–14:00"
+                - option "14:00–16:00"
+          - paragraph [ref=f11e273]: Please allow at least 4 days. Dates, time slots and delivery availability need to be confirmed with the bakery.
+      - region [ref=f11e274]:
+        - generic [ref=f11e275]:
+          - img "Floral buttercream cake inspiration" [ref=f11e276]
+          - generic [ref=f11e277]:
+            - heading "Your cake" [level=2] [ref=f11e278]
+            - paragraph [ref=f11e279]: Vanilla Sponge · 6″ (serves 10)
+            - paragraph [ref=f11e280]: Ivory · Hand piped
+            - paragraph [ref=f11e281]: No extras
+            - paragraph [ref=f11e282]: Collection
+            - generic [ref=f11e283]: Photo for inspiration; your cake will be made to your choices.
+        - generic [ref=f11e284]:
+          - generic [ref=f11e285]:
+            - generic [ref=f11e286]: Sample total
+            - strong [ref=f11e287]: £85.00
+          - button "Save my cake" [ref=f11e288] [cursor=pointer]:
+            - text: Save my cake
+            - generic [aria-hidden] [ref=f11e289]: →
+        - paragraph [ref=f11e290]: Sample prices for planning only. Save your selection on this device; this does not place an order.
+  - button "Open Next.js Dev Tools" [ref=f11e296] [cursor=pointer]

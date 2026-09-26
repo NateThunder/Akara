@@ -2,11 +2,103 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom cakes: isolated styles for the standalone cake builder. */
+.custom-cakes-page { color: #353831; background: #fcf8f1; background-image: linear-gradient(#fcf8f1eb, #fcf8f1eb), var(--site-texture); min-height: 100svh; padding-top: 36px; font-size: 16px; line-height: 1.5; }
+.custom-cakes-heading, .custom-cake-steps { width: min(100% - 40px, 1060px); margin-inline: auto; }
+.custom-cakes-heading { padding-bottom: 32px; }
+.custom-cakes-heading > p { margin: 0 0 10px; font-size: 11px; text-transform: uppercase; letter-spacing: .18em; }
+.custom-cakes-heading h1 { margin: 0; color: var(--brand-teal); font: 400 clamp(36px, 5vw, 56px)/1.15 Georgia, serif; }
+.custom-cake-form { margin: 0; }
+.custom-step { min-width: 0; margin: 0 0 32px; padding: 0; border: 0; }
+.custom-step > legend { display: flex; align-items: center; gap: 14px; padding: 0; font-size: 14px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
+.custom-step-number { display: inline-grid; place-items: center; width: 28px; height: 28px; flex: 0 0 28px; border-radius: 50%; background: #b88636; color: #fff; font-size: 16px; letter-spacing: 0; }
+.custom-step-hint { margin: 3px 0 20px 42px; }
+.custom-flavours, .custom-sizes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.custom-choice { position: relative; display: block; min-width: 0; cursor: pointer; }
+.custom-choice:has(> input:checked), .custom-choice:focus-within { z-index: 1; }
+.custom-choice > input, .custom-colour > input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.custom-choice-face { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; height: 100%; min-height: 68px; padding: 16px 10px; border: 1px solid #ddd5ca; background: #fffdf8a6; text-align: center; transition: border-color .18s, background-color .18s; }
+.custom-choice-face strong { font-size: 16px; font-weight: 600; }
+.custom-choice-face small { display: block; color: #6d675d; font-size: 13px; }
+.custom-choice > input:checked + .custom-choice-face { border-color: var(--brand-teal); box-shadow: inset 0 0 0 1px var(--brand-teal); background: #fffdf8; }
+.custom-choice > input:checked + .custom-choice-face::after { content: "✓"; position: absolute; top: -7px; right: -5px; display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--brand-teal); color: white; font-size: 14px; }
+.custom-choice > input:focus-visible + .custom-choice-face, .custom-colour > input:focus-visible + .custom-swatch { outline: 2px solid var(--brand-teal); outline-offset: 4px; }
+.custom-cake-slice { display: block; width: 108px; max-width: 100%; height: 88px; margin-bottom: 4px; }
+.custom-flavour strong { display: grid; place-items: center; min-height: 48px; }
+.custom-colours { display: flex; flex-wrap: wrap; gap: 14px 10px; }
+.custom-colour { position: relative; display: flex; flex-direction: column; align-items: center; gap: 8px; width: 72px; cursor: pointer; font-size: 12px; text-align: center; }
+.custom-swatch { position: relative; display: block; width: 44px; height: 44px; border: 5px solid #fcf8f1; border-radius: 50%; background: var(--cake-swatch); box-shadow: 0 0 0 1px #ded6ca; }
+.custom-colour > input:checked + .custom-swatch { box-shadow: 0 0 0 2px var(--brand-teal); }
+.custom-colour > input:checked ~ span:last-child { color: var(--brand-teal); font-weight: 600; }
+.custom-personalisation { padding: 18px; border: 1px solid #e3dbcf; background: #fffdf844; }
+.custom-personalisation-top, .custom-schedule { display: grid; gap: 20px; }
+.custom-writing, .custom-extras { min-width: 0; padding: 0; margin: 0; border: 0; }
+.custom-writing legend, .custom-extras legend { padding: 0; margin-bottom: 10px; font-size: 14px; font-weight: 600; }
+.custom-writing > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.custom-writing .custom-choice-face { min-height: 48px; padding: 10px 7px; font-size: 14px; }
+.custom-field { display: flex; min-width: 0; flex-direction: column; gap: 10px; font-size: 14px; font-weight: 500; }
+.custom-field input, .custom-field select { width: 100%; min-width: 0; max-width: 100%; min-height: 48px; padding: 11px 12px; border: 1px solid #cfc8bc; border-radius: 0; background: #fffdf8; color: #353831; font: inherit; font-size: 16px; }
+.custom-field input:focus-visible, .custom-field select:focus-visible, .custom-summary button:focus-visible { outline: 2px solid var(--brand-teal); outline-offset: 4px; }
+.custom-message { position: relative; }
+.custom-message input { padding-right: 58px; }
+.custom-message > span { position: absolute; top: 14px; right: 12px; color: #787268; font-size: 12px; }
+.custom-extras { margin-top: 24px; }
+.custom-extras legend span { font-weight: 400; }
+.custom-extras > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.custom-choice-face svg:not(.custom-cake-slice), .custom-decoration-note svg { width: 30px; height: 30px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.35; stroke-linecap: round; stroke-linejoin: round; }
+.custom-extras svg, .custom-decoration-note svg { color: #b47c61; }
+.custom-decoration-note { display: flex; align-items: center; gap: 14px; margin: 20px 0 0; padding: 12px; background: #f4eadf; font-size: 14px; }
+.custom-delivery { display: grid; gap: 14px; margin-bottom: 20px; }
+.custom-delivery .custom-choice-face { flex-direction: row; justify-content: flex-start; gap: 18px; text-align: left; padding: 18px 20px; }
+.custom-delivery .custom-choice-face strong { display: block; margin-bottom: 4px; }
+.custom-availability { margin: 12px 0 0; font-size: 14px; color: #6d675d; max-width: 70ch; }
+.custom-summary { display: grid; gap: 20px; margin-top: 36px; padding: 24px max(20px, calc((100% - 1060px) / 2)); border-top: 1px solid #e3dbcf; background: #f1e9df; }
+.custom-summary-cake { display: flex; align-items: flex-start; gap: 18px; min-width: 0; }
+.custom-summary-cake > img { display: block; width: 76px; height: 100px; flex: 0 0 76px; object-fit: cover; }
+.custom-summary-cake > div { min-width: 0; overflow-wrap: anywhere; }
+.custom-summary h2 { margin: 0 0 8px; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; }
+.custom-summary-cake p { margin: 3px 0; font-size: 14px; }
+.custom-summary-cake small { display: block; margin-top: 8px; font-size: 12px; color: #6d675d; }
+.custom-summary-action { display: grid; gap: 16px; }
+.custom-total { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.custom-total > span { font-size: 12px; text-transform: uppercase; letter-spacing: .1em; }
+.custom-total strong { font-size: 28px; font-weight: 600; }
+.custom-summary button { display: flex; align-items: center; justify-content: center; gap: 24px; min-height: 54px; padding: 16px 24px; border: 1px solid var(--brand-teal); border-radius: 0; background: var(--brand-teal); color: white; font: inherit; font-size: 12px; text-transform: uppercase; letter-spacing: .12em; cursor: pointer; transition: background-color .18s, color .18s; }
+.custom-summary button:hover { background: #fffdf8; color: var(--brand-teal); }
+.custom-pricing-note, .custom-save-status { grid-column: 1 / -1; margin: 0; font-size: 14px; }
+.custom-save-status { color: var(--brand-teal); font-weight: 500; }
+.custom-save-status:empty { display: none; }
+@media (min-width: 700px) {
+  .custom-cakes-page { padding-top: 48px; }
+  .custom-cakes-heading, .custom-cake-steps { width: min(100% - 64px, 1060px); }
+  .custom-flavours { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; }
+  .custom-sizes { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+  .custom-colours { gap: 24px; }
+  .custom-personalisation { padding: 24px; }
+  .custom-personalisation-top { grid-template-columns: minmax(0, .9fr) minmax(0, 1.2fr); gap: 28px; }
+  .custom-extras > div { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+  .custom-delivery, .custom-schedule { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  .custom-summary { padding-inline: max(32px, calc((100% - 1060px) / 2)); }
+  .custom-summary-action { grid-template-columns: 1fr 1fr; align-items: center; }
+  .custom-summary-cake > img { width: 100px; height: 110px; flex-basis: 100px; }
+}
+@media (min-width: 1024px) {
+  .custom-summary { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); align-items: center; gap: 20px 40px; }
+  .custom-summary-action { grid-template-columns: auto minmax(0, 1fr); border-left: 1px solid #d8cec0; padding-left: 28px; }
+  .custom-summary button { padding-inline: 16px; gap: 12px; }
+  .custom-total { align-items: flex-start; flex-direction: column; gap: 4px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .custom-choice-face, .custom-summary button { transition: none; }
+}
+
 :root {
   --site-background: #f8f7f4;
   --site-texture: url("/Video/textures/Paper.webp");
   --brand-teal: #207E7A;
 }
+
+.menu-toggle { display: none; }
 
 /* Contact: adjoining cream copy and rectangular bakery photography. */
 .contact-page { color: #44413b; }
@@ -920,8 +1012,8 @@ a:focus-visible { outline: 2px solid var(--brand-teal); outline-offset: 4px; }
   .bespoke-gallery img, .bespoke-guidance a span { transition: none; }
 }
 
-/* Keep all seven original navigation links comfortably spaced on desktop. */
-@media (min-width: 1201px) and (max-width: 1450px) {
+/* Keep all eight navigation links comfortably spaced on desktop. */
+@media (min-width: 1201px) and (max-width: 1700px) {
   .site-header { gap: 20px; padding-inline: 3%; }
   .main-nav { gap: 18px; margin-left: 0; }
   .main-nav a { font-size: 11px; }
@@ -962,4 +1054,119 @@ a:focus-visible { outline: 2px solid var(--brand-teal); outline-offset: 4px; }
 @media (prefers-reduced-motion: reduce) {
   .about-intro, .about-portrait img { animation: none; }
   .about-photo img, .about-link span { transition: none; }
+}
+
+/* Small-screen adaptations are scoped to preserve the established desktop. */
+@media (max-width: 1023px) {
+  .site-header { min-height: 96px; padding: 12px 24px; gap: 0 24px; }
+  .site-logo { width: 112px; height: 72px; }
+  .header-actions { display: none; } /* These three actions are disabled placeholders. */
+  .menu-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 44px; margin-left: auto; padding: 10px 0 10px 12px; border: 0; background: transparent; color: var(--brand-teal); font: inherit; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; cursor: pointer; }
+  .menu-toggle svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.5; flex-shrink: 0; }
+  .menu-toggle:focus-visible { outline: 2px solid var(--brand-teal); outline-offset: 4px; }
+  .main-nav { display: none; flex: 0 0 100%; margin: 12px 0 0; padding: 12px 0; border-top: 1px solid #ded8ce; }
+  .main-nav a { min-height: 48px; font-size: 13px; white-space: normal; }
+  .main-nav a::after { right: auto; width: 32px; }
+  .service-strip li { padding-inline: 16px; font-size: 13px; letter-spacing: .04em; }
+  .hero-description, .favourites-heading p, .bakery-story-copy p, .enquiry-inner p,
+  .contact-details p, .contact-details address, .contact-methods a, .contact-form-intro p,
+  .contact-form-note, .contact-form-status, .product-description, .product-order-hint,
+  .product-accordion, .product-help p, .shop-empty p, .shop-order-note,
+  .bespoke-hero-copy > p:not(.bespoke-eyebrow), .bespoke-steps p,
+  .bespoke-section-heading > p:last-child, .bespoke-guidance p,
+  .about-copy > p:not(.about-eyebrow), .about-team > p:not(.about-eyebrow) { font-size: 16px; }
+  .order-notice { font-size: 16px; }
+  .order-notice a { font-size: 14px; white-space: normal; }
+  .favourite-shop, .bakery-story-about, .about-link, .bespoke-guidance a { min-height: 44px; font-size: 12px; }
+  .hero-dot, .hero-pause { width: 44px; height: 44px; flex-shrink: 0; }
+  .favourites-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .favourite-caption h3 { font-size: 24px; }
+  .bestseller h3, .shop-product-copy h3 { font-size: 14px; }
+  .bestseller-price, .shop-product-copy p { font-size: 16px; }
+  .bestseller button { font-size: 11px; padding-inline: 12px; }
+  .shop-product-button { font-size: 11px !important; padding-inline: 12px; }
+  .shop-toolbar { font-size: 16px; }
+  .shop-search input, .shop-sort select, .product-options select { font-size: 16px; }
+  .shop-search svg { flex-shrink: 0; }
+  .shop-categories { justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; padding: 4px; scrollbar-width: thin; scrollbar-color: var(--brand-teal) #eee8df; }
+  .shop-categories button { flex-shrink: 0; font-size: 14px; }
+  .product-information, .product-options, .contact-copy, .about-copy { min-width: 0; overflow-wrap: anywhere; }
+  .product-options label, .contact-form-field label { font-size: 14px; }
+  .product-accordion summary { min-height: 44px; font-size: 16px; }
+  .product-back { min-height: 44px; font-size: 14px; }
+  .enquiry-inner { margin-inline: 0; }
+  .footer-inner { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
+  .footer-links li { font-size: 14px; overflow-wrap: anywhere; }
+  .footer-links a { display: inline-flex; align-items: center; min-height: 44px; }
+  .footer-social-icons a { width: 44px; height: 44px; }
+  .footer-copyright { font-size: 12px; }
+}
+
+/* Native modal supplies an inert backdrop and contains keyboard focus. */
+.mobile-drawer { position: fixed; inset: 0 0 0 auto; width: min(360px, calc(100% - 40px)); max-width: none; height: 100dvh; max-height: none; margin: 0; padding: 24px; border: 0; border-radius: 0; background: var(--site-background); color: var(--brand-teal); overflow-y: auto; overscroll-behavior: contain; }
+.mobile-drawer::backdrop { background: rgb(30 35 30 / 40%); }
+.mobile-drawer[open] { animation: drawer-enter 220ms ease-out; }
+.drawer-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-bottom: 24px; }
+.drawer-heading > span { font: 400 26px/1.2 Georgia, serif; }
+.drawer-close { display: grid; place-items: center; flex-shrink: 0; width: 44px; height: 44px; border: 0; background: transparent; color: var(--brand-teal); cursor: pointer; }
+.drawer-close svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.drawer-close:focus-visible { outline: 2px solid var(--brand-teal); outline-offset: 2px; }
+.mobile-drawer .drawer-nav { display: flex; flex-direction: column; align-items: stretch; gap: 8px; margin: 0; padding: 16px 0; border-top: 1px solid #ded8ce; width: 100%; }
+.mobile-drawer .drawer-nav a { min-height: 48px; white-space: normal; font-size: 13px; }
+@keyframes drawer-enter { from { transform: translateX(100%); } to { transform: translateX(0); } }
+@media (prefers-reduced-motion: reduce) { .mobile-drawer[open] { animation: none; } }
+
+@media (max-width: 900px) {
+  .cake-hero { min-height: 0; flex-direction: column; }
+  .hero-copy { width: 100%; padding: 36px 24px; }
+  .hero-copy h1 { max-width: 24ch; font-size: clamp(28px, 4.5vw, 38px); }
+  .hero-description { max-width: 48ch; margin-block: 20px; }
+  .hero-eyebrow { margin-bottom: 18px; font-size: 12px; }
+  .hero-photographs { position: relative; inset: auto; order: 2; width: 100%; aspect-ratio: 4 / 3; z-index: 0; }
+  .hero-controls { z-index: 1; right: 16px; bottom: 12px; }
+  .hero-actions { gap: 12px; }
+  .hero-button { font-size: 12px; padding: 12px 18px; }
+  .bakery-story, .contact-layout, .about-story, .bespoke-hero, .product-layout { grid-template-columns: minmax(0, 1fr); }
+  .bakery-story-copy { max-width: none; padding: 40px 24px; }
+  .bakery-story-copy p { max-width: 55ch; }
+  .bakery-story-image, .contact-photograph { min-height: 0; aspect-ratio: 4 / 3; }
+  .about-copy, .contact-copy, .bespoke-hero-copy { padding: 40px 24px; }
+  .about-portrait { height: auto; aspect-ratio: 3 / 4; }
+  .about-cakes { min-height: 0; aspect-ratio: 1; }
+  .about-everyday .about-copy { grid-row: 1; }
+  .bespoke-hero-image { height: auto; aspect-ratio: 1; }
+  .bespoke-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 0; }
+  .bespoke-steps li:nth-child(3) { border-left: 0; }
+  .bespoke-steps h3 { font-size: 12px; }
+  .bespoke-guidance { grid-template-columns: minmax(0, 1fr); }
+  .product-layout { gap: 24px; }
+}
+
+@media (max-width: 640px) {
+  .shop-toolbar { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .shop-search { width: 100%; }
+  .shop-search input { width: 100%; min-width: 0; }
+  .shop-sort { justify-content: space-between; gap: 16px; }
+  .shop-sort select { flex: 1; max-width: none; min-width: 0; }
+  .shop-product-grid { align-items: stretch; }
+  .shop-product { display: flex; flex-direction: column; }
+  .shop-product-copy { flex: 1; }
+  .shop-product-copy h3 { min-height: 0; }
+  .shop-product-copy p { margin-top: auto; padding-top: 10px; }
+  .shop-product-button { width: 100%; letter-spacing: .05em; }
+  .shop-product-copy h3 a { display: inline-flex; align-items: center; min-height: 44px; }
+  .contact-form-row { grid-template-columns: minmax(0, 1fr); gap: 0; }
+}
+
+@media (max-width: 480px) {
+  .favourites-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .hero-controls { display: grid; grid-template-columns: repeat(4, 44px); padding: 0 4px; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-button { max-width: 100%; }
+  .bespoke-steps { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .bespoke-steps li { padding: 0 0 24px; }
+  .bespoke-steps li + li { border-left: 0; border-top: 1px solid #ded8ce; padding-top: 24px; }
+  .bespoke-steps p { max-width: 28ch; }
+  .bespoke-gallery { grid-template-columns: minmax(0, 1fr); }
+  .footer-inner { grid-template-columns: minmax(0, 1fr); }
 }
