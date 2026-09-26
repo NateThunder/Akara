@@ -56,8 +56,10 @@ export default function SiteHeader() { return (<>
           <span>Vegan &amp; GF available</span>
         </li>
       </ul>
+      {/* Order notice temporarily muted; keep markup and styles for restoring later.
       <aside className="order-notice" aria-label="Cake order lead times">
         <p>Cake orders need 4 days’ notice. Order by Tuesday midnight for the same week.</p>
         <a href="/contact">Need it sooner? Get in touch <span aria-hidden="true">→</span></a>
       </aside>
+      */}
 </>); }

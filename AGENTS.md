@@ -1,7 +1,9 @@
 # Design rules
 
+- Use `#F2EBDE` as the global site background colour. Define it once as `--site-background` in `src/app/globals.css` and use `var(--site-background)` for shared page backgrounds and their paper-texture overlays.
 - Use `#207E7A` for all teal on the site. Define it once as `--brand-teal` in `src/app/globals.css` and use `var(--brand-teal)` for teal text, backgrounds, borders, icons, logo tints, and focus indicators. Do not introduce other teal shades.
 - Keep shared visual styles in `src/app/globals.css`, rather than individual page files.
+- Compress raster images before adding or updating them on the site, and convert them to WebP only if they are not already in WebP format. Avoid unnecessary re-encoding of existing WebP images. Resize images to appropriate display dimensions, preserve visual quality and transparency where needed, and update image references to use the optimised `.webp` files. Keep vector assets such as SVGs in their original format.
 
 ## Visual direction
 

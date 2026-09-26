@@ -1,4 +1,4 @@
-const quickLinks = ["Shop", "About", "Gallery", "Contact", "FAQs"];
+const quickLinks = ["Shop", "About", "Contact", "FAQs"];
 const information = ["Collection & Delivery", "Ingredients & Allergens", "Terms & Conditions", "Privacy Policy"];
 
 function BotanicalBranch({ className }: { className: string }) {
