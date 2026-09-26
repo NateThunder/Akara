@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import catalogue from "./products.json";
 
@@ -12,6 +12,14 @@ export default function Catalogue() {
   const router = useRouter();
   const selected = params.get("category") || "All";
   const category = categories.includes(selected) ? selected : "All";
+  const categoryList = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const list = categoryList.current;
+    const button = list?.querySelector<HTMLButtonElement>('[aria-pressed="true"]');
+    if (list && button && list.scrollWidth > list.clientWidth) {
+      list.scrollLeft += button.getBoundingClientRect().left - list.getBoundingClientRect().left - (list.clientWidth - button.offsetWidth) / 2;
+    }
+  }, [category]);
   const [search, setSearch] = useState("");
   const [sort, setSort] = useState("featured");
   const products = catalogue.products.filter(product => (category === "All" || product.categories.includes(category)) && product.name.toLowerCase().includes(search.trim().toLowerCase()));
@@ -25,7 +33,7 @@ export default function Catalogue() {
   }
   return <section className="shop-collection" id="collection" aria-labelledby="collection-heading">
     <header className="shop-collection-heading"><h1 id="collection-heading">Shop our collection</h1></header>
-    <div className="shop-categories" aria-label="Product categories">{categories.map(item => <button key={item} type="button" aria-pressed={category === item} onClick={() => selectCategory(item)}>{item}</button>)}</div>
+    <div ref={categoryList} className="shop-categories" aria-label="Product categories">{categories.map(item => <button key={item} type="button" aria-pressed={category === item} onClick={() => selectCategory(item)}>{item}</button>)}</div>
     <div className="shop-toolbar">
       <p role="status" aria-live="polite">{products.length} {products.length === 1 ? "product" : "products"}{category !== "All" ? ` · ${category}` : ""}</p>
       <label className="shop-search"><span className="shop-sr-only">Search products</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6" /><path d="m15 15 5 5" /></svg><input type="search" placeholder="Find something delicious…" value={search} onChange={event => setSearch(event.target.value)} /></label>
