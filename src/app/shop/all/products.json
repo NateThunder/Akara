@@ -1,0 +1,654 @@
+{
+    "source":  "https://www.akarabakery.co.uk/allproducts",
+    "capturedAt":  "2026-09-26",
+    "products":  [
+                     {
+                         "id":  "699ec4890031623cbcd74037",
+                         "name":  "Gluten Free Mothers Day Cupcakes (Box of 6)",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/gfmothersdaycupcakes",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/d2767285-2cfc-49e2-b47c-28ab012ce635/IMG_5266%2B2.png?format=750w",
+                         "price":  26,
+                         "from":  false,
+                         "categories":  [
+                                            "Brownies \u0026 Cupcakes"
+                                        ]
+                     },
+                     {
+                         "id":  "696908bd7263465d9f893e6a",
+                         "name":  "Vegan Lemon Lavender Blueberry",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/veganlemonlavenderblue",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/476f525b-8562-4261-925e-bfbbea8807c5/IMG_4482.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Vegan Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "691b873f862ec71a5115e8d0",
+                         "name":  "Mixed Box Cupcakes",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/mixedcupcakes",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/8f9b4f09-facb-4db4-8fc0-4931108637d9/2af03688-1ac7-4aea-8afe-f9a3c87c2f9e.png?format=750w",
+                         "price":  24,
+                         "from":  true,
+                         "categories":  [
+                                            "Brownies \u0026 Cupcakes"
+                                        ]
+                     },
+                     {
+                         "id":  "691b850e589c920e01ea6d0e",
+                         "name":  "Black Forest Cupcake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/blackforestcupcakes",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/d2767285-2cfc-49e2-b47c-28ab012ce635/IMG_5266%2B2.png?format=750w",
+                         "price":  22,
+                         "from":  true,
+                         "categories":  [
+                                            "Brownies \u0026 Cupcakes"
+                                        ]
+                     },
+                     {
+                         "id":  "691b83922a18ad4fc0cb5ee7",
+                         "name":  "Berry Earl Grey Cupcakes",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/berryearlgreycupcakes",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/0abbef29-d0f3-4a13-aa0d-cf6463e21948/IMG_5268%2B2.png?format=750w",
+                         "price":  22,
+                         "from":  true,
+                         "categories":  [
+                                            "Brownies \u0026 Cupcakes"
+                                        ]
+                     },
+                     {
+                         "id":  "691b811aa1900f2868a91bf7",
+                         "name":  "Red Velvet Cupcakes",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/redvelvetcupcakes",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/4576c10a-ad1d-452b-8d05-289255495f3f/IMG_5265%2B2.png?format=750w",
+                         "price":  22,
+                         "from":  true,
+                         "categories":  [
+                                            "Brownies \u0026 Cupcakes"
+                                        ]
+                     },
+                     {
+                         "id":  "691b7fca4d24fe13e4830ec8",
+                         "name":  "Coconut Cardamom Passion Cupcake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/cerealmilkcupcake-7cssh",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/ebeb140e-cafc-4ac6-b437-e7b43b749606/IMG_5267%2B2.png?format=750w",
+                         "price":  22,
+                         "from":  true,
+                         "categories":  [
+                                            "Brownies \u0026 Cupcakes"
+                                        ]
+                     },
+                     {
+                         "id":  "691b7838d7ebe07c40d91e7d",
+                         "name":  "Milk Chocolate \u0026 Blackcurrant Cheesecake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/milkchoccurrant-cheesecake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/cb420bc0-7e2f-4c07-acfe-85e94058af61/IMG_5242%2B2.png?format=750w",
+                         "price":  37,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "691b7240db99d123ffbb8590",
+                         "name":  "White Chocolate, Salted Almond \u0026 Lime Cheesecake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/whitechocolatealmondlime-cheesecake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/17c1c7a7-dff9-43cb-befb-c81ea3dda1f5/IMG_5269%2B2.png?format=750w",
+                         "price":  37,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "691b6fa7f08727473e0b3f1f",
+                         "name":  "Lemon Meringue Cheesecake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/lemonmeringue-cheesecake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/a0ef8a31-03af-425f-9184-028434b1ea6c/IMG_5245%2B2.png?format=750w",
+                         "price":  37,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "691b6c31cf8e16744233a65f",
+                         "name":  "Strawberries \u0026 Cream Cheesecake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/strawberrycheesecake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/bce035c7-18db-4818-b53b-394b4f91236b/IMG_5142.png?format=750w",
+                         "price":  35,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "6907e56927d9304a304abfe3",
+                         "name":  "Gluten Free Sprinkle Sprinkle",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/gfsprinklesprinkle",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/1712697874349-TXNI4826XCWG4OXLYS9N/IMG_2512.jpg?format=750w",
+                         "price":  60,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes",
+                                            "Gluten Free Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "6907e16811555276451bf80e",
+                         "name":  "Gluten Free Flower Crown",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/gfflowercrowncake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/807e18eb-7979-4c3d-a9b9-26384ac08511/IMG_0804.png?format=750w",
+                         "price":  60,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes",
+                                            "Gluten Free Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "6907df79191efd5c6e79760c",
+                         "name":  "Gluten Free Mini Hearts",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/gfminiheartscake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/8441e870-4e11-4516-b9e6-597ef9c44670/IMG_1161_jpg.jpg?format=750w",
+                         "price":  33,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes",
+                                            "Gluten Free Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "69064192e2657c1ed811b23f",
+                         "name":  "Gluten Free Heart to Heart Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/gfhearttoheart",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/a1ce1a17-ca3b-4469-bce5-3e5e75ebc2c0/IMG_0320.jpg?format=750w",
+                         "price":  33,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes",
+                                            "Gluten Free Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "69064016c0a9977e4e887177",
+                         "name":  "Ribbon Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/ribbon-cake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/b01b8035-cadb-4b30-b23c-e72ed789c64d/IMG_1818.png?format=750w",
+                         "price":  55,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "69063f5e28fbfe2917a13a40",
+                         "name":  "Queen of Hearts",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/queenof-hearts",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/5c4b87bd-d41e-43d0-93cc-30468b569f42/IMG_3791.png?format=750w",
+                         "price":  70,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "69063d352b8bf461759f3ab5",
+                         "name":  "Pressed Flower Petals Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/pressed-flower",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/8d1b6ab1-746a-48c4-be00-f85f29c86914/IMG_6661.png?format=750w",
+                         "price":  33,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "690622fca917f07c568edebd",
+                         "name":  "Gluten Free Chocolate Ganache Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/gfchocolateganachecake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/271555d9-c3a1-4177-9891-6ec1ebdb3ea9/IMG_4483.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "6906214b6fdd536d37b64fee",
+                         "name":  "Gluten Free Lemon Lavender Blueberry",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/gflemonlavenderblueberry",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/8ae5f728-1727-4caf-b7f5-5e57ad2915a4/IMG_4482.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "690620340701d5536945436b",
+                         "name":  "Berry Earl Grey Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/gfearlgreyberry",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/f5c9c0e0-5926-4bfb-8628-59da89689d32/IMG_4485.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "69061f2eeba09706cec70c69",
+                         "name":  "Gluten Free Red Velvet Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/gfredvelvetcake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/b509dff1-9a62-42b7-91b2-72d47ed12395/IMG_4488.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "6906199487d1ed0fb5d9e04e",
+                         "name":  "Gluten Free Black Forest Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/gfblackforestcake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/6241a74c-1ad5-4e37-8c1b-0313848f6c6e/IMG_4489.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "690618bb03fe5f755b480dda",
+                         "name":  "Gluten Free Coconut, Cardamom \u0026 Passionfruit",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/gfpassioncoconutcake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/39f8b4a5-3a9b-40cb-8ed6-c5e8ec442593/IMG_4487.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "6905de74bfe264522a159334",
+                         "name":  "Lemon Lavender Blueberry",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/lemonlavenderblueberry",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/8ae5f728-1727-4caf-b7f5-5e57ad2915a4/IMG_4482.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "6905da52bcf7ad402f54fd72",
+                         "name":  "Banana Dream Cake (nuts)",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/bananachocnutcaramel",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/37e1389c-3b64-4ac5-98a6-54811fca264c/IMG_4480.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "6905d36dbcdfd52ab57c3cc8",
+                         "name":  "Black Forest Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/blackforestcake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/6241a74c-1ad5-4e37-8c1b-0313848f6c6e/IMG_4489.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "6905d134f0ab4006cadee4a3",
+                         "name":  "Coconut, Cardamom \u0026 Passionfruit",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/passionfruitcoconutcake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/39f8b4a5-3a9b-40cb-8ed6-c5e8ec442593/IMG_4487.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "6905cee97301aa2fa7e9da22",
+                         "name":  "Cereal Sprinkle Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/cerealsprinklecake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/333dbb1c-0a45-49ad-a1bf-525950aef9ab/IMG_4484.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "690544652265dc64811f1053",
+                         "name":  "Fresh Cream Victoria",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/creamvictoria",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/c04a85ac-da00-4042-b068-0bc99ecfa8c5/IMG_4481.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "687098bc3c6c3537233da819",
+                         "name":  "Vegan Heart to Heart Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/veganhearttoheart",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/71814659-089b-4173-8d6a-be9a1e2534e2/IMG_0320.jpg?format=750w",
+                         "price":  33,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes",
+                                            "Vegan Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "68709407df29c3481df24d38",
+                         "name":  "Heart to Heart Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/heart2heart",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/a1ce1a17-ca3b-4469-bce5-3e5e75ebc2c0/IMG_0320.jpg?format=750w",
+                         "price":  33,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "67f2413e08844e4723797329",
+                         "name":  "Gluten Free Ribbon Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/glutenfreeribboncake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/c28ab298-7e37-409d-b732-6b6a3a0d42d3/IMG_1818.png?format=750w",
+                         "price":  55,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes",
+                                            "Gluten Free Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "67f23d603824790a5e63e70e",
+                         "name":  "Gluten Free Queen of Hearts",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/queenofheartsgf",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/5c4b87bd-d41e-43d0-93cc-30468b569f42/IMG_3791.png?format=750w",
+                         "price":  70,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes",
+                                            "Gluten Free Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "67f23b418dabad636818213b",
+                         "name":  "Gluten Free Pressed Flower Petals Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/glutenfreepressedflower",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/8d1b6ab1-746a-48c4-be00-f85f29c86914/IMG_6661.png?format=750w",
+                         "price":  33,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes",
+                                            "Gluten Free Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "67a38ea1ddbfb14367e79712",
+                         "name":  "Akara In Store Gift Card (instore purchases only)",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/giftcardphysical",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/b37c41c4-ed07-40cb-99b6-89dfacef1d97/1.png?format=750w",
+                         "price":  10,
+                         "from":  true,
+                         "categories":  [
+                                            "Gift Cards"
+                                        ]
+                     },
+                     {
+                         "id":  "6798e66bc9f6df15dfc2ec7e",
+                         "name":  "Vegan Sprinkle Sprinkle",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/vegansprinkle",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/1712697874349-TXNI4826XCWG4OXLYS9N/IMG_2512.jpg?format=750w",
+                         "price":  63,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes",
+                                            "Vegan Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "66686334ac3e3b1d26aa01b9",
+                         "name":  "Flower Crown",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/flowercrowncake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/1718117223541-FFGXCXNMPYI0Y1K0UQD7/IMG_0804.JPG?format=750w",
+                         "price":  60,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "6615b140bead126c7937abf4",
+                         "name":  "Sprinkle Sprinkle",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/sprinklesprinkle",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/1712697874349-TXNI4826XCWG4OXLYS9N/IMG_2512.jpg?format=750w",
+                         "price":  60,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "65d280afeab67256750d61e6",
+                         "name":  "Vegan Pressed Flowers Petal Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/veganflowercake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/3dffa4e7-0587-4ba8-b2f7-aa7efe0527e5/IMG_6659.JPG?format=750w",
+                         "price":  34,
+                         "from":  true,
+                         "categories":  [
+                                            "Vegan Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "654b7033b9a467496ee78501",
+                         "name":  "Spiced Carrot Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/carrotcake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/d67fe1a5-d2e8-429d-9589-19e542ac46af/IMG_4486.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "65b4cc994e0656062dd6c30d",
+                         "name":  "Vegan Ribbon Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/veganribboncake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/1706347754551-JXLDTTHBCN5SZU7MKO5T/IMG_1818.JPG?format=750w",
+                         "price":  55,
+                         "from":  true,
+                         "categories":  [
+                                            "Vegan Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "6539030f250e3e2c1650102e",
+                         "name":  "Gluten Free Chocolate Salted Dulce De Leche Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/gfchocsaltedcaramel",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/1669149519550-491HBVYD3RWANJY2VZNM/IMG_4801_jpg+2.jpg?format=750w",
+                         "price":  50,
+                         "from":  true,
+                         "categories":  [
+                                            "Gluten Free Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "6538de05f27a69693b851e51",
+                         "name":  "Vegan Vintage Regal Ruffles",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/veganvintage",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/1698228836012-G6AP07DT0KSIOJVPYTG4/E3A0A7F8-F011-4116-A1D0-9847456A84D0.JPG?format=750w",
+                         "price":  68,
+                         "from":  true,
+                         "categories":  [
+                                            "Vegan Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "6536637fdf57190437654ff8",
+                         "name":  "Akara Online Gift Card (Online purcheses only)",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/giftcardonline",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/1669510103376-26NR6VJF93BBJ936056K/A6+of+Voucher+%281%29.png?format=750w",
+                         "price":  10,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes",
+                                            "Gift Cards"
+                                        ]
+                     },
+                     {
+                         "id":  "64e13a43b168986f38b459d0",
+                         "name":  "Mini Hearts",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/miniheartscake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/8441e870-4e11-4516-b9e6-597ef9c44670/IMG_1161_jpg.jpg?format=750w",
+                         "price":  33,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "64c0fab1b3b29e00f473d28e",
+                         "name":  "Vegan Classic Vintage Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/veganclassicvintage",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/1698228854485-X7LWGLJE4ZX4W2SM5I5U/IMG_0160.JPG?format=750w",
+                         "price":  57,
+                         "from":  true,
+                         "categories":  [
+                                            "Vegan Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "641eca6862ab5e0e8eaf12ad",
+                         "name":  "Vegan Biscoff Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/veganbiscoffcake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/79620b67-f971-4c91-a4bc-e107b13c6de0/E0B44C97-BFBE-41D6-880F-4D0FF83F75AB.jpg?format=750w",
+                         "price":  48,
+                         "from":  true,
+                         "categories":  [
+                                            "Vegan Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "637d2ddadcb1045315ce9bdf",
+                         "name":  "Gluten Free Spiced Carrot Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/gf-carrot-cake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/f7f29025-7815-477c-bf0a-83ec5a961522/IMG_4486.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Gluten Free Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "637e7ceaa04b4d6b64edec9a",
+                         "name":  "Vegan Old Skool Birthday Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/vegan-old-skool-birthday-cake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/5098d3cc-0df4-483f-9ef5-c5223c503079/IMG_2197.jpg?format=750w",
+                         "price":  45,
+                         "from":  true,
+                         "categories":  [
+                                            "Vegan Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "637e7c2edbe8455668640c8e",
+                         "name":  "Vegan Coconut Passionfruit Cardamom",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/vegan-coconut-passionfruit-cardamom-cake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/c6819ba9-620a-4244-bf8b-20b55f90034c/IMG_4487.png?format=750w",
+                         "price":  50,
+                         "from":  true,
+                         "categories":  [
+                                            "Vegan Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "637e7a9f4fb1dc65734faf43",
+                         "name":  "Vegan Victoria Sponge",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/vegan-victoria-sponge",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/4e10c756-e1aa-46f2-a46e-fa3566d9ef16/IMG_4481.png?format=750w",
+                         "price":  45,
+                         "from":  true,
+                         "categories":  [
+                                            "Vegan Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "637d466d0ed1aa10be2a9eab",
+                         "name":  "Vanilla Bean Cheesecake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/vanilla-cheesecake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/a793000f-33e9-4718-bf74-780fe0e60131/IMG_5126.png?format=750w",
+                         "price":  32,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "637d3fd3309e500af1d93d6c",
+                         "name":  "Earl Grey Mixed Berry Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/earlgreyberry",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/f5c9c0e0-5926-4bfb-8628-59da89689d32/IMG_4485.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "636bbc5505fb9e73e5059bd5",
+                         "name":  "Cereal Milk Sprinkle Cupcakes",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/cerealmilkcupcake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/cff3a469-e79e-48f2-9f24-3e43be192b36/IMG_5264.png?format=750w",
+                         "price":  22,
+                         "from":  true,
+                         "categories":  [
+                                            "Brownies \u0026 Cupcakes"
+                                        ]
+                     },
+                     {
+                         "id":  "636bbc5405fb9e73e5059b95",
+                         "name":  "Red Velvet Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/red-velvet-cake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/b509dff1-9a62-42b7-91b2-72d47ed12395/IMG_4488.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "636bbc5505fb9e73e5059bc9",
+                         "name":  "Chocolate Ganache Cake",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/chocolateganachecake",
+                         "image":  "https://images.squarespace-cdn.com/content/v1/6366d85369d9695fc1011d77/271555d9-c3a1-4177-9891-6ec1ebdb3ea9/IMG_4483.png?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Cakes"
+                                        ]
+                     },
+                     {
+                         "id":  "636bbc5405fb9e73e5059b89",
+                         "name":  "Gluten Free Fresh Cream Victoria Sponge",
+                         "href":  "https://www.akarabakery.co.uk/allproducts/p/glutenfreevictoria",
+                         "image":  "https://static1.squarespace.com/static/6366d85369d9695fc1011d77/636bbc5405fb9e73e5059b71/636bbc5405fb9e73e5059b89/1787819903914/?format=750w",
+                         "price":  30,
+                         "from":  true,
+                         "categories":  [
+                                            "Gluten Free Cakes"
+                                        ]
+                     }
+                 ]
+}

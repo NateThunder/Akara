@@ -19,7 +19,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <svg width="0" height="0" aria-hidden="true" focusable="false" style={{ position: "absolute" }}>
+          <defs>
+            <filter id="brand-teal-tint" colorInterpolationFilters="sRGB">
+              <feFlood floodColor="var(--brand-teal)" />
+              <feComposite in2="SourceAlpha" operator="in" />
+            </filter>
+          </defs>
+        </svg>
+        {children}
+      </body>
     </html>
   );
 }
