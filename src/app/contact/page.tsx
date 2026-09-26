@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import SiteHeader from "../site-header";
-import HomeFooter, { EnquiryBanner } from "../home-footer";
+import HomeFooter from "../home-footer";
 import ContactForm from "./contact-form";
 
 export const metadata: Metadata = {
@@ -37,7 +37,6 @@ export default function ContactPage() {
           </div>
           <ContactForm />
         </section>
-        <EnquiryBanner href="#contact-form" />
       </main>
       <HomeFooter />
     </>
