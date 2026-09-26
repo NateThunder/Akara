@@ -35,12 +35,12 @@ export default function HeroCarousel() {
         ))}
       </div>
       <div className="hero-copy">
-        <p className="hero-eyebrow">Cakes made with love</p>
-        <h1>Celebrate<br />the moments<br />that matter.</h1>
-        <p className="hero-description">Beautifully handmade cakes for birthdays,<br className="hero-desktop-break" /> weddings and every special occasion.</p>
+        <p className="hero-eyebrow">Our cake philosophy is joy.</p>
+        <h1>We are an artisan cake shop and cafe bakery specialising in unique custom celebration and wedding cakes in Glasgow!</h1>
+        <p className="hero-description">Beautifully handmade cakes for birthdays, weddings and every special occasion.</p>
         <div className="hero-actions">
-          <button className="hero-button hero-button-primary" type="button" disabled>Shop cakes</button>
-          <button className="hero-button hero-button-secondary" type="button" disabled>Custom orders</button>
+          <a className="hero-button hero-button-primary" href="/shop/all">Shop cakes</a>
+          <a className="hero-button hero-button-secondary" href="/contact">Custom orders</a>
         </div>
       </div>
       <div className="hero-controls" aria-label="Banner controls">

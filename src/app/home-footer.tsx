@@ -19,7 +19,7 @@ function BotanicalBranch({ className }: { className: string }) {
   );
 }
 
-export function EnquiryBanner() {
+export function EnquiryBanner({ href = "/contact" }: { href?: string }) {
   return (
     <section className="enquiry-banner" aria-labelledby="enquiry-heading">
       <BotanicalBranch className="enquiry-botanical enquiry-botanical-left" />
@@ -29,9 +29,9 @@ export function EnquiryBanner() {
           <h2 id="enquiry-heading">Planning something special?</h2>
           <p>We&apos;d love to create the perfect cake for your occasion.<br />Get in touch to discuss your ideas.</p>
         </div>
-        <button className="enquiry-button" type="button" disabled aria-label="Enquire now (coming soon)">
+        <a className="enquiry-button" href={href}>
           Enquire now <span aria-hidden="true">&rarr;</span>
-        </button>
+        </a>
       </div>
     </section>
   );
@@ -46,7 +46,7 @@ export default function HomeFooter() {
         </a>
         <nav className="footer-links" aria-label="Quick links">
           <h2>Quick links</h2>
-          <ul>{quickLinks.map((label) => <li key={label}><a role="link" aria-disabled="true">{label}</a></li>)}</ul>
+          <ul>{quickLinks.map((label) => <li key={label}>{label === "Contact" || label === "About" ? <a href={`/${label.toLowerCase()}`}>{label}</a> : <a role="link" aria-disabled="true">{label}</a>}</li>)}</ul>
         </nav>
         <nav className="footer-links" aria-label="Information">
           <h2>Info</h2>
