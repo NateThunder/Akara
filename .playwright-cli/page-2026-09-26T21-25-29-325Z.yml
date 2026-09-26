@@ -1,0 +1,1030 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Akara Bakery home" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "Akara Bakery" [ref=e4]
+    - navigation "Main navigation" [ref=e5]:
+      - link "Shop" [ref=e6] [cursor=pointer]:
+        - /url: /shop/all
+      - link "Bespoke Cakes" [ref=e9] [cursor=pointer]:
+        - /url: /bespoke-cakes
+      - link "Custom Cakes" [ref=e10] [cursor=pointer]:
+        - /url: /custom-cakes
+      - link "Celebration Cakes" [ref=e11] [cursor=pointer]:
+        - /url: /shop/all?category=Cakes
+      - link "Cupcakes & Treats" [ref=e12] [cursor=pointer]:
+        - /url: /shop/all?category=Brownies%20%26%20Cupcakes
+      - link "About" [ref=e13] [cursor=pointer]:
+        - /url: /about
+      - link "Contact" [ref=e14] [cursor=pointer]:
+        - /url: /contact
+    - generic [ref=e15]:
+      - button "Search (coming soon)" [disabled] [ref=e16]
+      - button "Account (coming soon)" [disabled] [ref=e20]
+      - button "Shopping bag (coming soon)" [disabled] [ref=e24]
+  - list "Bakery services" [ref=e28]:
+    - listitem [ref=e29]:
+      - generic [ref=e34]: Handmade in Glasgow
+    - listitem [ref=e35]:
+      - text: •
+      - generic [ref=e40]: Collection & local delivery
+    - listitem [ref=e41]:
+      - text: •
+      - generic [ref=e45]: Vegan & GF available
+  - main [ref=e46]:
+    - region [ref=e47]:
+      - heading "Shop our collection" [level=1] [ref=e49]
+      - generic "Product categories" [ref=e50]:
+        - button "All" [pressed] [ref=e51] [cursor=pointer]
+        - button "Cakes" [ref=e52] [cursor=pointer]
+        - button "Vegan Cakes" [ref=e53] [cursor=pointer]
+        - button "Gluten Free Cakes" [ref=e54] [cursor=pointer]
+        - button "Brownies & Cupcakes" [ref=e55] [cursor=pointer]
+        - button "Gift Cards" [ref=e56] [cursor=pointer]
+      - generic [ref=e57]:
+        - status [ref=e58]: 58 products
+        - generic [ref=e59]:
+          - generic [ref=e60]: Search products
+          - searchbox "Search products" [ref=e64]
+        - generic [ref=e65]:
+          - text: Sort by
+          - combobox "Sort by" [ref=e66]:
+            - option "Featured" [selected]
+            - 'option "Price: low to high"'
+            - 'option "Price: high to low"'
+            - 'option "Name: A–Z"'
+      - generic [ref=e67]:
+        - article [ref=e68]:
+          - link "View Gluten Free Mothers Day Cupcakes (Box of 6)" [ref=e69] [cursor=pointer]:
+            - /url: /shop/gfmothersdaycupcakes
+            - img "Gluten Free Mothers Day Cupcakes (Box of 6)" [ref=e70]
+            - generic [ref=e71]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e72]: →
+          - generic [ref=e73]:
+            - heading [level=3] [ref=e74]:
+              - link "Gluten Free Mothers Day Cupcakes (Box of 6)" [ref=e75] [cursor=pointer]:
+                - /url: /shop/gfmothersdaycupcakes
+            - paragraph [ref=e76]: £26.00
+            - link "Choose options for Gluten Free Mothers Day Cupcakes (Box of 6)" [ref=e77] [cursor=pointer]:
+              - /url: /shop/gfmothersdaycupcakes
+              - text: Choose options
+              - generic [ref=e78]: for Gluten Free Mothers Day Cupcakes (Box of 6)
+        - article [ref=e79]:
+          - link "View Vegan Lemon Lavender Blueberry" [ref=e80] [cursor=pointer]:
+            - /url: /shop/veganlemonlavenderblue
+            - img "Vegan Lemon Lavender Blueberry" [ref=e81]
+            - generic [ref=e82]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e83]: →
+          - generic [ref=e84]:
+            - heading [level=3] [ref=e85]:
+              - link "Vegan Lemon Lavender Blueberry" [ref=e86] [cursor=pointer]:
+                - /url: /shop/veganlemonlavenderblue
+            - paragraph [ref=e87]: From £30.00
+            - link "Choose options for Vegan Lemon Lavender Blueberry" [ref=e88] [cursor=pointer]:
+              - /url: /shop/veganlemonlavenderblue
+              - text: Choose options
+              - generic [ref=e89]: for Vegan Lemon Lavender Blueberry
+        - article [ref=e90]:
+          - link "View Mixed Box Cupcakes" [ref=e91] [cursor=pointer]:
+            - /url: /shop/mixedcupcakes
+            - img "Mixed Box Cupcakes" [ref=e92]
+            - generic [ref=e93]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e94]: →
+          - generic [ref=e95]:
+            - heading [level=3] [ref=e96]:
+              - link "Mixed Box Cupcakes" [ref=e97] [cursor=pointer]:
+                - /url: /shop/mixedcupcakes
+            - paragraph [ref=e98]: From £24.00
+            - link "Choose options for Mixed Box Cupcakes" [ref=e99] [cursor=pointer]:
+              - /url: /shop/mixedcupcakes
+              - text: Choose options
+              - generic [ref=e100]: for Mixed Box Cupcakes
+        - article [ref=e101]:
+          - link "View Black Forest Cupcake" [ref=e102] [cursor=pointer]:
+            - /url: /shop/blackforestcupcakes
+            - img "Black Forest Cupcake" [ref=e103]
+            - generic [ref=e104]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e105]: →
+          - generic [ref=e106]:
+            - heading [level=3] [ref=e107]:
+              - link "Black Forest Cupcake" [ref=e108] [cursor=pointer]:
+                - /url: /shop/blackforestcupcakes
+            - paragraph [ref=e109]: From £22.00
+            - link "Choose options for Black Forest Cupcake" [ref=e110] [cursor=pointer]:
+              - /url: /shop/blackforestcupcakes
+              - text: Choose options
+              - generic [ref=e111]: for Black Forest Cupcake
+        - article [ref=e112]:
+          - link "View Berry Earl Grey Cupcakes" [ref=e113] [cursor=pointer]:
+            - /url: /shop/berryearlgreycupcakes
+            - img "Berry Earl Grey Cupcakes" [ref=e114]
+            - generic [ref=e115]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e116]: →
+          - generic [ref=e117]:
+            - heading [level=3] [ref=e118]:
+              - link "Berry Earl Grey Cupcakes" [ref=e119] [cursor=pointer]:
+                - /url: /shop/berryearlgreycupcakes
+            - paragraph [ref=e120]: From £22.00
+            - link "Choose options for Berry Earl Grey Cupcakes" [ref=e121] [cursor=pointer]:
+              - /url: /shop/berryearlgreycupcakes
+              - text: Choose options
+              - generic [ref=e122]: for Berry Earl Grey Cupcakes
+        - article [ref=e123]:
+          - link "View Red Velvet Cupcakes" [ref=e124] [cursor=pointer]:
+            - /url: /shop/redvelvetcupcakes
+            - img "Red Velvet Cupcakes" [ref=e125]
+            - generic [ref=e126]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e127]: →
+          - generic [ref=e128]:
+            - heading [level=3] [ref=e129]:
+              - link "Red Velvet Cupcakes" [ref=e130] [cursor=pointer]:
+                - /url: /shop/redvelvetcupcakes
+            - paragraph [ref=e131]: From £22.00
+            - link "Choose options for Red Velvet Cupcakes" [ref=e132] [cursor=pointer]:
+              - /url: /shop/redvelvetcupcakes
+              - text: Choose options
+              - generic [ref=e133]: for Red Velvet Cupcakes
+        - article [ref=e134]:
+          - link "View Coconut Cardamom Passion Cupcake" [ref=e135] [cursor=pointer]:
+            - /url: /shop/cerealmilkcupcake-7cssh
+            - img "Coconut Cardamom Passion Cupcake" [ref=e136]
+            - generic [ref=e137]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e138]: →
+          - generic [ref=e139]:
+            - heading [level=3] [ref=e140]:
+              - link "Coconut Cardamom Passion Cupcake" [ref=e141] [cursor=pointer]:
+                - /url: /shop/cerealmilkcupcake-7cssh
+            - paragraph [ref=e142]: From £22.00
+            - link "Choose options for Coconut Cardamom Passion Cupcake" [ref=e143] [cursor=pointer]:
+              - /url: /shop/cerealmilkcupcake-7cssh
+              - text: Choose options
+              - generic [ref=e144]: for Coconut Cardamom Passion Cupcake
+        - article [ref=e145]:
+          - link "View Milk Chocolate & Blackcurrant Cheesecake" [ref=e146] [cursor=pointer]:
+            - /url: /shop/milkchoccurrant-cheesecake
+            - img "Milk Chocolate & Blackcurrant Cheesecake" [ref=e147]
+            - generic [ref=e148]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e149]: →
+          - generic [ref=e150]:
+            - heading [level=3] [ref=e151]:
+              - link "Milk Chocolate & Blackcurrant Cheesecake" [ref=e152] [cursor=pointer]:
+                - /url: /shop/milkchoccurrant-cheesecake
+            - paragraph [ref=e153]: From £37.00
+            - link "Choose options for Milk Chocolate & Blackcurrant Cheesecake" [ref=e154] [cursor=pointer]:
+              - /url: /shop/milkchoccurrant-cheesecake
+              - text: Choose options
+              - generic [ref=e155]: for Milk Chocolate & Blackcurrant Cheesecake
+        - article [ref=e156]:
+          - link "View White Chocolate, Salted Almond & Lime Cheesecake" [ref=e157] [cursor=pointer]:
+            - /url: /shop/whitechocolatealmondlime-cheesecake
+            - img "White Chocolate, Salted Almond & Lime Cheesecake" [ref=e158]
+            - generic [ref=e159]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e160]: →
+          - generic [ref=e161]:
+            - heading [level=3] [ref=e162]:
+              - link "White Chocolate, Salted Almond & Lime Cheesecake" [ref=e163] [cursor=pointer]:
+                - /url: /shop/whitechocolatealmondlime-cheesecake
+            - paragraph [ref=e164]: From £37.00
+            - link "Choose options for White Chocolate, Salted Almond & Lime Cheesecake" [ref=e165] [cursor=pointer]:
+              - /url: /shop/whitechocolatealmondlime-cheesecake
+              - text: Choose options
+              - generic [ref=e166]: for White Chocolate, Salted Almond & Lime Cheesecake
+        - article [ref=e167]:
+          - link "View Lemon Meringue Cheesecake" [ref=e168] [cursor=pointer]:
+            - /url: /shop/lemonmeringue-cheesecake
+            - img "Lemon Meringue Cheesecake" [ref=e169]
+            - generic [ref=e170]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e171]: →
+          - generic [ref=e172]:
+            - heading [level=3] [ref=e173]:
+              - link "Lemon Meringue Cheesecake" [ref=e174] [cursor=pointer]:
+                - /url: /shop/lemonmeringue-cheesecake
+            - paragraph [ref=e175]: From £37.00
+            - link "Choose options for Lemon Meringue Cheesecake" [ref=e176] [cursor=pointer]:
+              - /url: /shop/lemonmeringue-cheesecake
+              - text: Choose options
+              - generic [ref=e177]: for Lemon Meringue Cheesecake
+        - article [ref=e178]:
+          - link "View Strawberries & Cream Cheesecake" [ref=e179] [cursor=pointer]:
+            - /url: /shop/strawberrycheesecake
+            - img "Strawberries & Cream Cheesecake" [ref=e180]
+            - generic [ref=e181]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e182]: →
+          - generic [ref=e183]:
+            - heading [level=3] [ref=e184]:
+              - link "Strawberries & Cream Cheesecake" [ref=e185] [cursor=pointer]:
+                - /url: /shop/strawberrycheesecake
+            - paragraph [ref=e186]: From £35.00
+            - link "Choose options for Strawberries & Cream Cheesecake" [ref=e187] [cursor=pointer]:
+              - /url: /shop/strawberrycheesecake
+              - text: Choose options
+              - generic [ref=e188]: for Strawberries & Cream Cheesecake
+        - article [ref=e189]:
+          - link "View Gluten Free Sprinkle Sprinkle" [ref=e190] [cursor=pointer]:
+            - /url: /shop/gfsprinklesprinkle
+            - img "Gluten Free Sprinkle Sprinkle" [ref=e191]
+            - generic [ref=e192]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e193]: →
+          - generic [ref=e194]:
+            - heading [level=3] [ref=e195]:
+              - link "Gluten Free Sprinkle Sprinkle" [ref=e196] [cursor=pointer]:
+                - /url: /shop/gfsprinklesprinkle
+            - paragraph [ref=e197]: From £60.00
+            - link "Choose options for Gluten Free Sprinkle Sprinkle" [ref=e198] [cursor=pointer]:
+              - /url: /shop/gfsprinklesprinkle
+              - text: Choose options
+              - generic [ref=e199]: for Gluten Free Sprinkle Sprinkle
+        - article [ref=e200]:
+          - link "View Gluten Free Flower Crown" [ref=e201] [cursor=pointer]:
+            - /url: /shop/gfflowercrowncake
+            - img "Gluten Free Flower Crown" [ref=e202]
+            - generic [ref=e203]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e204]: →
+          - generic [ref=e205]:
+            - heading [level=3] [ref=e206]:
+              - link "Gluten Free Flower Crown" [ref=e207] [cursor=pointer]:
+                - /url: /shop/gfflowercrowncake
+            - paragraph [ref=e208]: From £60.00
+            - link "Choose options for Gluten Free Flower Crown" [ref=e209] [cursor=pointer]:
+              - /url: /shop/gfflowercrowncake
+              - text: Choose options
+              - generic [ref=e210]: for Gluten Free Flower Crown
+        - article [ref=e211]:
+          - link "View Gluten Free Mini Hearts" [ref=e212] [cursor=pointer]:
+            - /url: /shop/gfminiheartscake
+            - img "Gluten Free Mini Hearts" [ref=e213]
+            - generic [ref=e214]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e215]: →
+          - generic [ref=e216]:
+            - heading [level=3] [ref=e217]:
+              - link "Gluten Free Mini Hearts" [ref=e218] [cursor=pointer]:
+                - /url: /shop/gfminiheartscake
+            - paragraph [ref=e219]: From £33.00
+            - link "Choose options for Gluten Free Mini Hearts" [ref=e220] [cursor=pointer]:
+              - /url: /shop/gfminiheartscake
+              - text: Choose options
+              - generic [ref=e221]: for Gluten Free Mini Hearts
+        - article [ref=e222]:
+          - link "View Gluten Free Heart to Heart Cake" [ref=e223] [cursor=pointer]:
+            - /url: /shop/gfhearttoheart
+            - img "Gluten Free Heart to Heart Cake" [ref=e224]
+            - generic [ref=e225]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e226]: →
+          - generic [ref=e227]:
+            - heading [level=3] [ref=e228]:
+              - link "Gluten Free Heart to Heart Cake" [ref=e229] [cursor=pointer]:
+                - /url: /shop/gfhearttoheart
+            - paragraph [ref=e230]: From £33.00
+            - link "Choose options for Gluten Free Heart to Heart Cake" [ref=e231] [cursor=pointer]:
+              - /url: /shop/gfhearttoheart
+              - text: Choose options
+              - generic [ref=e232]: for Gluten Free Heart to Heart Cake
+        - article [ref=e233]:
+          - link "View Ribbon Cake" [ref=e234] [cursor=pointer]:
+            - /url: /shop/ribbon-cake
+            - img "Ribbon Cake" [ref=e235]
+            - generic [ref=e236]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e237]: →
+          - generic [ref=e238]:
+            - heading [level=3] [ref=e239]:
+              - link "Ribbon Cake" [ref=e240] [cursor=pointer]:
+                - /url: /shop/ribbon-cake
+            - paragraph [ref=e241]: From £55.00
+            - link "Choose options for Ribbon Cake" [ref=e242] [cursor=pointer]:
+              - /url: /shop/ribbon-cake
+              - text: Choose options
+              - generic [ref=e243]: for Ribbon Cake
+        - article [ref=e244]:
+          - link "View Queen of Hearts" [ref=e245] [cursor=pointer]:
+            - /url: /shop/queenof-hearts
+            - img "Queen of Hearts" [ref=e246]
+            - generic [ref=e247]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e248]: →
+          - generic [ref=e249]:
+            - heading [level=3] [ref=e250]:
+              - link "Queen of Hearts" [ref=e251] [cursor=pointer]:
+                - /url: /shop/queenof-hearts
+            - paragraph [ref=e252]: From £70.00
+            - link "Choose options for Queen of Hearts" [ref=e253] [cursor=pointer]:
+              - /url: /shop/queenof-hearts
+              - text: Choose options
+              - generic [ref=e254]: for Queen of Hearts
+        - article [ref=e255]:
+          - link "View Pressed Flower Petals Cake" [ref=e256] [cursor=pointer]:
+            - /url: /shop/pressed-flower
+            - img "Pressed Flower Petals Cake" [ref=e257]
+            - generic [ref=e258]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e259]: →
+          - generic [ref=e260]:
+            - heading [level=3] [ref=e261]:
+              - link "Pressed Flower Petals Cake" [ref=e262] [cursor=pointer]:
+                - /url: /shop/pressed-flower
+            - paragraph [ref=e263]: From £33.00
+            - link "Choose options for Pressed Flower Petals Cake" [ref=e264] [cursor=pointer]:
+              - /url: /shop/pressed-flower
+              - text: Choose options
+              - generic [ref=e265]: for Pressed Flower Petals Cake
+        - article [ref=e266]:
+          - link "View Gluten Free Chocolate Ganache Cake" [ref=e267] [cursor=pointer]:
+            - /url: /shop/gfchocolateganachecake
+            - img "Gluten Free Chocolate Ganache Cake" [ref=e268]
+            - generic [ref=e269]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e270]: →
+          - generic [ref=e271]:
+            - heading [level=3] [ref=e272]:
+              - link "Gluten Free Chocolate Ganache Cake" [ref=e273] [cursor=pointer]:
+                - /url: /shop/gfchocolateganachecake
+            - paragraph [ref=e274]: From £30.00
+            - link "Choose options for Gluten Free Chocolate Ganache Cake" [ref=e275] [cursor=pointer]:
+              - /url: /shop/gfchocolateganachecake
+              - text: Choose options
+              - generic [ref=e276]: for Gluten Free Chocolate Ganache Cake
+        - article [ref=e277]:
+          - link "View Gluten Free Lemon Lavender Blueberry" [ref=e278] [cursor=pointer]:
+            - /url: /shop/gflemonlavenderblueberry
+            - img "Gluten Free Lemon Lavender Blueberry" [ref=e279]
+            - generic [ref=e280]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e281]: →
+          - generic [ref=e282]:
+            - heading [level=3] [ref=e283]:
+              - link "Gluten Free Lemon Lavender Blueberry" [ref=e284] [cursor=pointer]:
+                - /url: /shop/gflemonlavenderblueberry
+            - paragraph [ref=e285]: From £30.00
+            - link "Choose options for Gluten Free Lemon Lavender Blueberry" [ref=e286] [cursor=pointer]:
+              - /url: /shop/gflemonlavenderblueberry
+              - text: Choose options
+              - generic [ref=e287]: for Gluten Free Lemon Lavender Blueberry
+        - article [ref=e288]:
+          - link "View Berry Earl Grey Cake" [ref=e289] [cursor=pointer]:
+            - /url: /shop/gfearlgreyberry
+            - img "Berry Earl Grey Cake" [ref=e290]
+            - generic [ref=e291]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e292]: →
+          - generic [ref=e293]:
+            - heading [level=3] [ref=e294]:
+              - link "Berry Earl Grey Cake" [ref=e295] [cursor=pointer]:
+                - /url: /shop/gfearlgreyberry
+            - paragraph [ref=e296]: From £30.00
+            - link "Choose options for Berry Earl Grey Cake" [ref=e297] [cursor=pointer]:
+              - /url: /shop/gfearlgreyberry
+              - text: Choose options
+              - generic [ref=e298]: for Berry Earl Grey Cake
+        - article [ref=e299]:
+          - link "View Gluten Free Red Velvet Cake" [ref=e300] [cursor=pointer]:
+            - /url: /shop/gfredvelvetcake
+            - img "Gluten Free Red Velvet Cake" [ref=e301]
+            - generic [ref=e302]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e303]: →
+          - generic [ref=e304]:
+            - heading [level=3] [ref=e305]:
+              - link "Gluten Free Red Velvet Cake" [ref=e306] [cursor=pointer]:
+                - /url: /shop/gfredvelvetcake
+            - paragraph [ref=e307]: From £30.00
+            - link "Choose options for Gluten Free Red Velvet Cake" [ref=e308] [cursor=pointer]:
+              - /url: /shop/gfredvelvetcake
+              - text: Choose options
+              - generic [ref=e309]: for Gluten Free Red Velvet Cake
+        - article [ref=e310]:
+          - link "View Gluten Free Black Forest Cake" [ref=e311] [cursor=pointer]:
+            - /url: /shop/gfblackforestcake
+            - img "Gluten Free Black Forest Cake" [ref=e312]
+            - generic [ref=e313]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e314]: →
+          - generic [ref=e315]:
+            - heading [level=3] [ref=e316]:
+              - link "Gluten Free Black Forest Cake" [ref=e317] [cursor=pointer]:
+                - /url: /shop/gfblackforestcake
+            - paragraph [ref=e318]: From £30.00
+            - link "Choose options for Gluten Free Black Forest Cake" [ref=e319] [cursor=pointer]:
+              - /url: /shop/gfblackforestcake
+              - text: Choose options
+              - generic [ref=e320]: for Gluten Free Black Forest Cake
+        - article [ref=e321]:
+          - link "View Gluten Free Coconut, Cardamom & Passionfruit" [ref=e322] [cursor=pointer]:
+            - /url: /shop/gfpassioncoconutcake
+            - img "Gluten Free Coconut, Cardamom & Passionfruit" [ref=e323]
+            - generic [ref=e324]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e325]: →
+          - generic [ref=e326]:
+            - heading [level=3] [ref=e327]:
+              - link "Gluten Free Coconut, Cardamom & Passionfruit" [ref=e328] [cursor=pointer]:
+                - /url: /shop/gfpassioncoconutcake
+            - paragraph [ref=e329]: From £30.00
+            - link "Choose options for Gluten Free Coconut, Cardamom & Passionfruit" [ref=e330] [cursor=pointer]:
+              - /url: /shop/gfpassioncoconutcake
+              - text: Choose options
+              - generic [ref=e331]: for Gluten Free Coconut, Cardamom & Passionfruit
+        - article [ref=e332]:
+          - link "View Lemon Lavender Blueberry" [ref=e333] [cursor=pointer]:
+            - /url: /shop/lemonlavenderblueberry
+            - img "Lemon Lavender Blueberry" [ref=e334]
+            - generic [ref=e335]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e336]: →
+          - generic [ref=e337]:
+            - heading [level=3] [ref=e338]:
+              - link "Lemon Lavender Blueberry" [ref=e339] [cursor=pointer]:
+                - /url: /shop/lemonlavenderblueberry
+            - paragraph [ref=e340]: From £30.00
+            - link "Choose options for Lemon Lavender Blueberry" [ref=e341] [cursor=pointer]:
+              - /url: /shop/lemonlavenderblueberry
+              - text: Choose options
+              - generic [ref=e342]: for Lemon Lavender Blueberry
+        - article [ref=e343]:
+          - link "View Banana Dream Cake (nuts)" [ref=e344] [cursor=pointer]:
+            - /url: /shop/bananachocnutcaramel
+            - img "Banana Dream Cake (nuts)" [ref=e345]
+            - generic [ref=e346]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e347]: →
+          - generic [ref=e348]:
+            - heading [level=3] [ref=e349]:
+              - link "Banana Dream Cake (nuts)" [ref=e350] [cursor=pointer]:
+                - /url: /shop/bananachocnutcaramel
+            - paragraph [ref=e351]: From £30.00
+            - link "Choose options for Banana Dream Cake (nuts)" [ref=e352] [cursor=pointer]:
+              - /url: /shop/bananachocnutcaramel
+              - text: Choose options
+              - generic [ref=e353]: for Banana Dream Cake (nuts)
+        - article [ref=e354]:
+          - link "View Black Forest Cake" [ref=e355] [cursor=pointer]:
+            - /url: /shop/blackforestcake
+            - img "Black Forest Cake" [ref=e356]
+            - generic [ref=e357]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e358]: →
+          - generic [ref=e359]:
+            - heading [level=3] [ref=e360]:
+              - link "Black Forest Cake" [ref=e361] [cursor=pointer]:
+                - /url: /shop/blackforestcake
+            - paragraph [ref=e362]: From £30.00
+            - link "Choose options for Black Forest Cake" [ref=e363] [cursor=pointer]:
+              - /url: /shop/blackforestcake
+              - text: Choose options
+              - generic [ref=e364]: for Black Forest Cake
+        - article [ref=e365]:
+          - link "View Coconut, Cardamom & Passionfruit" [ref=e366] [cursor=pointer]:
+            - /url: /shop/passionfruitcoconutcake
+            - img "Coconut, Cardamom & Passionfruit" [ref=e367]
+            - generic [ref=e368]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e369]: →
+          - generic [ref=e370]:
+            - heading [level=3] [ref=e371]:
+              - link "Coconut, Cardamom & Passionfruit" [ref=e372] [cursor=pointer]:
+                - /url: /shop/passionfruitcoconutcake
+            - paragraph [ref=e373]: From £30.00
+            - link "Choose options for Coconut, Cardamom & Passionfruit" [ref=e374] [cursor=pointer]:
+              - /url: /shop/passionfruitcoconutcake
+              - text: Choose options
+              - generic [ref=e375]: for Coconut, Cardamom & Passionfruit
+        - article [ref=e376]:
+          - link "View Cereal Sprinkle Cake" [ref=e377] [cursor=pointer]:
+            - /url: /shop/cerealsprinklecake
+            - img "Cereal Sprinkle Cake" [ref=e378]
+            - generic [ref=e379]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e380]: →
+          - generic [ref=e381]:
+            - heading [level=3] [ref=e382]:
+              - link "Cereal Sprinkle Cake" [ref=e383] [cursor=pointer]:
+                - /url: /shop/cerealsprinklecake
+            - paragraph [ref=e384]: From £30.00
+            - link "Choose options for Cereal Sprinkle Cake" [ref=e385] [cursor=pointer]:
+              - /url: /shop/cerealsprinklecake
+              - text: Choose options
+              - generic [ref=e386]: for Cereal Sprinkle Cake
+        - article [ref=e387]:
+          - link "View Fresh Cream Victoria" [ref=e388] [cursor=pointer]:
+            - /url: /shop/creamvictoria
+            - img "Fresh Cream Victoria" [ref=e389]
+            - generic [ref=e390]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e391]: →
+          - generic [ref=e392]:
+            - heading [level=3] [ref=e393]:
+              - link "Fresh Cream Victoria" [ref=e394] [cursor=pointer]:
+                - /url: /shop/creamvictoria
+            - paragraph [ref=e395]: From £30.00
+            - link "Choose options for Fresh Cream Victoria" [ref=e396] [cursor=pointer]:
+              - /url: /shop/creamvictoria
+              - text: Choose options
+              - generic [ref=e397]: for Fresh Cream Victoria
+        - article [ref=e398]:
+          - link "View Vegan Heart to Heart Cake" [ref=e399] [cursor=pointer]:
+            - /url: /shop/veganhearttoheart
+            - img "Vegan Heart to Heart Cake" [ref=e400]
+            - generic [ref=e401]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e402]: →
+          - generic [ref=e403]:
+            - heading [level=3] [ref=e404]:
+              - link "Vegan Heart to Heart Cake" [ref=e405] [cursor=pointer]:
+                - /url: /shop/veganhearttoheart
+            - paragraph [ref=e406]: From £33.00
+            - link "Choose options for Vegan Heart to Heart Cake" [ref=e407] [cursor=pointer]:
+              - /url: /shop/veganhearttoheart
+              - text: Choose options
+              - generic [ref=e408]: for Vegan Heart to Heart Cake
+        - article [ref=e409]:
+          - link "View Heart to Heart Cake" [ref=e410] [cursor=pointer]:
+            - /url: /shop/heart2heart
+            - img "Heart to Heart Cake" [ref=e411]
+            - generic [ref=e412]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e413]: →
+          - generic [ref=e414]:
+            - heading [level=3] [ref=e415]:
+              - link "Heart to Heart Cake" [ref=e416] [cursor=pointer]:
+                - /url: /shop/heart2heart
+            - paragraph [ref=e417]: From £33.00
+            - link "Choose options for Heart to Heart Cake" [ref=e418] [cursor=pointer]:
+              - /url: /shop/heart2heart
+              - text: Choose options
+              - generic [ref=e419]: for Heart to Heart Cake
+        - article [ref=e420]:
+          - link "View Gluten Free Ribbon Cake" [ref=e421] [cursor=pointer]:
+            - /url: /shop/glutenfreeribboncake
+            - img "Gluten Free Ribbon Cake" [ref=e422]
+            - generic [ref=e423]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e424]: →
+          - generic [ref=e425]:
+            - heading [level=3] [ref=e426]:
+              - link "Gluten Free Ribbon Cake" [ref=e427] [cursor=pointer]:
+                - /url: /shop/glutenfreeribboncake
+            - paragraph [ref=e428]: From £55.00
+            - link "Choose options for Gluten Free Ribbon Cake" [ref=e429] [cursor=pointer]:
+              - /url: /shop/glutenfreeribboncake
+              - text: Choose options
+              - generic [ref=e430]: for Gluten Free Ribbon Cake
+        - article [ref=e431]:
+          - link "View Gluten Free Queen of Hearts" [ref=e432] [cursor=pointer]:
+            - /url: /shop/queenofheartsgf
+            - img "Gluten Free Queen of Hearts" [ref=e433]
+            - generic [ref=e434]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e435]: →
+          - generic [ref=e436]:
+            - heading [level=3] [ref=e437]:
+              - link "Gluten Free Queen of Hearts" [ref=e438] [cursor=pointer]:
+                - /url: /shop/queenofheartsgf
+            - paragraph [ref=e439]: From £70.00
+            - link "Choose options for Gluten Free Queen of Hearts" [ref=e440] [cursor=pointer]:
+              - /url: /shop/queenofheartsgf
+              - text: Choose options
+              - generic [ref=e441]: for Gluten Free Queen of Hearts
+        - article [ref=e442]:
+          - link "View Gluten Free Pressed Flower Petals Cake" [ref=e443] [cursor=pointer]:
+            - /url: /shop/glutenfreepressedflower
+            - img "Gluten Free Pressed Flower Petals Cake" [ref=e444]
+            - generic [ref=e445]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e446]: →
+          - generic [ref=e447]:
+            - heading [level=3] [ref=e448]:
+              - link "Gluten Free Pressed Flower Petals Cake" [ref=e449] [cursor=pointer]:
+                - /url: /shop/glutenfreepressedflower
+            - paragraph [ref=e450]: From £33.00
+            - link "Choose options for Gluten Free Pressed Flower Petals Cake" [ref=e451] [cursor=pointer]:
+              - /url: /shop/glutenfreepressedflower
+              - text: Choose options
+              - generic [ref=e452]: for Gluten Free Pressed Flower Petals Cake
+        - article [ref=e453]:
+          - link "View Akara In Store Gift Card (instore purchases only)" [ref=e454] [cursor=pointer]:
+            - /url: /shop/giftcardphysical
+            - img "Akara In Store Gift Card (instore purchases only)" [ref=e455]
+            - generic [ref=e456]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e457]: →
+          - generic [ref=e458]:
+            - heading [level=3] [ref=e459]:
+              - link "Akara In Store Gift Card (instore purchases only)" [ref=e460] [cursor=pointer]:
+                - /url: /shop/giftcardphysical
+            - paragraph [ref=e461]: From £10.00
+            - link "Choose options for Akara In Store Gift Card (instore purchases only)" [ref=e462] [cursor=pointer]:
+              - /url: /shop/giftcardphysical
+              - text: Choose options
+              - generic [ref=e463]: for Akara In Store Gift Card (instore purchases only)
+        - article [ref=e464]:
+          - link "View Vegan Sprinkle Sprinkle" [ref=e465] [cursor=pointer]:
+            - /url: /shop/vegansprinkle
+            - img "Vegan Sprinkle Sprinkle" [ref=e466]
+            - generic [ref=e467]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e468]: →
+          - generic [ref=e469]:
+            - heading [level=3] [ref=e470]:
+              - link "Vegan Sprinkle Sprinkle" [ref=e471] [cursor=pointer]:
+                - /url: /shop/vegansprinkle
+            - paragraph [ref=e472]: From £63.00
+            - link "Choose options for Vegan Sprinkle Sprinkle" [ref=e473] [cursor=pointer]:
+              - /url: /shop/vegansprinkle
+              - text: Choose options
+              - generic [ref=e474]: for Vegan Sprinkle Sprinkle
+        - article [ref=e475]:
+          - link "View Flower Crown" [ref=e476] [cursor=pointer]:
+            - /url: /shop/flowercrowncake
+            - img "Flower Crown" [ref=e477]
+            - generic [ref=e478]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e479]: →
+          - generic [ref=e480]:
+            - heading [level=3] [ref=e481]:
+              - link "Flower Crown" [ref=e482] [cursor=pointer]:
+                - /url: /shop/flowercrowncake
+            - paragraph [ref=e483]: From £60.00
+            - link "Choose options for Flower Crown" [ref=e484] [cursor=pointer]:
+              - /url: /shop/flowercrowncake
+              - text: Choose options
+              - generic [ref=e485]: for Flower Crown
+        - article [ref=e486]:
+          - link "View Sprinkle Sprinkle" [ref=e487] [cursor=pointer]:
+            - /url: /shop/sprinklesprinkle
+            - img "Sprinkle Sprinkle" [ref=e488]
+            - generic [ref=e489]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e490]: →
+          - generic [ref=e491]:
+            - heading [level=3] [ref=e492]:
+              - link "Sprinkle Sprinkle" [ref=e493] [cursor=pointer]:
+                - /url: /shop/sprinklesprinkle
+            - paragraph [ref=e494]: From £60.00
+            - link "Choose options for Sprinkle Sprinkle" [ref=e495] [cursor=pointer]:
+              - /url: /shop/sprinklesprinkle
+              - text: Choose options
+              - generic [ref=e496]: for Sprinkle Sprinkle
+        - article [ref=e497]:
+          - link "View Vegan Pressed Flowers Petal Cake" [ref=e498] [cursor=pointer]:
+            - /url: /shop/veganflowercake
+            - img "Vegan Pressed Flowers Petal Cake" [ref=e499]
+            - generic [ref=e500]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e501]: →
+          - generic [ref=e502]:
+            - heading [level=3] [ref=e503]:
+              - link "Vegan Pressed Flowers Petal Cake" [ref=e504] [cursor=pointer]:
+                - /url: /shop/veganflowercake
+            - paragraph [ref=e505]: From £34.00
+            - link "Choose options for Vegan Pressed Flowers Petal Cake" [ref=e506] [cursor=pointer]:
+              - /url: /shop/veganflowercake
+              - text: Choose options
+              - generic [ref=e507]: for Vegan Pressed Flowers Petal Cake
+        - article [ref=e508]:
+          - link "View Spiced Carrot Cake" [ref=e509] [cursor=pointer]:
+            - /url: /shop/carrotcake
+            - img "Spiced Carrot Cake" [ref=e510]
+            - generic [ref=e511]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e512]: →
+          - generic [ref=e513]:
+            - heading [level=3] [ref=e514]:
+              - link "Spiced Carrot Cake" [ref=e515] [cursor=pointer]:
+                - /url: /shop/carrotcake
+            - paragraph [ref=e516]: From £30.00
+            - link "Choose options for Spiced Carrot Cake" [ref=e517] [cursor=pointer]:
+              - /url: /shop/carrotcake
+              - text: Choose options
+              - generic [ref=e518]: for Spiced Carrot Cake
+        - article [ref=e519]:
+          - link "View Vegan Ribbon Cake" [ref=e520] [cursor=pointer]:
+            - /url: /shop/veganribboncake
+            - img "Vegan Ribbon Cake" [ref=e521]
+            - generic [ref=e522]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e523]: →
+          - generic [ref=e524]:
+            - heading [level=3] [ref=e525]:
+              - link "Vegan Ribbon Cake" [ref=e526] [cursor=pointer]:
+                - /url: /shop/veganribboncake
+            - paragraph [ref=e527]: From £55.00
+            - link "Choose options for Vegan Ribbon Cake" [ref=e528] [cursor=pointer]:
+              - /url: /shop/veganribboncake
+              - text: Choose options
+              - generic [ref=e529]: for Vegan Ribbon Cake
+        - article [ref=e530]:
+          - link "View Gluten Free Chocolate Salted Dulce De Leche Cake" [ref=e531] [cursor=pointer]:
+            - /url: /shop/gfchocsaltedcaramel
+            - img "Gluten Free Chocolate Salted Dulce De Leche Cake" [ref=e532]
+            - generic [ref=e533]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e534]: →
+          - generic [ref=e535]:
+            - heading [level=3] [ref=e536]:
+              - link "Gluten Free Chocolate Salted Dulce De Leche Cake" [ref=e537] [cursor=pointer]:
+                - /url: /shop/gfchocsaltedcaramel
+            - paragraph [ref=e538]: From £50.00
+            - link "Choose options for Gluten Free Chocolate Salted Dulce De Leche Cake" [ref=e539] [cursor=pointer]:
+              - /url: /shop/gfchocsaltedcaramel
+              - text: Choose options
+              - generic [ref=e540]: for Gluten Free Chocolate Salted Dulce De Leche Cake
+        - article [ref=e541]:
+          - link "View Vegan Vintage Regal Ruffles" [ref=e542] [cursor=pointer]:
+            - /url: /shop/veganvintage
+            - img "Vegan Vintage Regal Ruffles" [ref=e543]
+            - generic [ref=e544]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e545]: →
+          - generic [ref=e546]:
+            - heading [level=3] [ref=e547]:
+              - link "Vegan Vintage Regal Ruffles" [ref=e548] [cursor=pointer]:
+                - /url: /shop/veganvintage
+            - paragraph [ref=e549]: From £68.00
+            - link "Choose options for Vegan Vintage Regal Ruffles" [ref=e550] [cursor=pointer]:
+              - /url: /shop/veganvintage
+              - text: Choose options
+              - generic [ref=e551]: for Vegan Vintage Regal Ruffles
+        - article [ref=e552]:
+          - link "View Akara Online Gift Card (Online purcheses only)" [ref=e553] [cursor=pointer]:
+            - /url: /shop/giftcardonline
+            - img "Akara Online Gift Card (Online purcheses only)" [ref=e554]
+            - generic [ref=e555]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e556]: →
+          - generic [ref=e557]:
+            - heading [level=3] [ref=e558]:
+              - link "Akara Online Gift Card (Online purcheses only)" [ref=e559] [cursor=pointer]:
+                - /url: /shop/giftcardonline
+            - paragraph [ref=e560]: From £10.00
+            - link "Choose options for Akara Online Gift Card (Online purcheses only)" [ref=e561] [cursor=pointer]:
+              - /url: /shop/giftcardonline
+              - text: Choose options
+              - generic [ref=e562]: for Akara Online Gift Card (Online purcheses only)
+        - article [ref=e563]:
+          - link "View Mini Hearts" [ref=e564] [cursor=pointer]:
+            - /url: /shop/miniheartscake
+            - img "Mini Hearts" [ref=e565]
+            - generic [ref=e566]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e567]: →
+          - generic [ref=e568]:
+            - heading [level=3] [ref=e569]:
+              - link "Mini Hearts" [ref=e570] [cursor=pointer]:
+                - /url: /shop/miniheartscake
+            - paragraph [ref=e571]: From £33.00
+            - link "Choose options for Mini Hearts" [ref=e572] [cursor=pointer]:
+              - /url: /shop/miniheartscake
+              - text: Choose options
+              - generic [ref=e573]: for Mini Hearts
+        - article [ref=e574]:
+          - link "View Vegan Classic Vintage Cake" [ref=e575] [cursor=pointer]:
+            - /url: /shop/veganclassicvintage
+            - img "Vegan Classic Vintage Cake" [ref=e576]
+            - generic [ref=e577]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e578]: →
+          - generic [ref=e579]:
+            - heading [level=3] [ref=e580]:
+              - link "Vegan Classic Vintage Cake" [ref=e581] [cursor=pointer]:
+                - /url: /shop/veganclassicvintage
+            - paragraph [ref=e582]: From £57.00
+            - link "Choose options for Vegan Classic Vintage Cake" [ref=e583] [cursor=pointer]:
+              - /url: /shop/veganclassicvintage
+              - text: Choose options
+              - generic [ref=e584]: for Vegan Classic Vintage Cake
+        - article [ref=e585]:
+          - link "View Vegan Biscoff Cake" [ref=e586] [cursor=pointer]:
+            - /url: /shop/veganbiscoffcake
+            - img "Vegan Biscoff Cake" [ref=e587]
+            - generic [ref=e588]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e589]: →
+          - generic [ref=e590]:
+            - heading [level=3] [ref=e591]:
+              - link "Vegan Biscoff Cake" [ref=e592] [cursor=pointer]:
+                - /url: /shop/veganbiscoffcake
+            - paragraph [ref=e593]: From £48.00
+            - link "Choose options for Vegan Biscoff Cake" [ref=e594] [cursor=pointer]:
+              - /url: /shop/veganbiscoffcake
+              - text: Choose options
+              - generic [ref=e595]: for Vegan Biscoff Cake
+        - article [ref=e596]:
+          - link "View Gluten Free Spiced Carrot Cake" [ref=e597] [cursor=pointer]:
+            - /url: /shop/gf-carrot-cake
+            - img "Gluten Free Spiced Carrot Cake" [ref=e598]
+            - generic [ref=e599]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e600]: →
+          - generic [ref=e601]:
+            - heading [level=3] [ref=e602]:
+              - link "Gluten Free Spiced Carrot Cake" [ref=e603] [cursor=pointer]:
+                - /url: /shop/gf-carrot-cake
+            - paragraph [ref=e604]: From £30.00
+            - link "Choose options for Gluten Free Spiced Carrot Cake" [ref=e605] [cursor=pointer]:
+              - /url: /shop/gf-carrot-cake
+              - text: Choose options
+              - generic [ref=e606]: for Gluten Free Spiced Carrot Cake
+        - article [ref=e607]:
+          - link "View Vegan Old Skool Birthday Cake" [ref=e608] [cursor=pointer]:
+            - /url: /shop/vegan-old-skool-birthday-cake
+            - img "Vegan Old Skool Birthday Cake" [ref=e609]
+            - generic [ref=e610]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e611]: →
+          - generic [ref=e612]:
+            - heading [level=3] [ref=e613]:
+              - link "Vegan Old Skool Birthday Cake" [ref=e614] [cursor=pointer]:
+                - /url: /shop/vegan-old-skool-birthday-cake
+            - paragraph [ref=e615]: From £45.00
+            - link "Choose options for Vegan Old Skool Birthday Cake" [ref=e616] [cursor=pointer]:
+              - /url: /shop/vegan-old-skool-birthday-cake
+              - text: Choose options
+              - generic [ref=e617]: for Vegan Old Skool Birthday Cake
+        - article [ref=e618]:
+          - link "View Vegan Coconut Passionfruit Cardamom" [ref=e619] [cursor=pointer]:
+            - /url: /shop/vegan-coconut-passionfruit-cardamom-cake
+            - img "Vegan Coconut Passionfruit Cardamom" [ref=e620]
+            - generic [ref=e621]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e622]: →
+          - generic [ref=e623]:
+            - heading [level=3] [ref=e624]:
+              - link "Vegan Coconut Passionfruit Cardamom" [ref=e625] [cursor=pointer]:
+                - /url: /shop/vegan-coconut-passionfruit-cardamom-cake
+            - paragraph [ref=e626]: From £50.00
+            - link "Choose options for Vegan Coconut Passionfruit Cardamom" [ref=e627] [cursor=pointer]:
+              - /url: /shop/vegan-coconut-passionfruit-cardamom-cake
+              - text: Choose options
+              - generic [ref=e628]: for Vegan Coconut Passionfruit Cardamom
+        - article [ref=e629]:
+          - link "View Vegan Victoria Sponge" [ref=e630] [cursor=pointer]:
+            - /url: /shop/vegan-victoria-sponge
+            - img "Vegan Victoria Sponge" [ref=e631]
+            - generic [ref=e632]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e633]: →
+          - generic [ref=e634]:
+            - heading [level=3] [ref=e635]:
+              - link "Vegan Victoria Sponge" [ref=e636] [cursor=pointer]:
+                - /url: /shop/vegan-victoria-sponge
+            - paragraph [ref=e637]: From £45.00
+            - link "Choose options for Vegan Victoria Sponge" [ref=e638] [cursor=pointer]:
+              - /url: /shop/vegan-victoria-sponge
+              - text: Choose options
+              - generic [ref=e639]: for Vegan Victoria Sponge
+        - article [ref=e640]:
+          - link "View Vanilla Bean Cheesecake" [ref=e641] [cursor=pointer]:
+            - /url: /shop/vanilla-cheesecake
+            - img "Vanilla Bean Cheesecake" [ref=e642]
+            - generic [ref=e643]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e644]: →
+          - generic [ref=e645]:
+            - heading [level=3] [ref=e646]:
+              - link "Vanilla Bean Cheesecake" [ref=e647] [cursor=pointer]:
+                - /url: /shop/vanilla-cheesecake
+            - paragraph [ref=e648]: From £32.00
+            - link "Choose options for Vanilla Bean Cheesecake" [ref=e649] [cursor=pointer]:
+              - /url: /shop/vanilla-cheesecake
+              - text: Choose options
+              - generic [ref=e650]: for Vanilla Bean Cheesecake
+        - article [ref=e651]:
+          - link "View Earl Grey Mixed Berry Cake" [ref=e652] [cursor=pointer]:
+            - /url: /shop/earlgreyberry
+            - img "Earl Grey Mixed Berry Cake" [ref=e653]
+            - generic [ref=e654]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e655]: →
+          - generic [ref=e656]:
+            - heading [level=3] [ref=e657]:
+              - link "Earl Grey Mixed Berry Cake" [ref=e658] [cursor=pointer]:
+                - /url: /shop/earlgreyberry
+            - paragraph [ref=e659]: From £30.00
+            - link "Choose options for Earl Grey Mixed Berry Cake" [ref=e660] [cursor=pointer]:
+              - /url: /shop/earlgreyberry
+              - text: Choose options
+              - generic [ref=e661]: for Earl Grey Mixed Berry Cake
+        - article [ref=e662]:
+          - link "View Cereal Milk Sprinkle Cupcakes" [ref=e663] [cursor=pointer]:
+            - /url: /shop/cerealmilkcupcake
+            - img "Cereal Milk Sprinkle Cupcakes" [ref=e664]
+            - generic [ref=e665]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e666]: →
+          - generic [ref=e667]:
+            - heading [level=3] [ref=e668]:
+              - link "Cereal Milk Sprinkle Cupcakes" [ref=e669] [cursor=pointer]:
+                - /url: /shop/cerealmilkcupcake
+            - paragraph [ref=e670]: From £22.00
+            - link "Choose options for Cereal Milk Sprinkle Cupcakes" [ref=e671] [cursor=pointer]:
+              - /url: /shop/cerealmilkcupcake
+              - text: Choose options
+              - generic [ref=e672]: for Cereal Milk Sprinkle Cupcakes
+        - article [ref=e673]:
+          - link "View Red Velvet Cake" [ref=e674] [cursor=pointer]:
+            - /url: /shop/red-velvet-cake
+            - img "Red Velvet Cake" [ref=e675]
+            - generic [ref=e676]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e677]: →
+          - generic [ref=e678]:
+            - heading [level=3] [ref=e679]:
+              - link "Red Velvet Cake" [ref=e680] [cursor=pointer]:
+                - /url: /shop/red-velvet-cake
+            - paragraph [ref=e681]: From £30.00
+            - link "Choose options for Red Velvet Cake" [ref=e682] [cursor=pointer]:
+              - /url: /shop/red-velvet-cake
+              - text: Choose options
+              - generic [ref=e683]: for Red Velvet Cake
+        - article [ref=e684]:
+          - link "View Chocolate Ganache Cake" [ref=e685] [cursor=pointer]:
+            - /url: /shop/chocolateganachecake
+            - img "Chocolate Ganache Cake" [ref=e686]
+            - generic [ref=e687]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e688]: →
+          - generic [ref=e689]:
+            - heading [level=3] [ref=e690]:
+              - link "Chocolate Ganache Cake" [ref=e691] [cursor=pointer]:
+                - /url: /shop/chocolateganachecake
+            - paragraph [ref=e692]: From £30.00
+            - link "Choose options for Chocolate Ganache Cake" [ref=e693] [cursor=pointer]:
+              - /url: /shop/chocolateganachecake
+              - text: Choose options
+              - generic [ref=e694]: for Chocolate Ganache Cake
+        - article [ref=e695]:
+          - link "View Gluten Free Fresh Cream Victoria Sponge" [ref=e696] [cursor=pointer]:
+            - /url: /shop/glutenfreevictoria
+            - img "Gluten Free Fresh Cream Victoria Sponge" [ref=e697]
+            - generic [ref=e698]:
+              - text: Discover more
+              - generic [aria-hidden] [ref=e699]: →
+          - generic [ref=e700]:
+            - heading [level=3] [ref=e701]:
+              - link "Gluten Free Fresh Cream Victoria Sponge" [ref=e702] [cursor=pointer]:
+                - /url: /shop/glutenfreevictoria
+            - paragraph [ref=e703]: From £30.00
+            - link "Choose options for Gluten Free Fresh Cream Victoria Sponge" [ref=e704] [cursor=pointer]:
+              - /url: /shop/glutenfreevictoria
+              - text: Choose options
+              - generic [ref=e705]: for Gluten Free Fresh Cream Victoria Sponge
+    - generic [ref=e707]:
+      - generic [ref=e708]:
+        - heading "A cake as special as the occasion." [level=2] [ref=e709]
+        - paragraph [ref=e710]: Tell us what you have in mind. We’ll help bring it to life.
+      - link "Enquire now" [ref=e711] [cursor=pointer]:
+        - /url: https://www.akarabakery.co.uk/contact
+        - text: Enquire now
+        - generic [aria-hidden] [ref=e712]: →
+  - contentinfo [ref=e713]:
+    - generic [ref=e714]:
+      - link "Akara Bakery home" [ref=e715] [cursor=pointer]:
+        - /url: /
+        - img "Akara Bakery" [ref=e716]
+      - navigation "Quick links" [ref=e717]:
+        - heading "Quick links" [level=2] [ref=e718]
+        - list [ref=e719]:
+          - listitem [ref=e720]:
+            - link "Shop" [disabled] [ref=e721]
+          - listitem [ref=e722]:
+            - link "About" [ref=e723] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e724]:
+            - link "Contact" [ref=e725] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=e726]:
+            - link "FAQs" [disabled] [ref=e727]
+      - navigation "Information" [ref=e728]:
+        - heading "Info" [level=2] [ref=e729]
+        - list [ref=e730]:
+          - listitem [ref=e731]:
+            - link "Collection & Delivery" [disabled] [ref=e732]
+          - listitem [ref=e733]:
+            - link "Ingredients & Allergens" [disabled] [ref=e734]
+          - listitem [ref=e735]:
+            - link "Terms & Conditions" [disabled] [ref=e736]
+          - listitem [ref=e737]:
+            - link "Privacy Policy" [disabled] [ref=e738]
+      - generic [ref=e739]:
+        - heading "Follow us" [level=2] [ref=e740]
+        - generic [ref=e741]:
+          - link "Instagram (coming soon)" [disabled] [ref=e742]
+          - link "Facebook (coming soon)" [disabled] [ref=e747]
+          - link "TikTok (coming soon)" [disabled] [ref=e750]
+    - paragraph [ref=e753]: © 2026 Akara Bakery. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=e759] [cursor=pointer]
+  - alert [ref=e763]

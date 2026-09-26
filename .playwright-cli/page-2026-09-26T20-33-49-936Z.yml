@@ -1,0 +1,110 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Akara Bakery home" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "Akara Bakery" [ref=e4]
+    - navigation "Main navigation" [ref=e5]:
+      - link "Shop" [ref=e6] [cursor=pointer]:
+        - /url: /shop/all
+      - link "Bespoke Cakes" [ref=e9] [cursor=pointer]:
+        - /url: /bespoke-cakes
+      - link "Custom Cakes" [ref=e10] [cursor=pointer]:
+        - /url: /custom-cakes
+      - link "Celebration Cakes" [ref=e11] [cursor=pointer]:
+        - /url: /shop/all?category=Cakes
+      - link "Cupcakes & Treats" [ref=e12] [cursor=pointer]:
+        - /url: /shop/all?category=Brownies%20%26%20Cupcakes
+      - link "About" [ref=e13] [cursor=pointer]:
+        - /url: /about
+      - link "Contact" [ref=e14] [cursor=pointer]:
+        - /url: /contact
+    - generic [ref=e15]:
+      - button "Search (coming soon)" [disabled] [ref=e16]
+      - button "Account (coming soon)" [disabled] [ref=e20]
+      - button "Shopping bag (coming soon)" [disabled] [ref=e24]
+  - list "Bakery services" [ref=e28]:
+    - listitem [ref=e29]:
+      - generic [ref=e34]: Handmade in Glasgow
+    - listitem [ref=e35]:
+      - text: •
+      - generic [ref=e40]: Collection & local delivery
+    - listitem [ref=e41]:
+      - text: •
+      - generic [ref=e45]: Vegan & GF available
+  - main [ref=e46]:
+    - region [ref=e47]:
+      - generic [ref=e48]:
+        - paragraph [ref=e49]: Akara Bakery · Our story
+        - heading "A little cake. A lot of heart." [level=1] [ref=e50]: A little cake.A lot of heart.
+        - paragraph [ref=e51]: Lewa began baking celebration cakes from home in 2016, under a different name. Red velvet was the favourite then, and it still is today.
+        - paragraph [ref=e52]: "In 2019, Akara opened its doors with a simple wish: to be a joyful neighbourhood bakery that feels like home."
+        - link "Find your favourite" [ref=e53] [cursor=pointer]:
+          - /url: /shop/all
+          - text: Find your favourite
+          - generic [aria-hidden] [ref=e54]: →
+      - img "Akara Bakery's original story portrait, surrounded by buttercream celebration cakes" [ref=e56]
+    - region [ref=e57]:
+      - img "A selection of layered cake slices with sponge and buttercream" [ref=e59]
+      - generic [ref=e60]:
+        - paragraph [ref=e61]: Your neighbourhood bakery
+        - heading "For celebrations. And just because." [level=2] [ref=e62]: For celebrations.And just because.
+        - paragraph [ref=e63]: Familiar textures, unexpected flavours. Our bakes bring a fresh twist to the classics, from a slice with your coffee to a cake for a moment worth celebrating.
+        - paragraph [ref=e64]: That first celebration cake menu has grown to include wedding cakes, savoury bakes and catering. There's always something to gather around.
+        - link "A cake for your occasion" [ref=e65] [cursor=pointer]:
+          - /url: /bespoke-cakes
+          - text: A cake for your occasion
+          - generic [aria-hidden] [ref=e66]: →
+    - region [ref=e67]:
+      - paragraph [ref=e68]: Join our team
+      - heading "Make someone's day. Bake with us." [level=2] [ref=e69]: Make someone's day.Bake with us.
+      - paragraph [ref=e70]: We're always happy to hear from talented people who would love to be part of Akara Bakery.
+      - link "Reach out" [ref=e71] [cursor=pointer]:
+        - /url: /contact
+        - text: Reach out
+        - generic [aria-hidden] [ref=e72]: →
+    - region [ref=e73]:
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - heading "Planning something special?" [level=2] [ref=e76]
+          - paragraph [ref=e77]: We'd love to create the perfect cake for your occasion.Get in touch to discuss your ideas.
+        - link "Enquire now" [ref=e78] [cursor=pointer]:
+          - /url: /contact
+          - text: Enquire now
+          - generic [aria-hidden] [ref=e79]: →
+  - contentinfo [ref=e80]:
+    - generic [ref=e81]:
+      - link "Akara Bakery home" [ref=e82] [cursor=pointer]:
+        - /url: /
+        - img "Akara Bakery" [ref=e83]
+      - navigation "Quick links" [ref=e84]:
+        - heading "Quick links" [level=2] [ref=e85]
+        - list [ref=e86]:
+          - listitem [ref=e87]:
+            - link "Shop" [disabled] [ref=e88]
+          - listitem [ref=e89]:
+            - link "About" [ref=e90] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e91]:
+            - link "Contact" [ref=e92] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=e93]:
+            - link "FAQs" [disabled] [ref=e94]
+      - navigation "Information" [ref=e95]:
+        - heading "Info" [level=2] [ref=e96]
+        - list [ref=e97]:
+          - listitem [ref=e98]:
+            - link "Collection & Delivery" [disabled] [ref=e99]
+          - listitem [ref=e100]:
+            - link "Ingredients & Allergens" [disabled] [ref=e101]
+          - listitem [ref=e102]:
+            - link "Terms & Conditions" [disabled] [ref=e103]
+          - listitem [ref=e104]:
+            - link "Privacy Policy" [disabled] [ref=e105]
+      - generic [ref=e106]:
+        - heading "Follow us" [level=2] [ref=e107]
+        - generic [ref=e108]:
+          - link "Instagram (coming soon)" [disabled] [ref=e109]
+          - link "Facebook (coming soon)" [disabled] [ref=e114]
+          - link "TikTok (coming soon)" [disabled] [ref=e117]
+    - paragraph [ref=e120]: © 2026 Akara Bakery. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=e126] [cursor=pointer]

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import SiteHeader from "../site-header";
-import HomeFooter, { EnquiryBanner } from "../home-footer";
+import HomeFooter from "../home-footer";
 
 export const metadata: Metadata = {
   title: "Our Story | Akara Bakery Glasgow",
@@ -26,7 +26,6 @@ export default function AboutPage() {
               <div className="journal-image">
                 <img src="/Video/About/portrait.webp" alt="Akara Bakery's founder surrounded by buttercream celebration cakes" width={1100} height={1467} fetchPriority="high" />
               </div>
-              <figcaption className="journal-location"><span aria-hidden="true">✳</span>Glasgow</figcaption>
             </figure>
           </section>
 
@@ -59,7 +58,6 @@ export default function AboutPage() {
             <p className="journal-body">The goal is to create a joyous place for each customer that feels like a delicious home away from home.</p>
           </section>
         </article>
-        <EnquiryBanner />
       </main>
       <HomeFooter />
     </>

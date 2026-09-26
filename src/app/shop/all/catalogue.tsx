@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import catalogue from "./products.json";
 
-const categories = ["All", "Cakes", "Vegan Cakes", "Gluten Free Cakes", "Brownies & Cupcakes", "Gift Cards"];
+const categories = ["All", "Cakes", "Cheesecakes", "Vegan Cakes", "Gluten Free Cakes", "Cupcakes", "Gift Cards"];
 const money = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP" });
 
 export default function Catalogue() {

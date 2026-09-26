@@ -9,7 +9,7 @@ const navigation = [
   { label: "Bespoke Cakes", href: "/bespoke-cakes" },
   { label: "Custom Cakes", href: "/custom-cakes" },
   { label: "Celebration Cakes", href: "/shop/all?category=Cakes" },
-  { label: "Cupcakes & Treats", href: "/shop/all?category=Brownies%20%26%20Cupcakes" },
+  { label: "Cupcakes", href: "/shop/all?category=Cupcakes" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];

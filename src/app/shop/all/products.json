@@ -10,7 +10,7 @@
                          "price":  26,
                          "from":  false,
                          "categories":  [
-                                            "Brownies \u0026 Cupcakes"
+                                            "Cupcakes"
                                         ]
                      },
                      {
@@ -32,7 +32,7 @@
                          "price":  24,
                          "from":  true,
                          "categories":  [
-                                            "Brownies \u0026 Cupcakes"
+                                            "Cupcakes"
                                         ]
                      },
                      {
@@ -43,7 +43,7 @@
                          "price":  22,
                          "from":  true,
                          "categories":  [
-                                            "Brownies \u0026 Cupcakes"
+                                            "Cupcakes"
                                         ]
                      },
                      {
@@ -54,7 +54,7 @@
                          "price":  22,
                          "from":  true,
                          "categories":  [
-                                            "Brownies \u0026 Cupcakes"
+                                            "Cupcakes"
                                         ]
                      },
                      {
@@ -65,7 +65,7 @@
                          "price":  22,
                          "from":  true,
                          "categories":  [
-                                            "Brownies \u0026 Cupcakes"
+                                            "Cupcakes"
                                         ]
                      },
                      {
@@ -76,7 +76,7 @@
                          "price":  22,
                          "from":  true,
                          "categories":  [
-                                            "Brownies \u0026 Cupcakes"
+                                            "Cupcakes"
                                         ]
                      },
                      {
@@ -87,7 +87,7 @@
                          "price":  37,
                          "from":  true,
                          "categories":  [
-                                            "Cakes"
+                                            "Cheesecakes"
                                         ]
                      },
                      {
@@ -98,7 +98,7 @@
                          "price":  37,
                          "from":  true,
                          "categories":  [
-                                            "Cakes"
+                                            "Cheesecakes"
                                         ]
                      },
                      {
@@ -109,7 +109,7 @@
                          "price":  37,
                          "from":  true,
                          "categories":  [
-                                            "Cakes"
+                                            "Cheesecakes"
                                         ]
                      },
                      {
@@ -120,7 +120,7 @@
                          "price":  35,
                          "from":  true,
                          "categories":  [
-                                            "Cakes"
+                                            "Cheesecakes"
                                         ]
                      },
                      {
@@ -592,7 +592,7 @@
                          "price":  32,
                          "from":  true,
                          "categories":  [
-                                            "Cakes"
+                                            "Cheesecakes"
                                         ]
                      },
                      {
@@ -614,7 +614,7 @@
                          "price":  22,
                          "from":  true,
                          "categories":  [
-                                            "Brownies \u0026 Cupcakes"
+                                            "Cupcakes"
                                         ]
                      },
                      {

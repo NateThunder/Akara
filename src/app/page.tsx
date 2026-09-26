@@ -7,8 +7,8 @@ import HomeFooter, { EnquiryBanner } from "./home-footer";
 const favourites = [
   { name: "Celebration Cakes", image: "/Video/Banner Carosel/banner-2.webp", alt: "Pink celebration cake with piped icing, cherries and red ribbons" },
   { name: "Wedding Cakes", image: "/Video/Banner Carosel/banner-5.webp", alt: "Two-tier wedding cake decorated with flowers and gold leaf" },
-  { name: "Cupcakes & Treats", image: "/Video/Cup Cakes/Cupcakes in box.png", alt: "Box of six assorted cupcakes topped with buttercream, berries, cherries and crumbs" },
-  { name: "Cake Slices", image: "/Video/Banner Carosel/banner-6.webp", alt: "A selection of layered cake slices with buttercream filling" },
+  { name: "Cupcakes", image: "/Video/Cup Cakes/Cupcakes in box.png", alt: "Box of six assorted cupcakes topped with buttercream, berries, cherries and crumbs" },
+  { name: "Cheesecakes", image: "/Video/Cheesecakes/strawberries-cream.webp", alt: "Strawberries and cream cheesecake topped with piped cream and strawberry dust", href: "/shop/all?category=Cheesecakes" },
 ];
 
 // Display-only product details until the shop catalogue is connected.
@@ -45,7 +45,7 @@ export default function Home() {
                 </div>
                 <div className="favourite-caption">
                   <h3>{category.name}</h3>
-                  <a className="favourite-shop" href="/shop/all">
+                  <a className="favourite-shop" href={category.href ?? "/shop/all"}>
                     Shop now <span aria-hidden="true">→</span>
                   </a>
                 </div>

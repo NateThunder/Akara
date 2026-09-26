@@ -1,3 +1,5 @@
+import { siteSettings } from "./site-settings";
+
 const quickLinks = ["Shop", "About", "Contact", "FAQs"];
 const information = ["Collection & Delivery", "Ingredients & Allergens", "Terms & Conditions", "Privacy Policy"];
 
@@ -22,8 +24,12 @@ function BotanicalBranch({ className }: { className: string }) {
 export function EnquiryBanner({ href = "/contact" }: { href?: string }) {
   return (
     <section className="enquiry-banner" aria-labelledby="enquiry-heading">
-      <BotanicalBranch className="enquiry-botanical enquiry-botanical-left" />
-      <BotanicalBranch className="enquiry-botanical enquiry-botanical-right" />
+      {siteSettings.showBotanicalLeaves && (
+        <>
+          <BotanicalBranch className="enquiry-botanical enquiry-botanical-left" />
+          <BotanicalBranch className="enquiry-botanical enquiry-botanical-right" />
+        </>
+      )}
       <div className="enquiry-inner">
         <div>
           <h2 id="enquiry-heading">Planning something special?</h2>
