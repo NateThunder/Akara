@@ -27,18 +27,6 @@ export default function BespokeCakesPage() {
     <>
       <SiteHeader />
       <main className="bespoke-page">
-        <section className="bespoke-hero" aria-labelledby="bespoke-heading">
-          <div className="bespoke-hero-copy">
-            <p className="bespoke-eyebrow">Akara Bakery · Made just for you</p>
-            <h1 id="bespoke-heading">Bespoke cakes.<br />Made for your<br />moment.</h1>
-            <p>From birthday celebrations to life&apos;s biggest milestones, a cake as personal as the occasion.</p>
-            <a className="hero-button hero-button-primary" href="/contact">Enquire about a cake <span aria-hidden="true">&rarr;</span></a>
-          </div>
-          <div className="bespoke-hero-image">
-            <img src="/Video/Banner Carosel/banner-5.webp" alt="Handmade two-tier cake with buttercream, gold leaf and fresh flowers" width={1600} height={2133} fetchPriority="high" />
-          </div>
-        </section>
-
         <section className="bespoke-process bespoke-container" aria-labelledby="process-heading">
           <h2 id="process-heading">How it works</h2>
           <ol className="bespoke-steps">

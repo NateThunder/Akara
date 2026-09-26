@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import SiteHeader from "../site-header";
-import HomeFooter, { EnquiryBanner } from "../home-footer";
+import HomeFooter from "../home-footer";
 import ContactForm from "./contact-form";
 
 export const metadata: Metadata = {
@@ -35,12 +35,8 @@ export default function ContactPage() {
               </section>
             </div>
           </div>
-          <div className="contact-photograph">
-            <img src="/Video/Banner Carosel/banner-1.webp" alt="Handmade buttercream cakes decorated with delicate flowers" width={1536} height={1024} fetchPriority="high" />
-          </div>
+          <ContactForm />
         </section>
-        <ContactForm />
-        <EnquiryBanner href="#contact-form" />
       </main>
       <HomeFooter />
     </>

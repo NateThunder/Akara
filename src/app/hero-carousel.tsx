@@ -6,7 +6,6 @@ const slides = Array.from({ length: 7 }, (_,index) => `/Video/Banner Carosel/ban
 
 export default function HeroCarousel() {
   const [active, setActive] = useState(0);
-  const [paused, setPaused] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(false);
 
   useEffect(() => {
@@ -18,12 +17,12 @@ export default function HeroCarousel() {
   }, []);
 
   useEffect(() => {
-    if (paused || reducedMotion) return;
+    if (reducedMotion) return;
     const timer = window.setInterval(() => {
       if (!document.hidden) setActive((current) => (current + 1) % slides.length);
     }, 5000);
     return () => window.clearInterval(timer);
-  }, [paused, reducedMotion, active]);
+  }, [reducedMotion]);
 
   return (
     <section className="cake-hero" aria-label="Celebration cakes" aria-roledescription="carousel">
@@ -42,12 +41,6 @@ export default function HeroCarousel() {
           <a className="hero-button hero-button-primary" href="/shop/all">Shop cakes</a>
           <a className="hero-button hero-button-secondary" href="/contact">Custom orders</a>
         </div>
-      </div>
-      <div className="hero-controls" aria-label="Banner controls">
-        {slides.map((_, index) => (
-          <button key={index} type="button" className="hero-dot" aria-label={`Show cake photo ${index + 1} of ${slides.length}`} aria-pressed={active === index} onClick={() => { setActive(index); setPaused(true); }}><span /></button>
-        ))}
-        {!reducedMotion && <button type="button" className="hero-pause" aria-label={paused ? "Play slideshow" : "Pause slideshow"} onClick={() => setPaused(!paused)}>{paused ? "▶" : "Ⅱ"}</button>}
       </div>
     </section>
   );

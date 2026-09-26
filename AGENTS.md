@@ -1,7 +1,9 @@
 # Design rules
 
+- Use `#f8f7f4` as the global site background colour. Define it once as `--site-background` in `src/app/globals.css` and use `var(--site-background)` for shared page backgrounds and their paper-texture overlays.
 - Use `#207E7A` for all teal on the site. Define it once as `--brand-teal` in `src/app/globals.css` and use `var(--brand-teal)` for teal text, backgrounds, borders, icons, logo tints, and focus indicators. Do not introduce other teal shades.
 - Keep shared visual styles in `src/app/globals.css`, rather than individual page files.
+- Compress raster images before adding or updating them on the site, and convert them to WebP only if they are not already in WebP format. Avoid unnecessary re-encoding of existing WebP images. Resize images to appropriate display dimensions, preserve visual quality and transparency where needed, and update image references to use the optimised `.webp` files. Keep vector assets such as SVGs in their original format.
 
 ## Visual direction
 
@@ -20,6 +22,7 @@
 - Build story panels as adjoining rectangular text and image halves on desktop, stacking them on smaller screens.
 - Use a full-width brand teal enquiry banner with light text, restrained botanical decoration, and a muted gold rectangular call-to-action button.
 - Style buttons as compact square-cornered rectangles with uppercase, letter-spaced labels. Use solid brand teal for primary actions and transparent or cream surfaces with thin borders for secondary actions.
+- Give every teal-filled call-to-action button the shared `rough texture.webp` background with a translucent `var(--brand-teal)` overlay, matching the home hero button. On hover-capable devices, fade it to 80% opacity like the home hero button while keeping its light text; disable the transition for reduced motion. Keep this treatment in `src/app/globals.css` and leave outlined and muted gold buttons distinct.
 
 ## Cards
 

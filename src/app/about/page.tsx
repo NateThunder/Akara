@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import SiteHeader from "../site-header";
-import HomeFooter, { EnquiryBanner } from "../home-footer";
+import HomeFooter from "../home-footer";
 
 export const metadata: Metadata = {
   title: "Our Story | Akara Bakery Glasgow",
@@ -12,41 +12,55 @@ export default function AboutPage() {
     <>
       <SiteHeader />
       <main className="about-page">
-        <section className="about-story" aria-labelledby="about-heading">
-          <div className="about-copy about-intro">
-            <p className="about-eyebrow">Akara Bakery · Our story</p>
-            <h1 id="about-heading">A little cake.<br />A lot of heart.</h1>
-            <p>Lewa began baking celebration cakes from home in 2016, under a different name. Red velvet was the favourite then, and it still is today.</p>
-            <p>In 2019, Akara opened its doors with a simple wish: to be a joyful neighbourhood bakery that feels like home.</p>
-            <a className="about-link" href="/shop/all">Find your favourite <span aria-hidden="true">&rarr;</span></a>
-          </div>
-          <div className="about-photo about-portrait">
-            <img src="/about-original.jpg" alt="Akara Bakery's original story portrait, surrounded by buttercream celebration cakes" width={1500} height={2000} fetchPriority="high" />
-          </div>
-        </section>
+        <article className="about-journal" aria-labelledby="about-heading">
+          <section className="journal-opening">
+            <div className="journal-intro">
+              <p className="journal-label">Akara Bakery</p>
+              <h1 id="about-heading" className="journal-title">
+                <img src="/Video/About/header.webp" alt="Our story" width={1116} height={870} fetchPriority="high" />
+              </h1>
+              <p className="journal-body journal-first-paragraph">Lewa started Akara Bakery as a home celebration cake business back in 2016 under a different name. Back then red velvet was her best seller, and it still is today.</p>
+            </div>
+            <figure className="journal-figure journal-portrait">
+              <img className="journal-shape journal-square" src="/Video/About/teal-square.webp" alt="" width={600} height={599} aria-hidden="true" />
+              <div className="journal-image">
+                <img src="/Video/About/portrait.webp" alt="Akara Bakery's founder surrounded by buttercream celebration cakes" width={1100} height={1467} fetchPriority="high" />
+              </div>
+            </figure>
+          </section>
 
-        <section className="about-story about-everyday" aria-labelledby="about-baking-heading">
-          <div className="about-photo about-cakes">
-            <img src="/Video/Banner Carosel/banner-6.webp" alt="A selection of layered cake slices with sponge and buttercream" width={1600} height={1200} loading="lazy" />
-          </div>
-          <div className="about-copy">
-            <p className="about-eyebrow">Your neighbourhood bakery</p>
-            <h2 id="about-baking-heading">For celebrations.<br />And just because.</h2>
-            <p>Familiar textures, unexpected flavours. Our bakes bring a fresh twist to the classics, from a slice with your coffee to a cake for a moment worth celebrating.</p>
-            <p>That first celebration cake menu has grown to include wedding cakes, savoury bakes and catering. There&apos;s always something to gather around.</p>
-            <a className="about-link" href="/bespoke-cakes">A cake for your occasion <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </section>
+          <section className="journal-baking" aria-label="The bakery today">
+            <figure className="journal-figure journal-shop">
+              <img className="journal-shape journal-circle" src="/Video/About/teal-circle.webp" alt="" width={480} height={481} loading="lazy" aria-hidden="true" />
+              <div className="journal-image">
+                <img src="/Video/shop.webp" alt="Sunlight falling across Akara Café and Bakery's front window" width={1000} height={1333} loading="lazy" />
+              </div>
+              <figcaption className="journal-since">Since 2019</figcaption>
+            </figure>
+            <div className="journal-baking-copy">
+              <p className="journal-label">Since 2019</p>
+              <p className="journal-body">Since opening their doors in 2019, Akara Bakery has been known for their delicious bakes and unique flavours that riff off classic textures with a modern twist.</p>
+              <p className="journal-body">What was once a simple celebration cake menu has expanded to include wedding cakes, savoury bakes and a delicious catering menu.</p>
+              <a className="journal-link" href="/shop/all">Explore our bakes <span aria-hidden="true">&rarr;</span></a>
+              <figure className="journal-figure journal-shop-interior">
+                <div className="journal-image">
+                  <img src="/Video/shop2.webp" alt="Wooden chairs and tables beside the sunny window inside Akara Bakery" width={1000} height={667} loading="lazy" />
+                </div>
+              </figure>
+            </div>
+          </section>
 
-        <section className="about-team" aria-labelledby="about-team-heading">
-          <p className="about-eyebrow">Join our team</p>
-          <h2 id="about-team-heading">Make someone&apos;s day.<br />Bake with us.</h2>
-          <p>We&apos;re always happy to hear from talented people who would love to be part of Akara Bakery.</p>
-          <a className="about-link" href="/contact">Reach out <span aria-hidden="true">&rarr;</span></a>
-        </section>
-        <EnquiryBanner />
+          <section className="journal-closing" aria-labelledby="journal-neighbourhood">
+            <div>
+              <p className="journal-label">Our mission</p>
+              <h2 id="journal-neighbourhood">Your official<br />neighbourhood<br />bakery.</h2>
+            </div>
+            <p className="journal-body">The goal is to create a joyous place for each customer that feels like a delicious home away from home.</p>
+          </section>
+        </article>
       </main>
       <HomeFooter />
     </>
   );
 }
+
