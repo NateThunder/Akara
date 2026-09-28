@@ -38,7 +38,8 @@ export default function SiteHeader() { return (<>
             <circle cx="12" cy="9" r="2" />
             <path d="M8 18.5c-2 .4-3 1-3 1.5 0 1.1 3.1 2 7 2s7-.9 7-2c0-.5-1-1.1-3-1.5" />
           </svg>
-          <span>Handmade in Glasgow</span>
+          <span className="service-label-full">Handmade in Glasgow</span>
+          <span className="service-label-mobile">Glasgow</span>
         </li>
         <li>
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -46,14 +47,16 @@ export default function SiteHeader() { return (<>
             <circle cx="5" cy="17" r="2" />
             <circle cx="18" cy="17" r="2" />
           </svg>
-          <span>Collection &amp; local delivery</span>
+          <span className="service-label-full">Collection &amp; local delivery</span>
+          <span className="service-label-mobile">Local delivery</span>
         </li>
         <li>
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M20 3C10 2 4 6 4 12a7 7 0 0 0 7 7c6 0 10-6 9-16Z" />
             <path d="M3 21 15 9m-7 7v-5m0 5h5" />
           </svg>
-          <span>Vegan &amp; GF available</span>
+          <span className="service-label-full">Vegan &amp; GF available</span>
+          <span className="service-label-mobile">Vegan &amp; GF</span>
         </li>
       </ul>
       {/* Order notice temporarily muted; keep markup and styles for restoring later.

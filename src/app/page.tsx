@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <>
       <SiteHeader />
-      <main>
+      <main className="home-main">
         <HeroCarousel />
         <section className="favourites" aria-labelledby="favourites-heading">
           <header className="favourites-heading">

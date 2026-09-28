@@ -1,0 +1,182 @@
+- generic [active] [ref=f16e1]:
+  - link "Zum Inhalt wechseln" [ref=f16e2] [cursor=pointer]:
+    - /url: "#content"
+  - text: ▾ ▾
+  - main [ref=f16e3]:
+    - generic [ref=f16e5]:
+      - generic [ref=f16e9]:
+        - link [ref=f16e11] [cursor=pointer]:
+          - /url: https://www.awwwards.com/sites/welling-creative-crumbs
+        - generic [ref=f16e21]:
+          - link [ref=f16e28] [cursor=pointer]:
+            - /url: https://baeckerei-welling.de
+          - navigation "Menü" [ref=f16e33]:
+            - list [ref=f16e34]:
+              - listitem [ref=f16e35]:
+                - link [ref=f16e36] [cursor=pointer]:
+                  - /url: https://baeckerei-welling.de/#produkte
+              - listitem [ref=f16e40]:
+                - link "Über Uns" [ref=f16e41] [cursor=pointer]:
+                  - /url: https://baeckerei-welling.de/#ueberuns
+              - listitem [ref=f16e42]:
+                - link "Eindrücke" [ref=f16e43] [cursor=pointer]:
+                  - /url: https://baeckerei-welling.de/#eindruck
+              - listitem [ref=f16e44]:
+                - link [ref=f16e45] [cursor=pointer]:
+                  - /url: https://baeckerei-welling.de/stellenangebote/
+              - listitem [ref=f16e49]:
+                - link "Fachgeschäfte" [ref=f16e50] [cursor=pointer]:
+                  - /url: https://baeckerei-welling.de/#map
+              - listitem [ref=f16e51]:
+                - link "Kontakt" [ref=f16e52] [cursor=pointer]:
+                  - /url: https://baeckerei-welling.de/#kontakt
+      - generic [ref=f16e55]:
+        - heading "Willkommen bei Welling" [level=2] [ref=f16e60]
+        - generic [ref=f16e62]:
+          - heading "Startseite" [level=2] [ref=f16e65]
+          - heading "josef" [level=2] [ref=f16e68]
+          - heading "welling" [level=2] [ref=f16e71]
+          - heading "Backtradition seit 1962" [level=2] [ref=f16e74]
+          - generic [ref=f16e76]:
+            - paragraph [ref=f16e77]:
+              - text: Bis heute hat sich an der Devise, die
+              - strong [ref=f16e78]: Josef Welling
+              - text: mit der Welling Bäckerei & Konditorei begründete, nichts geändert.
+            - paragraph [ref=f16e79]:
+              - text: Backwaren nach
+              - strong [ref=f16e80]: traditionellen Rezepturen
+              - text: – das ist das
+              - strong [ref=f16e81]: „Welling Reinheitsgebot“.
+          - link "Zu unseren Produkten" [ref=f16e85] [cursor=pointer]:
+            - /url: "#produkte"
+      - generic [ref=f16e97]:
+        - generic [ref=f16e101]:
+          - heading "Unsere" [level=2] [ref=f16e104]
+          - heading "auswahl" [level=2] [ref=f16e107]
+          - generic [ref=f16e109]:
+            - paragraph [ref=f16e110]:
+              - text: Alle unsere Brote werden mit unserem
+              - strong [ref=f16e111]: hauseigenen Sauerteig
+              - text: hergestellt.
+            - paragraph [ref=f16e112]:
+              - text: Vom Kleingebäck über Weißbrot & Spezialbrot bis hin zum Saisonalen reichen
+              - strong [ref=f16e113]: unsere Rezepte
+              - text: ", die wir laufend weiter entwickeln, um eure Gaumen immer wieder"
+              - strong [ref=f16e114]: zufrieden zu stellen.
+        - heading "Unser Produktsortiment" [level=2] [ref=f16e121]
+      - generic [ref=f16e123]:
+        - generic [ref=f16e124] [cursor=pointer]
+        - generic [ref=f16e129] [cursor=pointer]:
+          - link:
+            - /url: https://baeckerei-welling.de/shopseite-brotmanufaktur/
+        - generic [ref=f16e130] [cursor=pointer]
+        - generic [ref=f16e134] [cursor=pointer]
+      - generic [ref=f16e141]:
+        - generic [ref=f16e144] [cursor=pointer]
+        - generic [ref=f16e146] [cursor=pointer]
+      - generic [ref=f16e153]:
+        - heading "Bäckerei konditorei" [level=2] [ref=f16e156]: Bäckereikonditorei
+        - heading "Tradition" [level=2] [ref=f16e159]
+      - generic [ref=f16e165]:
+        - generic [ref=f16e168] [cursor=pointer]
+        - generic [ref=f16e172] [cursor=pointer]
+      - generic [ref=f16e179]:
+        - generic [ref=f16e182] [cursor=pointer]
+        - generic [ref=f16e184] [cursor=pointer]
+      - generic [ref=f16e189]:
+        - heading "welling" [level=2] [ref=f16e193]
+        - heading "Backtradition seit 1962" [level=2] [ref=f16e200]
+      - generic [ref=f16e202]:
+        - heading "Backtradition seit 1962" [level=2] [ref=f16e207]
+        - heading "regional" [level=2] [ref=f16e213]
+      - generic [ref=f16e215]:
+        - heading "Familiär" [level=2] [ref=f16e219]
+        - heading "Backtradition seit 1962" [level=2] [ref=f16e226]
+      - generic [ref=f16e228]:
+        - heading "Backtradition seit 1962" [level=2] [ref=f16e233]
+        - heading "downloaden" [level=2] [ref=f16e239]
+      - generic [ref=f16e246]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - text: Klicke auf "Ich stimme zu", um Google zu aktivieren
+                - generic:
+                  - link "Datenschutz":
+                    - /url: https://baeckerei-welling.de/datenschutz/
+              - 'button "Klicke auf die Schaltfläche um den {Service} zu aktivieren"': Ich stimme zu
+      - generic [ref=f16e258]:
+        - generic [ref=f16e260]:
+          - generic [ref=f16e262]:
+            - paragraph [ref=f16e267]: Die Bäckerei Welling mit Sitz in Saarwellingen betreibt mehrere Filialen im Landkreis Saarlouis. Als eine der wenigen traditionellen Bäckereien im Saarland, zeichnet Welling vor allem die hochwertigen Backwaren aus.
+            - heading "KONTAKT" [level=2] [ref=f16e270]
+            - list [ref=f16e273]:
+              - listitem [ref=f16e274]:
+                - generic [ref=f16e278]: Philipp-Reis-Straße 8 66793 Saarwellingen
+              - listitem [ref=f16e279]:
+                - link "06838/9032-0" [ref=f16e280] [cursor=pointer]:
+                  - /url: tel:0683890320
+              - listitem [ref=f16e285]:
+                - link "info(at)baeckerei-welling.de" [ref=f16e286] [cursor=pointer]:
+                  - /url: https://aemail.com/98X3
+          - generic [ref=f16e294]:
+            - paragraph [ref=f16e295]: Guten Tag bei der Bäckerei Welling,
+            - paragraph [ref=f16e296]: "schön, dass Sie uns besuchen. Wenn Sie mit uns Kontakt aufnehmen möchten, senden Sie Ihre Bewerbung, Bestellung oder Anfrage bitte direkt per E-Mail an:"
+            - paragraph [ref=f16e297]:
+              - link "info@baeckerei-welling.de" [ref=f16e298] [cursor=pointer]:
+                - /url: mailto:info@baeckerei-welling.de
+            - paragraph [ref=f16e299]: Wir kümmern uns schnellstmöglich um Ihr Anliegen.
+            - paragraph [ref=f16e300]: Herzliche Grüße
+            - paragraph [ref=f16e301]: Ihr Team der Bäckerei Welling
+        - generic [ref=f16e303]:
+          - generic [ref=f16e305]:
+            - heading [level=2] [ref=f16e308]:
+              - link "Unsere Produkte" [ref=f16e309] [cursor=pointer]:
+                - /url: https://baeckerei-welling.de/#produkte
+            - heading [level=2] [ref=f16e312]:
+              - link "Über Uns" [ref=f16e313] [cursor=pointer]:
+                - /url: https://baeckerei-welling.de/#ueberuns
+            - heading [level=2] [ref=f16e316]:
+              - link "Eindrücke" [ref=f16e317] [cursor=pointer]:
+                - /url: https://baeckerei-welling.de/#eindruck
+          - generic [ref=f16e319]:
+            - heading [level=2] [ref=f16e322]:
+              - link "Jobs" [ref=f16e323] [cursor=pointer]:
+                - /url: https://baeckerei-welling.de/stellenangebote/
+            - heading [level=2] [ref=f16e326]:
+              - link "Fachgeschäfte" [ref=f16e327] [cursor=pointer]:
+                - /url: https://baeckerei-welling.de/#map
+            - heading [level=2] [ref=f16e330]:
+              - link "‎Kontakt" [ref=f16e331] [cursor=pointer]:
+                - /url: https://baeckerei-welling.de/#kontakt
+          - generic [ref=f16e333]:
+            - heading "‎‎‎" [level=2] [ref=f16e336]:
+              - link "‎‎‎":
+                - /url: https://baeckerei-welling.de/?elementor_library=schweizer-almbrot
+            - heading [level=2] [ref=f16e339]:
+              - link "Datenschutz" [ref=f16e340] [cursor=pointer]:
+                - /url: https://baeckerei-welling.de/datenschutz/
+            - heading [level=2] [ref=f16e343]:
+              - link "Impressum" [ref=f16e344] [cursor=pointer]:
+                - /url: https://baeckerei-welling.de/impressum/
+          - generic [ref=f16e346]:
+            - heading "‎‎‎" [level=2] [ref=f16e349]:
+              - link "‎‎‎":
+                - /url: https://baeckerei-welling.de/?elementor_library=schweizer-almbrot
+            - heading [level=2] [ref=f16e352]:
+              - link "Facebook" [ref=f16e353] [cursor=pointer]:
+                - /url: https://www.facebook.com/baeckerei.welling/
+            - heading [level=2] [ref=f16e356]:
+              - link "Instagram" [ref=f16e357] [cursor=pointer]:
+                - /url: https://www.instagram.com/baeckerei_konditorei_welling
+        - link [ref=f16e361] [cursor=pointer]:
+          - /url: "#"
+        - generic [ref=f16e375]:
+          - generic [ref=f16e376]: Bäckerei Welling © 2025 Alle Rechte vorbehalten.
+          - generic [ref=f16e381]:
+            - text: Webseite von
+            - link "ONESTEP Marketing" [ref=f16e382] [cursor=pointer]:
+              - /url: https://onestep.marketing
+  - button "Zustimmung verwalten" [ref=f16e383] [cursor=pointer]
+  - generic [ref=f16e384]: desktop
+  - status [ref=f16e385]

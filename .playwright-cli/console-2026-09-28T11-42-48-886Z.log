@@ -1,0 +1,10 @@
+[     304ms] [LOG] JQMIGRATE: Migrate is installed, version 3.4.1 @ https://baeckerei-welling.de/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1:1
+[     438ms] [LOG] opt-in @ https://baeckerei-welling.de/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1744716662:0
+[     487ms] [WARNING] jQuery.Deferred exception: $(...).hoverIntent is not a function TypeError: $(...).hoverIntent is not a function
+    at HTMLDocument.<anonymous> (https://baeckerei-welling.de/:1270:25)
+    at e (https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js:2:30038)
+    at t (https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js:2:30340) undefined @ https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js:1
+[     622ms] Uncaught TypeError: $(...).hoverIntent is not a function
+    at <anonymous> (https://baeckerei-welling.de/:1269:24)
+    at e (https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js:1:30037)
+    at t (https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js:1:30339)
