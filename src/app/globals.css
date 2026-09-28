@@ -324,16 +324,8 @@ body {
   stroke-linejoin: round;
 }
 
-@media (max-width: 640px) {
-  .service-strip {
-    flex-direction: column;
-    gap: 8px;
-    padding-block: 12px;
-  }
-
-  .service-strip li + li::before {
-    content: none;
-  }
+.service-label-mobile {
+  display: none;
 }
 
 @media (max-width: 1200px) {
@@ -1048,7 +1040,7 @@ a:focus-visible { outline: 2px solid var(--brand-teal); outline-offset: 4px; }
 .story-display { margin: 0 0 28px; font: 400 clamp(58px, 8vw, 118px)/.96 Georgia, serif; letter-spacing: -.045em; }
 .story-panel-copy h3 { margin: 0 0 20px; font: 400 clamp(25px, 2.7vw, 36px)/1.2 Georgia, serif; }
 .story-founder-photo { aspect-ratio: 4 / 5; }
-.story-founder-photo img { object-position: center 40%; }
+.story-founder-photo img { object-position: center top; }
 .story-today .story-display { color: var(--brand-teal); }
 .story-shop-photo { aspect-ratio: 4 / 3; }
 .story-neighbourhood { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); isolation: isolate; }
@@ -1102,12 +1094,75 @@ a:focus-visible { outline: 2px solid var(--brand-teal); outline-offset: 4px; }
 @media (prefers-reduced-motion: no-preference) {
   .story-hero-copy { animation: hero-arrive .8s ease-out both; }
   .story-hero-photo { animation: hero-arrive 1s .1s ease-out both; }
+  .akara-story[data-motion="enabled"] .story-photo img:not(.story-wordmark) {
+    transform: translateY(var(--story-drift, 0px)) scale(1.18);
+    transition: none;
+  }
+  .akara-story[data-motion="enabled"] .story-hero-photo img:not(.story-wordmark) {
+    transform: translateY(var(--story-drift, 0px)) scale(1.44);
+  }
+  .akara-story[data-motion="enabled"] .story-founder-photo img:not(.story-wordmark) {
+    transform: translateY(var(--story-drift, 0px)) scale(1.06);
+  }
+  .akara-story[data-motion="enabled"] .story-hero-photo .story-wordmark {
+    transform: translateY(var(--story-wordmark-drift, 0px));
+    transition: none;
+  }
+  .akara-story[data-motion="enabled"] .story-revealed {
+    animation: story-scroll-reveal .85s cubic-bezier(.2, .65, .3, 1) both;
+  }
+  .akara-story .story-revealed:nth-child(2) { animation-delay: .08s; }
+  .akara-story .story-revealed:nth-child(3) { animation-delay: .16s; }
+  .akara-story .story-revealed:nth-child(n+4) { animation-delay: .22s; }
+  .akara-story .story-revealed:focus-within { animation: none; }
+}
+@keyframes story-scroll-reveal {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 @media (prefers-reduced-motion: reduce) {
   .story-photo img, .story-link span { transition: none; }
 }
 
 /* Small-screen adaptations are scoped to preserve the established desktop. */
+@media (max-width: 767px) {
+  /* Photo-led chapters inspired by Welling's mobile story layout. */
+  .akara-story .story-hero-photo,
+  .akara-story .story-founder-photo,
+  .akara-story .story-shop-photo,
+  .akara-story .story-welcome-photo { grid-row: 1; }
+  .story-hero-copy, .story-panel-copy, .story-welcome-copy { grid-row: 2; padding: 40px 24px 56px; }
+  .story-hero-photo { aspect-ratio: 1; }
+  .story-founder-photo { aspect-ratio: 3 / 4; }
+  .story-shop-photo { aspect-ratio: 1; }
+  .story-welcome-photo { aspect-ratio: 4 / 5; }
+  .story-hero h1 { font-size: clamp(88px, 25vw, 128px); }
+  .story-panel .story-display { font-size: clamp(76px, 24vw, 112px); line-height: .94; }
+  .story-today .story-display { font-size: clamp(58px, 18vw, 76px); }
+  .story-founder .story-panel-copy, .story-welcome-copy {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: -112px;
+    padding-top: 0;
+  }
+  .story-founder .story-display, .story-neighbourhood h2 { order: -1; margin-bottom: 32px; }
+  .story-founder .story-eyebrow, .story-neighbourhood .story-eyebrow { margin-bottom: 20px; }
+  .story-neighbourhood h2 { font-size: clamp(48px, 13vw, 68px); line-height: 1.04; }
+  .story-welcome-copy { margin-top: 0; padding-top: 40px; }
+  .story-founder-photo::after, .story-welcome-photo::after {
+    content: "";
+    position: absolute;
+    inset: 55% 0 0;
+    background: linear-gradient(transparent, #211d1873);
+    pointer-events: none;
+  }
+  .story-panel-copy h3 { font-size: 30px; }
+  .akara-story .story-body { font-size: 17px; line-height: 1.7; }
+  .story-hero-copy .story-eyebrow { margin-bottom: 20px; }
+  .story-link { align-self: flex-start; }
+}
 @media (max-width: 1023px) {
   .site-header { min-height: 96px; padding: 12px 24px; gap: 0 24px; }
   .site-logo { width: 112px; height: 72px; }
@@ -1118,7 +1173,12 @@ a:focus-visible { outline: 2px solid var(--brand-teal); outline-offset: 4px; }
   .main-nav { display: none; flex: 0 0 100%; margin: 12px 0 0; padding: 12px 0; border-top: 1px solid #ded8ce; }
   .main-nav a { min-height: 48px; font-size: 13px; white-space: normal; }
   .main-nav a::after { right: auto; width: 32px; }
-  .service-strip li { padding-inline: 16px; font-size: 13px; letter-spacing: .04em; }
+  .service-strip { gap: 0; padding: 10px 1.25rem; }
+  .service-strip li { gap: 0; padding-inline: 10px; font-size: 14px; letter-spacing: 0; white-space: nowrap; }
+  .service-strip li:first-child { padding-left: 0; }
+  .service-strip li:last-child { padding-right: 0; }
+  .service-strip svg, .service-strip .service-label-full { display: none; }
+  .service-strip .service-label-mobile { display: inline; }
   .hero-description, .favourites-heading p, .bakery-story-copy p, .enquiry-inner p,
   .contact-details p, .contact-details address, .contact-methods a, .contact-form-intro p,
   .contact-form-note, .contact-form-status, .product-description, .product-order-hint,
@@ -1146,10 +1206,13 @@ a:focus-visible { outline: 2px solid var(--brand-teal); outline-offset: 4px; }
   .product-back { min-height: 44px; font-size: 14px; }
   .enquiry-inner { margin-inline: 0; }
   .footer-inner { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
+  .footer-brand, .footer-social { grid-column: 1 / -1; }
+  .footer-brand img { width: 132px; height: 96px; }
+  .footer-links { min-width: 0; }
   .footer-links li { font-size: 14px; overflow-wrap: anywhere; }
   .footer-links a { display: inline-flex; align-items: center; min-height: 44px; }
   .footer-social-icons a { width: 44px; height: 44px; }
-  .footer-copyright { font-size: 12px; }
+  .footer-copyright { margin-top: 16px; text-align: left; font-size: 12px; }
 }
 
 /* Native modal supplies an inert backdrop and contains keyboard focus. */
@@ -1217,7 +1280,6 @@ a:focus-visible { outline: 2px solid var(--brand-teal); outline-offset: 4px; }
   .bespoke-steps li + li { border-left: 0; border-top: 1px solid #ded8ce; padding-top: 24px; }
   .bespoke-steps p { max-width: 28ch; }
   .bespoke-gallery { grid-template-columns: minmax(0, 1fr); }
-  .footer-inner { grid-template-columns: minmax(0, 1fr); }
 }
 
 /* Shared treatment for teal-filled calls to action. */

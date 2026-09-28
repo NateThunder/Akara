@@ -1,0 +1,132 @@
+- generic [active] [ref=f18e1]:
+  - banner [ref=f18e2]:
+    - link "Akara Bakery home" [ref=f18e3] [cursor=pointer]:
+      - /url: /
+      - img "Akara Bakery" [ref=f18e4]
+    - button "Open menu" [ref=f18e5] [cursor=pointer]:
+      - generic [ref=f18e8]: Menu
+  - list "Bakery services" [ref=f18e9]:
+    - listitem [ref=f18e10]:
+      - generic [ref=f18e15]: Handmade in Glasgow
+    - listitem [ref=f18e16]:
+      - generic [ref=f18e21]: Collection & local delivery
+    - listitem [ref=f18e22]:
+      - generic [ref=f18e26]: Vegan & GF available
+  - main [ref=f18e27]:
+    - region [ref=f18e28]:
+      - generic [ref=f18e29]:
+        - paragraph [ref=f18e30]: Akara Bakery · Glasgow
+        - heading [level=1] [ref=f18e31]:
+          - text: Our
+          - emphasis [ref=f18e32]: story.
+        - paragraph [ref=f18e33]:
+          - text: A little home
+          - emphasis [ref=f18e34]: away from home.
+        - paragraph [ref=f18e35]: From celebration cakes in a home kitchen to a neighbourhood bakery on Duke Street. Come on in.
+        - link "Meet Akara" [ref=f18e36] [cursor=pointer]:
+          - /url: "#our-beginnings"
+          - text: Meet Akara
+          - generic [aria-hidden] [ref=f18e37]: ↓
+      - figure [ref=f18e38]:
+        - img "Sunlight filling the tables and wooden chairs inside Akara Bakery" [ref=f18e39]
+        - generic [ref=f18e40]: A place to pause.Something delicious to stay for.
+    - region [ref=f18e41]:
+      - generic [ref=f18e42]:
+        - paragraph [ref=f18e43]: Small beginnings
+        - heading "Since 2016." [level=2] [ref=f18e44]: Since2016.
+        - heading "It started with a cake." [level=3] [ref=f18e45]
+        - paragraph [ref=f18e46]: Lewa started Akara as a home celebration cake business in 2016, under a different name. Back then, red velvet was her best seller. It still is today.
+        - paragraph [ref=f18e47]: A simple celebration cake menu was the beginning of something that would grow into a bakery of its own.
+        - link "From a kitchen to Akara" [ref=f18e48] [cursor=pointer]:
+          - /url: "#bakery-today"
+          - text: From a kitchen to Akara
+          - generic [aria-hidden] [ref=f18e49]: →
+      - figure [ref=f18e50]:
+        - img "Lewa, Akara's founder, surrounded by her celebration cakes" [ref=f18e51]
+    - region [ref=f18e52]:
+      - generic [ref=f18e53]:
+        - paragraph [ref=f18e54]: Our doors opened in 2019
+        - heading [level=2] [ref=f18e55]:
+          - text: Made with
+          - emphasis [ref=f18e56]: joy.
+        - heading "Classic bakes. A little twist." [level=3] [ref=f18e57]
+        - paragraph [ref=f18e58]: Since opening our doors in 2019, Akara has been known for delicious bakes and unique flavours that riff off classic textures with a modern twist.
+        - paragraph [ref=f18e59]: Today, that little cake menu has grown to include wedding cakes, savoury bakes and a delicious catering menu.
+        - link "Explore our bakes" [ref=f18e60] [cursor=pointer]:
+          - /url: /shop/all
+          - text: Explore our bakes
+          - generic [aria-hidden] [ref=f18e61]: →
+      - figure [ref=f18e62]:
+        - img "A tray of Akara's cake slices with layers of sponge and buttercream" [ref=f18e63]
+    - region [ref=f18e64]:
+      - generic [ref=f18e65]:
+        - paragraph [ref=f18e66]: Your official neighbourhood bakery
+        - heading [level=2] [ref=f18e67]:
+          - text: Good bakes.
+          - emphasis [ref=f18e68]: A warm welcome.
+        - paragraph [ref=f18e69]: "Our goal is simple: to create a joyous place for every customer, with something delicious and a feeling of home."
+        - link "Find your way here" [ref=f18e70] [cursor=pointer]:
+          - /url: "#visit-akara"
+          - text: Find your way here
+          - generic [aria-hidden] [ref=f18e71]: ↓
+      - figure [ref=f18e72]:
+        - img "The sunny window and welcoming entrance to Akara Bakery on Duke Street" [ref=f18e73]
+    - region [ref=f18e74]:
+      - generic [ref=f18e75]:
+        - generic [ref=f18e76]:
+          - paragraph [ref=f18e77]: Find us on Duke Street
+          - heading [level=2] [ref=f18e78]:
+            - text: Come on
+            - emphasis [ref=f18e79]: in.
+        - generic [ref=f18e80]:
+          - heading "Visit the bakery" [level=3] [ref=f18e81]
+          - generic [ref=f18e82]: 537 Duke StreetGlasgow, G31 1DL
+          - link "Get directions" [ref=f18e83] [cursor=pointer]:
+            - /url: https://www.google.com/maps/dir/?api=1&destination=537+Duke+Street+Glasgow+G31+1DL
+            - text: Get directions
+            - generic [aria-hidden] [ref=f18e84]: ↗
+        - generic [ref=f18e85]:
+          - heading "Opening hours" [level=3] [ref=f18e86]
+          - paragraph [ref=f18e87]: Thursday–Sunday9am–5pm
+          - link "Get in touch" [ref=f18e88] [cursor=pointer]:
+            - /url: /contact
+            - text: Get in touch
+            - generic [aria-hidden] [ref=f18e89]: →
+      - iframe [ref=f18e90]
+  - contentinfo [ref=f18e91]:
+    - generic [ref=f18e92]:
+      - link "Akara Bakery home" [ref=f18e93] [cursor=pointer]:
+        - /url: /
+        - img "Akara Bakery" [ref=f18e94]
+      - navigation "Quick links" [ref=f18e95]:
+        - heading "Quick links" [level=2] [ref=f18e96]
+        - list [ref=f18e97]:
+          - listitem [ref=f18e98]:
+            - link "Shop" [disabled] [ref=f18e99]
+          - listitem [ref=f18e100]:
+            - link "About" [ref=f18e101] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=f18e102]:
+            - link "Contact" [ref=f18e103] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=f18e104]:
+            - link "FAQs" [disabled] [ref=f18e105]
+      - navigation "Information" [ref=f18e106]:
+        - heading "Info" [level=2] [ref=f18e107]
+        - list [ref=f18e108]:
+          - listitem [ref=f18e109]:
+            - link "Collection & Delivery" [disabled] [ref=f18e110]
+          - listitem [ref=f18e111]:
+            - link "Ingredients & Allergens" [disabled] [ref=f18e112]
+          - listitem [ref=f18e113]:
+            - link "Terms & Conditions" [disabled] [ref=f18e114]
+          - listitem [ref=f18e115]:
+            - link "Privacy Policy" [disabled] [ref=f18e116]
+      - generic [ref=f18e117]:
+        - heading "Follow us" [level=2] [ref=f18e118]
+        - generic [ref=f18e119]:
+          - link "Instagram (coming soon)" [disabled] [ref=f18e120]
+          - link "Facebook (coming soon)" [disabled] [ref=f18e125]
+          - link "TikTok (coming soon)" [disabled] [ref=f18e128]
+    - paragraph [ref=f18e131]: © 2026 Akara Bakery. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=f18e137] [cursor=pointer]

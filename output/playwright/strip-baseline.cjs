@@ -1,0 +1,1 @@
+async page => { await page.goto('http://localhost:3000/'); for (const width of [1024,1280,1440]) { await page.setViewportSize({width,height:900}); await page.locator('.service-strip').screenshot({path:`output/playwright/strip-before-${width}.png`}); } return await page.locator('.service-strip').innerText(); }

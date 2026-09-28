@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from "next";
 import SiteHeader from "../site-header";
 import HomeFooter from "../home-footer";
+import StoryMotion from "./story-motion";
 
 export const metadata: Metadata = {
   title: "Our Story | Akara Bakery Glasgow",
@@ -11,7 +12,7 @@ export default function AboutPage() {
   return (
     <>
       <SiteHeader />
-      <main className="akara-story">
+      <StoryMotion>
         <section className="story-hero" aria-labelledby="story-heading">
           <div className="story-hero-copy">
             <p className="story-eyebrow">Akara Bakery &middot; Glasgow</p>
@@ -86,7 +87,7 @@ export default function AboutPage() {
           </div>
           <iframe className="story-map" title="Map showing Akara Bakery at 537 Duke Street, Glasgow" src="https://maps.google.com/maps?q=Akara%20Bakery%20537%20Duke%20Street%20Glasgow%20G31%201DL&z=16&output=embed" width="1440" height="480" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
         </section>
-      </main>
+      </StoryMotion>
       <HomeFooter />
     </>
   );
