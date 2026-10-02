@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SiteHeader from "../site-header";
 import HomeFooter, { EnquiryBanner } from "../home-footer";
+import BespokeEnquiry from "../custom-cakes/bespoke-enquiry";
 
 export const metadata: Metadata = {
   title: "Bespoke Cakes | Akara Bakery Glasgow",
@@ -86,6 +87,7 @@ export default function BespokeCakesPage() {
             <a href="/contact">Check availability <span aria-hidden="true">&rarr;</span></a>
           </article>
         </section>
+        <BespokeEnquiry eyebrow="Start your bespoke order" />
         <EnquiryBanner href="/contact" />
       </main>
       <HomeFooter />

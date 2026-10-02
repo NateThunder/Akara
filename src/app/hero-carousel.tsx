@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const slides = Array.from({ length: 7 }, (_,index) => `/Video/Banner Carosel/banner-${index + 1}.webp`);
+const slides = Array.from({ length: 6 }, (_, index) => `/Carosel3/carousel-${index + 1}.webp`);
 
 export default function HeroCarousel() {
   const [active, setActive] = useState(0);
@@ -26,13 +26,16 @@ export default function HeroCarousel() {
 
   return (
     <section className="cake-hero" aria-label="Celebration cakes" aria-roledescription="carousel">
-      <div className="hero-photographs" aria-hidden="true">
-        {slides.map((src, index) => (
-          // Native images keep the pre-optimized local assets portable across hosts.
-          // eslint-disable-next-line @next/next/no-img-element
-          <img key={src} src={src} alt="" className={`hero-photograph${active === index ? " is-active" : ""}`} fetchPriority={index === 0 ? "high" : "low"} decoding="async" />
-        ))}
+      <div className="hero-photographs">
+        <div aria-hidden="true">
+          {slides.map((src, index) => (
+            // Native images keep the pre-optimized local assets portable across hosts.
+            // eslint-disable-next-line @next/next/no-img-element
+            <img key={src} src={src} alt="" className={`hero-photograph${active === index ? " is-active" : ""}`} fetchPriority={index === 0 ? "high" : "low"} decoding="async" />
+          ))}
+        </div>
       </div>
+      <div className="hero-copy-blur" aria-hidden="true" />
       <div className="hero-copy">
         <p className="hero-eyebrow">Our cake philosophy is joy.</p>
         <h1>We are an artisan cake shop and cafe bakery specialising in unique custom celebration and wedding cakes in Glasgow!</h1>

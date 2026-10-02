@@ -5,14 +5,16 @@ import HomeFooter from "../../home-footer";
 import catalogue from "../all/products.json";
 import details from "../product-details.json";
 import ProductDetail from "./product-detail";
+import { removedProductSlugs } from "../removed-products";
 
 type Props = { params: Promise<{ slug: string }> };
 function findProduct(slug: string) {
+  if (removedProductSlugs.has(slug)) return undefined;
   const detail = details.find(item => item.slug === slug);
   const product = catalogue.products.find(item => item.id === detail?.id);
   return product && detail ? { ...product, ...detail } : undefined;
 }
-export function generateStaticParams() { return details.map(item => ({ slug: item.slug })); }
+export function generateStaticParams() { return details.filter(item => !removedProductSlugs.has(item.slug)).map(item => ({ slug: item.slug })); }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = findProduct((await params).slug);
   return { title: product ? `${product.name} | Akara Bakery` : "Product not found | Akara Bakery", description: product?.description.slice(0, 160) };

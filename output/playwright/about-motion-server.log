@@ -87,3 +87,7 @@ Using secrets defined in .dev.vars
  GET /contact 200 in 172ms (next.js: 60ms, application-code: 111ms)
  GET /shop/all 200 in 80ms (next.js: 4ms, application-code: 75ms)
  GET /shop/gfmothersdaycupcakes 200 in 696ms (next.js: 101ms, generate-params: 10ms, application-code: 595ms)
+ GET / 200 in 143ms (next.js: 20ms, application-code: 123ms)
+ GET /contact 200 in 215ms (next.js: 47ms, application-code: 169ms)
+ GET /bespoke-cakes 200 in 133ms (next.js: 27ms, application-code: 106ms)
+ GET /custom-cakes 200 in 612ms (next.js: 290ms, application-code: 323ms)

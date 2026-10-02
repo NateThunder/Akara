@@ -16,7 +16,7 @@ export default function AboutPage() {
         <section className="story-hero" aria-labelledby="story-heading">
           <div className="story-hero-copy">
             <p className="story-eyebrow">Akara Bakery &middot; Glasgow</p>
-            <h1 id="story-heading">Our<br /><em>story.</em></h1>
+            <h1 id="story-heading"><img src="/Video/About/header.webp" alt="Our story" width={1116} height={870} /></h1>
             <p className="story-hero-intro">A little home <em>away from home.</em></p>
             <p className="story-body">From celebration cakes in a home kitchen to a neighbourhood bakery on Duke Street. Come on in.</p>
             <a className="story-link" href="#our-beginnings">Meet Akara <span aria-hidden="true">&darr;</span></a>
@@ -38,7 +38,7 @@ export default function AboutPage() {
             <a className="story-link" href="#bakery-today">From a kitchen to Akara <span aria-hidden="true">&rarr;</span></a>
           </div>
           <figure className="story-photo story-founder-photo">
-            <img src="/Video/About/portrait.webp" alt="Lewa, Akara's founder, surrounded by her celebration cakes" width={1100} height={1467} loading="lazy" />
+            <img src="/Video/Lewa.webp" alt="Lewa decorating a celebration cake at Akara Bakery" width={1120} height={1404} loading="lazy" />
           </figure>
         </section>
 
@@ -81,7 +81,7 @@ export default function AboutPage() {
             </div>
             <div>
               <h3>Opening hours</h3>
-              <p>Thursday&ndash;Sunday<br />9am&ndash;5pm</p>
+              <p>Thursday&ndash;Sunday<br />9am&ndash;4pm</p>
               <a className="story-link" href="/contact">Get in touch <span aria-hidden="true">&rarr;</span></a>
             </div>
           </div>
