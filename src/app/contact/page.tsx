@@ -5,7 +5,7 @@ import ContactForm from "./contact-form";
 
 export const metadata: Metadata = {
   title: "Contact | Akara Bakery",
-  description: "Contact Akara Bakery at 537 Duke Street, Glasgow, G31 1DL. Thursday–Sunday: 9am–5pm.",
+  description: "Contact Akara Bakery at 537 Duke Street, Glasgow, G31 1DL. Thursday–Sunday: 9am–4pm.",
 };
 
 export default function ContactPage() {
@@ -26,7 +26,7 @@ export default function ContactPage() {
               </section>
               <section aria-labelledby="contact-hours">
                 <h2 id="contact-hours">Hours</h2>
-                <p>Thursday-Sunday: 9am-5pm</p>
+                <p>Thursday-Sunday: 9am-4pm</p>
               </section>
               <section className="contact-methods" aria-labelledby="contact-methods-heading">
                 <h2 id="contact-methods-heading">Contact</h2>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, type CSSProperties, type FormEvent, type ReactNode } from "react";
+import { cakeColours as colours } from "../cake-colours";
 
 // Sample prices only. Replace with the bakery's confirmed price list before ordering goes live.
 const flavours = [
@@ -11,7 +12,6 @@ const flavours = [
   { name: "Carrot Cake", crumb: "#ac713d", icing: "#fff2dc", price: 5 },
 ];
 const sizes = [{ inches: 6, serves: 10, price: 85 }, { inches: 8, serves: 20, price: 110 }, { inches: 10, serves: 30, price: 140 }, { inches: 12, serves: 40, price: 170 }];
-const colours = [{ name: "Ivory", colour: "#fffaf0" }, { name: "Blush", colour: "#dca29c" }, { name: "Sage", colour: "#87956c" }, { name: "Dusty blue", colour: "#8197ac" }, { name: "Oatmeal", colour: "#caa77c" }, { name: "Terracotta", colour: "#a65635" }, { name: "Charcoal", colour: "#373735" }];
 const extras = [{ name: "Candles", price: 3, icon: "candle" }, { name: "Flowers", price: 15, icon: "flower" }, { name: "Fruit", price: 8, icon: "fruit" }, { name: "Sprinkles", price: 4, icon: "sprinkles" }];
 const money = (value: number) => new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP" }).format(value);
 const storageKey = "akara-custom-cake-v1";

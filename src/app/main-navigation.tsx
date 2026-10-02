@@ -6,10 +6,8 @@ import { usePathname, useSearchParams } from "next/navigation";
 // New links inherit URL matching and the shared selected style automatically.
 const navigation = [
   { label: "Shop", href: "/shop/all", matchPath: "/shop" },
-  { label: "Bespoke Cakes", href: "/bespoke-cakes" },
+  { label: "How to Order", href: "/bespoke-cakes" },
   { label: "Custom Cakes", href: "/custom-cakes" },
-  { label: "Celebration Cakes", href: "/shop/all?category=Cakes" },
-  { label: "Cupcakes", href: "/shop/all?category=Cupcakes" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -18,11 +16,6 @@ function NavigationLinks({ activeIndex = -1 }: { activeIndex?: number }) {
   return <>{navigation.map(({ label, href }, index) => (
     <a key={href} href={href} aria-current={index === activeIndex ? "page" : undefined}>
       {label}
-      {label === "Shop" && (
-        <svg className="nav-chevron" viewBox="0 0 12 12" aria-hidden="true">
-          <path d="m3 4.5 3 3 3-3" />
-        </svg>
-      )}
     </a>
   ))}</>;
 }

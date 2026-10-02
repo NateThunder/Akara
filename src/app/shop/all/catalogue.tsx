@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import catalogue from "./products.json";
+import { removedProductSlugs } from "../removed-products";
 
 const categories = ["All", "Cakes", "Cheesecakes", "Vegan Cakes", "Gluten Free Cakes", "Cupcakes", "Gift Cards"];
 const money = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP" });
@@ -22,7 +23,7 @@ export default function Catalogue() {
   }, [category]);
   const [search, setSearch] = useState("");
   const [sort, setSort] = useState("featured");
-  const products = catalogue.products.filter(product => (category === "All" || product.categories.includes(category)) && product.name.toLowerCase().includes(search.trim().toLowerCase()));
+  const products = catalogue.products.filter(product => !removedProductSlugs.has(product.href.split("/").pop() || "") && (category === "All" || product.categories.includes(category)) && product.name.toLowerCase().includes(search.trim().toLowerCase()));
   if (sort === "price-low") products.sort((a,b) => a.price - b.price);
   if (sort === "price-high") products.sort((a,b) => b.price - a.price);
   if (sort === "name") products.sort((a,b) => a.name.localeCompare(b.name));

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CakeCustomiser from "./cake-customiser";
+import BespokeEnquiry from "./bespoke-enquiry";
 import SiteHeader from "../site-header";
 import HomeFooter from "../home-footer";
 
@@ -12,5 +13,6 @@ export default function CustomCakesPage() {
   return <><SiteHeader /><main className="custom-cakes-page">
     <header className="custom-cakes-heading"><p>Akara Bakery · Made for you</p><h1>Custom Cakes</h1></header>
     <CakeCustomiser />
+    <BespokeEnquiry />
   </main><HomeFooter /></>;
 }
