@@ -26,6 +26,28 @@ export default function Home() {
       <SiteHeader />
       <main className="home-main">
         <HeroCarousel />
+        <section className="bakery-story" aria-labelledby="bakery-story-heading">
+          <div className="bakery-story-copy">
+            <h2 id="bakery-story-heading">Made from scratch.<br />Made for you.</h2>
+            <p>
+              We believe the best cakes start with the best ingredients and a
+              whole lot of care. Whether you have a clear idea in mind or need a
+              little inspiration, we&apos;re here to create something unforgettable.
+            </p>
+            <a className="bakery-story-about" href="/about">
+              About Akara Bakery <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+          <div className="bakery-story-image">
+            <img
+              src="/Video/Banner Carosel/banner-6.webp"
+              alt="A tray of handmade cake slices with layers of sponge and buttercream"
+              width={1600}
+              height={1200}
+              loading="lazy"
+            />
+          </div>
+        </section>
         <section className="favourites" aria-labelledby="favourites-heading">
           <header className="favourites-heading">
             <h2 id="favourites-heading">Shop our favourites</h2>
@@ -53,28 +75,7 @@ export default function Home() {
             ))}
           </div>
         </section>
-        <section className="bakery-story" aria-labelledby="bakery-story-heading">
-          <div className="bakery-story-copy">
-            <h2 id="bakery-story-heading">Made from scratch.<br />Made for you.</h2>
-            <p>
-              We believe the best cakes start with the best ingredients and a
-              whole lot of care. Whether you have a clear idea in mind or need a
-              little inspiration, we&apos;re here to create something unforgettable.
-            </p>
-            <a className="bakery-story-about" href="/about">
-              About Akara Bakery <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div>
-          <div className="bakery-story-image">
-            <img
-              src="/Video/Banner Carosel/banner-6.webp"
-              alt="A tray of handmade cake slices with layers of sponge and buttercream"
-              width={1600}
-              height={1200}
-              loading="lazy"
-            />
-          </div>
-        </section>
+
         <section className="bestsellers" aria-labelledby="bestsellers-heading">
           <h2 id="bestsellers-heading">Bestsellers</h2>
           <div className="bestsellers-grid">

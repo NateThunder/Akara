@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 700px) { .bespoke-enquiry { width: min(100% - 64px, 1060px); } .bespoke-enquiry-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; } }
 
 /* Custom cakes: isolated styles for the standalone cake builder. */
-.custom-cakes-page { color: #353831; background: var(--site-background); background-image: var(--site-grain-background); background-position: center; background-size: auto, cover; min-height: 100svh; padding-top: 36px; font-size: 16px; line-height: 1.5; }
+.custom-cakes-page { color: #353831; background: #fcf8f1; background-image: linear-gradient(#fcf8f1eb, #fcf8f1eb), var(--site-texture); min-height: 100svh; padding-top: 36px; font-size: 16px; line-height: 1.5; }
 .custom-cakes-heading, .custom-cake-steps { width: min(100% - 40px, 1060px); margin-inline: auto; }
 .custom-cakes-heading { padding-bottom: 32px; }
 .custom-cakes-heading > p { margin: 0 0 10px; font-size: 11px; text-transform: uppercase; letter-spacing: .18em; }
@@ -138,9 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
   --site-background: #f8f7f4;
-  --site-texture: url("/film-grain.webp");
-  --site-grain-wash: color-mix(in srgb, var(--site-background) 86%, transparent);
-  --site-grain-background: linear-gradient(var(--site-grain-wash), var(--site-grain-wash)), var(--site-texture);
+  --site-texture: url("/Video/textures/Paper.webp");
   --greaseproof-texture: url("/Video/textures/greeseproof paper.webp?v=2");
   --rough-strip-texture: url("/Video/textures/rough texture.webp");
   --brand-teal: #004B4B;
@@ -858,13 +856,10 @@ body,
 .cake-hero,
 .favourites,
 .favourite,
-.bestsellers,
-.contact-layout {
-  /* Match Grown Cookies film grain at 14%, retaining the cream base. */
-  background-image: var(--site-grain-background);
+.bestsellers {
+  /* A 90% cream overlay leaves a subtle paper texture at 10% opacity. */
+  background-image: linear-gradient(color-mix(in srgb, var(--site-background) 90%, transparent), color-mix(in srgb, var(--site-background) 90%, transparent)), var(--site-texture);
   background-repeat: repeat;
-  background-position: center;
-  background-size: auto, cover;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1072,7 +1067,7 @@ a:focus-visible { outline: 2px solid var(--brand-teal); outline-offset: 4px; }
 }
 
 /* About: full-width editorial chapters, scoped to this page. */
-.akara-story { color: #302f2b; background: var(--site-background); background-image: var(--site-grain-background); background-position: center; background-size: auto, cover; }
+.akara-story { color: #302f2b; background: var(--site-background); background-image: linear-gradient(color-mix(in srgb, var(--site-background) 90%, transparent), color-mix(in srgb, var(--site-background) 90%, transparent)), var(--site-texture); }
 .akara-story section { scroll-margin-top: 24px; }
 .story-hero, .story-panel { display: grid; grid-template-columns: minmax(0, 1fr); }
 .story-hero-copy, .story-panel-copy { min-width: 0; padding: 48px 24px; }
