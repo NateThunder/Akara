@@ -1,15 +1,15 @@
 # Design rules
 
 - Use `#f8f7f4` as the global site background colour. Define it once as `--site-background` in `src/app/globals.css` and use `var(--site-background)` for shared page backgrounds and their paper-texture overlays.
-- Use `#207E7A` for all teal on the site. Define it once as `--brand-teal` in `src/app/globals.css` and use `var(--brand-teal)` for teal text, backgrounds, borders, icons, logo tints, and focus indicators. Do not introduce other teal shades.
+- Use `#004B4B` for all teal on the site. Define it once as `--brand-teal` in `src/app/globals.css` and use `var(--brand-teal)` for teal text, backgrounds, borders, icons, logo tints, and focus indicators. Do not introduce other teal shades.
 - Keep shared visual styles in `src/app/globals.css`, rather than individual page files.
 - Compress raster images before adding or updating them on the site, and convert them to WebP only if they are not already in WebP format. Avoid unnecessary re-encoding of existing WebP images. Resize images to appropriate display dimensions, preserve visual quality and transparency where needed, and update image references to use the optimised `.webp` files. Keep vector assets such as SVGs in their original format.
 
 ## Visual direction
 
 - Aim for warm editorial luxury: a refined, inviting artisan bakery with softly romantic details.
-- Use cream, ivory, and oatmeal surfaces, dark neutral text, and restrained muted gold accents. Keep the existing brand teal `#207E7A` exactly as specified above, including when interpreting reference images.
-- Pair elegant, regular-weight serif headings with clean sans-serif body text. Use small, widely spaced uppercase text for navigation, labels, and calls to action; reserve handwritten lettering for branding.
+- Use cream, ivory, and oatmeal surfaces, dark neutral text, and restrained muted gold accents. Keep the existing brand teal `#004B4B` exactly as specified above, including when interpreting reference images.
+- Use Fraunces at weight 900 for headings, paired with clean sans-serif body text. Use small, widely spaced uppercase text for navigation, labels, and calls to action; reserve handwritten lettering for branding.
 - Use generous whitespace, orderly grids, and balanced section spacing. Center collection headings; left-align hero and story copy.
 - Do not add decorative underlines or short accent rules beneath headings, even when a photo or design reference includes them. Omit them when translating references into the site. This does not prohibit functional link underlines, active navigation indicators, or focus indicators.
 - Prefer softly lit cake photography with warm neutral backgrounds, linen, ceramics, and flowers. Keep image crops and lighting consistent across each collection.
@@ -51,6 +51,8 @@
 - Keep carousel controls within the image area, reachable and clearly visible at 320px. Retain pause/play controls, keyboard access, and reduced-motion behavior.
 
 ## Navigation and shopping controls
+
+- Use DM Sans at weight 600 (SemiBold) and `var(--brand-teal)` for desktop and mobile navigation text.
 
 - Below 1024px, replace the desktop navigation with an accessible hamburger disclosure or dialog. Hide the desktop link row and show the mobile toggle; at 1024px and above restore the existing desktop navigation unchanged.
 - Preserve every navigation destination and the active-page indicator. Use a real button with an accessible name, `aria-expanded`, and `aria-controls`. Closed links must not remain keyboard-focusable. Escape closes the menu and returns focus to its toggle; selecting a destination closes it. Dialog menus additionally require focus containment and appropriate scroll handling.

@@ -1,0 +1,177 @@
+- generic [active] [ref=e1]:
+  - list "Bakery services" [ref=e2]:
+    - listitem [ref=e3]:
+      - generic [ref=e8]: Handmade in Glasgow
+    - listitem [ref=e9]:
+      - text: •
+      - generic [ref=e14]: Collection & local delivery
+    - listitem [ref=e15]:
+      - text: •
+      - generic [ref=e19]: Vegan & GF available
+  - banner [ref=e20]:
+    - link "Akara Bakery home" [ref=e21] [cursor=pointer]:
+      - /url: /
+      - img "Akara Bakery" [ref=e22]
+    - navigation "Main navigation" [ref=e23]:
+      - link "Shop" [ref=e24] [cursor=pointer]:
+        - /url: /shop/all
+      - link "How to Order" [ref=e25] [cursor=pointer]:
+        - /url: /bespoke-cakes
+      - link "Custom Cakes" [ref=e26] [cursor=pointer]:
+        - /url: /custom-cakes
+      - link "About" [ref=e27] [cursor=pointer]:
+        - /url: /about
+      - link "Contact" [ref=e28] [cursor=pointer]:
+        - /url: /contact
+    - generic [ref=e29]:
+      - button "Search (coming soon)" [disabled] [ref=e30]
+      - button "Account (coming soon)" [disabled] [ref=e34]
+      - button "Shopping bag (coming soon)" [disabled] [ref=e38]
+  - main [ref=e42]:
+    - region "Celebration cakes" [ref=e43]:
+      - generic [ref=e45]:
+        - paragraph [ref=e46]: Your neighbourhood bakery, Glasgow
+        - heading [level=1] [ref=e47]:
+          - text: A littleslice of
+          - emphasis [ref=e48]: joy.
+        - paragraph [ref=e49]: Big days. Small wins. Just-because Tuesdays.There’s always a reason for cake.
+        - link "Find your happy cake" [ref=e51] [cursor=pointer]:
+          - /url: /shop/all
+          - text: Find your happy cake
+          - generic [aria-hidden] [ref=e52]: ↗
+        - paragraph [ref=e53]:
+          - generic [aria-hidden] [ref=e54]: ✳
+          - text: Handmade with love in Dennistoun.
+    - list "Made with care" [ref=e55]:
+      - listitem [ref=e56]:
+        - text: Made from scratch
+        - generic [aria-hidden] [ref=e57]: ✳
+      - listitem [ref=e58]:
+        - text: A little extra love
+        - generic [aria-hidden] [ref=e59]: ✳
+      - listitem [ref=e60]:
+        - text: Never just a cake
+        - generic [aria-hidden] [ref=e61]: ✳
+      - listitem [ref=e62]:
+        - text: Always a good idea
+        - generic [aria-hidden] [ref=e63]: ✳
+    - region [ref=e64]:
+      - generic [ref=e65]:
+        - heading "Made from scratch. Made for you." [level=2] [ref=e66]: Made from scratch.Made for you.
+        - paragraph [ref=e67]: We believe the best cakes start with the best ingredients and a whole lot of care. Whether you have a clear idea in mind or need a little inspiration, we're here to create something unforgettable.
+        - link "About Akara Bakery" [ref=e68] [cursor=pointer]:
+          - /url: /about
+          - text: About Akara Bakery
+          - generic [aria-hidden] [ref=e69]: →
+      - img "A tray of handmade cake slices with layers of sponge and buttercream" [ref=e71]
+    - region [ref=e72]:
+      - generic [ref=e73]:
+        - heading "Shop our favourites" [level=2] [ref=e74]
+        - paragraph [ref=e75]: From show-stopping celebration cakes to sweet little treats.
+      - generic [ref=e76]:
+        - article [ref=e77]:
+          - img "Pink celebration cake with piped icing, cherries and red ribbons" [ref=e79]
+          - generic [ref=e80]:
+            - heading "Celebration Cakes" [level=3] [ref=e81]
+            - link "Shop now" [ref=e82] [cursor=pointer]:
+              - /url: /shop/all
+              - text: Shop now
+              - generic [aria-hidden] [ref=e83]: →
+        - article [ref=e84]:
+          - img "Two-tier wedding cake decorated with flowers and gold leaf" [ref=e86]
+          - generic [ref=e87]:
+            - heading "Wedding Cakes" [level=3] [ref=e88]
+            - link "Shop now" [ref=e89] [cursor=pointer]:
+              - /url: /shop/all
+              - text: Shop now
+              - generic [aria-hidden] [ref=e90]: →
+        - article [ref=e91]:
+          - img "Box of six assorted cupcakes topped with buttercream, berries, cherries and crumbs" [ref=e93]
+          - generic [ref=e94]:
+            - heading "Cupcakes" [level=3] [ref=e95]
+            - link "Shop now" [ref=e96] [cursor=pointer]:
+              - /url: /shop/all
+              - text: Shop now
+              - generic [aria-hidden] [ref=e97]: →
+        - article [ref=e98]:
+          - img "Strawberries and cream cheesecake topped with piped cream and strawberry dust" [ref=e100]
+          - generic [ref=e101]:
+            - heading "Cheesecakes" [level=3] [ref=e102]
+            - link "Shop now" [ref=e103] [cursor=pointer]:
+              - /url: /shop/all?category=Cheesecakes
+              - text: Shop now
+              - generic [aria-hidden] [ref=e104]: →
+    - region [ref=e105]:
+      - heading "Bestsellers" [level=2] [ref=e106]
+      - generic [ref=e107]:
+        - article [ref=e108]:
+          - img "Pink buttercream cake with cherries and red ribbons" [ref=e109]
+          - heading "Cherry Celebration Cake" [level=3] [ref=e110]
+          - paragraph [ref=e111]: £45.00
+          - button "Add Cherry Celebration Cake to cart (coming soon)" [disabled] [ref=e112]: Add to cart
+        - article [ref=e113]:
+          - img "Buttercream cakes decorated with pressed flowers" [ref=e114]
+          - heading "Floral Celebration Cake" [level=3] [ref=e115]
+          - paragraph [ref=e116]: £45.00
+          - button "Add Floral Celebration Cake to cart (coming soon)" [disabled] [ref=e117]: Add to cart
+        - article [ref=e118]:
+          - img "Six cupcakes with assorted buttercream and fruit toppings" [ref=e119]
+          - heading "Assorted Cupcake Box" [level=3] [ref=e120]
+          - paragraph [ref=e121]: £18.00
+          - button "Add Assorted Cupcake Box to cart (coming soon)" [disabled] [ref=e122]: Add to cart
+        - article [ref=e123]:
+          - img "White celebration cake decorated with small red hearts" [ref=e124]
+          - heading "Heart Celebration Cake" [level=3] [ref=e125]
+          - paragraph [ref=e126]: £45.00
+          - button "Add Heart Celebration Cake to cart (coming soon)" [disabled] [ref=e127]: Add to cart
+        - article [ref=e128]:
+          - img "Buttercream tray cake decorated with tropical fruit" [ref=e129]
+          - heading "Tropical Fruit Cake" [level=3] [ref=e130]
+          - paragraph [ref=e131]: £40.00
+          - button "Add Tropical Fruit Cake to cart (coming soon)" [disabled] [ref=e132]: Add to cart
+    - region [ref=e133]:
+      - generic [ref=e134]:
+        - generic [ref=e135]:
+          - heading "Planning something special?" [level=2] [ref=e136]
+          - paragraph [ref=e137]: We'd love to create the perfect cake for your occasion.Get in touch to discuss your ideas.
+        - link "Enquire now" [ref=e138] [cursor=pointer]:
+          - /url: /contact
+          - text: Enquire now
+          - generic [aria-hidden] [ref=e139]: →
+  - contentinfo [ref=e140]:
+    - generic [ref=e141]:
+      - link "Akara Bakery home" [ref=e142] [cursor=pointer]:
+        - /url: /
+        - img "Akara Bakery" [ref=e143]
+      - navigation "Quick links" [ref=e144]:
+        - heading "Quick links" [level=2] [ref=e145]
+        - list [ref=e146]:
+          - listitem [ref=e147]:
+            - link "Shop" [disabled] [ref=e148]
+          - listitem [ref=e149]:
+            - link "About" [ref=e150] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e151]:
+            - link "Contact" [ref=e152] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=e153]:
+            - link "FAQs" [disabled] [ref=e154]
+      - navigation "Information" [ref=e155]:
+        - heading "Info" [level=2] [ref=e156]
+        - list [ref=e157]:
+          - listitem [ref=e158]:
+            - link "Collection & Delivery" [disabled] [ref=e159]
+          - listitem [ref=e160]:
+            - link "Ingredients & Allergens" [disabled] [ref=e161]
+          - listitem [ref=e162]:
+            - link "Terms & Conditions" [disabled] [ref=e163]
+          - listitem [ref=e164]:
+            - link "Privacy Policy" [disabled] [ref=e165]
+      - generic [ref=e166]:
+        - heading "Follow us" [level=2] [ref=e167]
+        - generic [ref=e168]:
+          - link "Instagram (coming soon)" [disabled] [ref=e169]
+          - link "Facebook (coming soon)" [disabled] [ref=e174]
+          - link "TikTok (coming soon)" [disabled] [ref=e177]
+    - paragraph [ref=e180]: © 2026 Akara Bakery. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=e186] [cursor=pointer]
