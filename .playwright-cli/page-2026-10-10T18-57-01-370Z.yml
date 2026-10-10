@@ -1,0 +1,211 @@
+- generic [active] [ref=f8e1]:
+  - list "Bakery services" [ref=f8e2]:
+    - listitem [ref=f8e3]:
+      - generic [ref=f8e8]: Handmade in Glasgow
+    - listitem [ref=f8e9]:
+      - text: •
+      - generic [ref=f8e14]: Collection & local delivery
+    - listitem [ref=f8e15]:
+      - text: •
+      - generic [ref=f8e19]: Vegan & GF available
+  - banner [ref=f8e20]:
+    - link "Akara Bakery home" [ref=f8e21] [cursor=pointer]:
+      - /url: /
+      - img "Akara Bakery" [ref=f8e22]
+    - navigation "Main navigation" [ref=f8e23]:
+      - link "Shop" [ref=f8e24] [cursor=pointer]:
+        - /url: /shop/all
+      - link "How to Order" [ref=f8e25] [cursor=pointer]:
+        - /url: /bespoke-cakes
+      - link "Custom Cakes" [ref=f8e26] [cursor=pointer]:
+        - /url: /custom-cakes
+      - link "About" [ref=f8e27] [cursor=pointer]:
+        - /url: /about
+      - link "Contact" [ref=f8e28] [cursor=pointer]:
+        - /url: /contact
+    - generic [ref=f8e29]:
+      - button "Search (coming soon)" [disabled] [ref=f8e30]
+      - button "Account (coming soon)" [disabled] [ref=f8e34]
+      - button "Shopping bag (coming soon)" [disabled] [ref=f8e38]
+  - main [ref=f8e42]:
+    - region [ref=f8e43]:
+      - heading "How it works" [level=2] [ref=f8e44]
+      - list [ref=f8e45]:
+        - listitem [ref=f8e46]:
+          - heading "1. Get in touch" [level=3] [ref=f8e49]
+          - paragraph [ref=f8e50]: Tell us about your event, ideas and colours.
+        - listitem [ref=f8e51]:
+          - heading "2. We design" [level=3] [ref=f8e54]
+          - paragraph [ref=f8e55]: We create a design and quote just for you.
+        - listitem [ref=f8e56]:
+          - heading "3. We bake & create" [level=3] [ref=f8e59]
+          - paragraph [ref=f8e60]: Your cake is handmade with care and attention.
+        - listitem [ref=f8e61]:
+          - heading "4. You celebrate" [level=3] [ref=f8e64]
+          - paragraph [ref=f8e65]: Collect or arrange delivery, ready to enjoy.
+    - region [ref=f8e66]:
+      - generic [ref=f8e67]:
+        - paragraph [ref=f8e68]: A few ideas to get you started
+        - heading "Inspiration" [level=2] [ref=f8e69]
+        - paragraph [ref=f8e70]: Flowers, colour, a favourite detail. Every celebration has its own story.
+      - generic [ref=f8e71]:
+        - figure "Botanical details" [ref=f8e72]:
+          - img "Buttercream cakes decorated with delicate pressed flowers" [ref=f8e74]
+        - figure "A little romance" [ref=f8e76]:
+          - img "Pink piped celebration cake with cherries and red ribbons" [ref=f8e78]
+        - figure "Made with love" [ref=f8e80]:
+          - img "White buttercream cake decorated with small red hearts" [ref=f8e82]
+        - figure "Something colourful" [ref=f8e84]:
+          - img "Celebration cake topped with colourful tropical fruit" [ref=f8e86]
+        - figure "Naturally elegant" [ref=f8e88]:
+          - img "Two-tier cake with flowers, foliage and gold leaf" [ref=f8e90]
+    - region "Planning your bespoke cake" [ref=f8e92]:
+      - article [ref=f8e93]:
+        - heading "Flavours" [level=2] [ref=f8e98]
+        - paragraph [ref=f8e99]: Tell us your favourites and we'll help you find the right combination. Share any dietary requirements when you enquire.
+        - link "Let's talk flavours" [ref=f8e100] [cursor=pointer]:
+          - /url: /contact
+          - text: Let's talk flavours
+          - generic [aria-hidden] [ref=f8e101]: →
+      - article [ref=f8e102]:
+        - heading "Sizes & prices" [level=2] [ref=f8e106]
+        - paragraph [ref=f8e107]: From intimate gatherings to bigger celebrations, we'll guide you on size and provide a quote for your design.
+        - link "Discuss your cake" [ref=f8e108] [cursor=pointer]:
+          - /url: /contact
+          - text: Discuss your cake
+          - generic [aria-hidden] [ref=f8e109]: →
+      - article [ref=f8e110]:
+        - heading "A date in mind?" [level=2] [ref=f8e114]
+        - paragraph [ref=f8e115]: Get in touch with your celebration date as early as possible, especially for weekends. We'll confirm availability with you.
+        - link "Check availability" [ref=f8e116] [cursor=pointer]:
+          - /url: /contact
+          - text: Check availability
+          - generic [aria-hidden] [ref=f8e117]: →
+    - region [ref=f8e118]:
+      - generic [ref=f8e119]:
+        - paragraph [ref=f8e120]: Start your bespoke order
+        - heading "Tell us about your dream cake" [level=2] [ref=f8e121]
+        - paragraph [ref=f8e122]: Share your ideas and we can make a design and quote for your celebration.
+      - generic [ref=f8e123]:
+        - generic [ref=f8e124]:
+          - generic [ref=f8e125]:
+            - text: Full name
+            - generic [ref=f8e126]: "*"
+            - textbox "Full name *" [ref=f8e127]
+          - generic [ref=f8e128]:
+            - text: Telephone number
+            - generic [ref=f8e129]: "*"
+            - textbox "Telephone number *" [ref=f8e130]
+          - generic [ref=f8e131]:
+            - text: Email address
+            - generic [ref=f8e132]: "*"
+            - textbox "Email address *" [ref=f8e133]
+          - generic [ref=f8e134]:
+            - text: Date of event
+            - generic [ref=f8e135]: "*"
+            - textbox "Date of event *" [ref=f8e136]
+          - generic [ref=f8e137]:
+            - text: Number of servings or guests
+            - generic [ref=f8e138]: "*"
+            - spinbutton "Number of servings or guests *" [ref=f8e139]
+          - generic [ref=f8e140]:
+            - text: Flavour choice
+            - generic [ref=f8e141]: "*"
+            - combobox "Flavour choice *" [ref=f8e142]:
+              - option "Choose a flavour" [selected]
+              - option "Vanilla Sponge"
+              - option "Chocolate Sponge"
+              - option "Red Velvet"
+              - option "Lemon Sponge"
+              - option "Carrot Cake"
+              - option "Something else / please advise"
+        - group "Dietary requirements or allergens" [ref=f8e143]:
+          - paragraph [ref=f8e145]: Select any that apply and add details below. We will confirm suitability with you.
+          - generic [ref=f8e146]:
+            - generic [ref=f8e147] [cursor=pointer]:
+              - checkbox "Gluten free" [ref=f8e148]
+              - text: Gluten free
+            - generic [ref=f8e149] [cursor=pointer]:
+              - checkbox "Vegan" [ref=f8e150]
+              - text: Vegan
+            - generic [ref=f8e151] [cursor=pointer]:
+              - checkbox "Nuts" [ref=f8e152]
+              - text: Nuts
+            - generic [ref=f8e153] [cursor=pointer]:
+              - checkbox "Soya" [ref=f8e154]
+              - text: Soya
+            - generic [ref=f8e155] [cursor=pointer]:
+              - checkbox "Other" [ref=f8e156]
+              - text: Other
+        - generic [ref=f8e157]:
+          - text: Dietary details (optional)
+          - textbox "Dietary details (optional)" [ref=f8e158]:
+            - /placeholder: Tell us about any allergies or other requirements
+        - group "Collection or delivery *" [ref=f8e159]:
+          - generic [ref=f8e161]:
+            - generic [ref=f8e162] [cursor=pointer]:
+              - radio "Collection" [checked] [ref=f8e163]
+              - text: Collection
+            - generic [ref=f8e164] [cursor=pointer]:
+              - radio "Delivery" [ref=f8e165]
+              - text: Delivery
+        - generic [ref=f8e166]:
+          - text: Design details (optional)
+          - textbox "Design details (optional)" [ref=f8e167]:
+            - /placeholder: Colours, decorations, occasion, or anything you would like us to know
+        - generic [ref=f8e168]:
+          - text: Inspiration image (optional)
+          - button "Inspiration image (optional) Choose a JPG, PNG, WebP or AVIF image." [ref=f8e169]
+          - generic [ref=f8e170]: Choose a JPG, PNG, WebP or AVIF image.
+        - paragraph [ref=f8e171]:
+          - text: Online enquiries are coming soon. This form does not send or store your details or image. For now, email
+          - link "orders@akarabakery.co.uk" [ref=f8e172] [cursor=pointer]:
+            - /url: mailto:orders@akarabakery.co.uk
+          - text: .
+        - button "Preview enquiry" [ref=f8e173] [cursor=pointer]: Preview enquiry →
+    - region [ref=f8e174]:
+      - generic [ref=f8e175]:
+        - generic [ref=f8e176]:
+          - heading "Planning something special?" [level=2] [ref=f8e177]
+          - paragraph [ref=f8e178]: We'd love to create the perfect cake for your occasion.Get in touch to discuss your ideas.
+        - link "Enquire now" [ref=f8e179] [cursor=pointer]:
+          - /url: /contact
+          - text: Enquire now
+          - generic [aria-hidden] [ref=f8e180]: →
+  - contentinfo [ref=f8e181]:
+    - generic [ref=f8e182]:
+      - link "Akara Bakery home" [ref=f8e183] [cursor=pointer]:
+        - /url: /
+        - img "Akara Bakery" [ref=f8e184]
+      - navigation "Quick links" [ref=f8e185]:
+        - heading "Quick links" [level=2] [ref=f8e186]
+        - list [ref=f8e187]:
+          - listitem [ref=f8e188]:
+            - link "Shop" [disabled] [ref=f8e189]
+          - listitem [ref=f8e190]:
+            - link "About" [ref=f8e191] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=f8e192]:
+            - link "Contact" [ref=f8e193] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=f8e194]:
+            - link "FAQs" [disabled] [ref=f8e195]
+      - navigation "Information" [ref=f8e196]:
+        - heading "Info" [level=2] [ref=f8e197]
+        - list [ref=f8e198]:
+          - listitem [ref=f8e199]:
+            - link "Collection & Delivery" [disabled] [ref=f8e200]
+          - listitem [ref=f8e201]:
+            - link "Ingredients & Allergens" [disabled] [ref=f8e202]
+          - listitem [ref=f8e203]:
+            - link "Terms & Conditions" [disabled] [ref=f8e204]
+          - listitem [ref=f8e205]:
+            - link "Privacy Policy" [disabled] [ref=f8e206]
+      - generic [ref=f8e207]:
+        - heading "Follow us" [level=2] [ref=f8e208]
+        - generic [ref=f8e209]:
+          - link "Instagram (coming soon)" [disabled] [ref=f8e210]
+          - link "Facebook (coming soon)" [disabled] [ref=f8e215]
+          - link "TikTok (coming soon)" [disabled] [ref=f8e218]
+    - paragraph [ref=f8e221]: © 2026 Akara Bakery. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=f8e227] [cursor=pointer]

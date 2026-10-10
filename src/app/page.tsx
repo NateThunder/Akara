@@ -8,16 +8,7 @@ const favourites = [
   { name: "Celebration Cakes", image: "/Video/Banner Carosel/banner-2.webp", alt: "Pink celebration cake with piped icing, cherries and red ribbons" },
   { name: "Wedding Cakes", image: "/Video/Banner Carosel/banner-5.webp", alt: "Two-tier wedding cake decorated with flowers and gold leaf" },
   { name: "Cupcakes", image: "/Video/Cup Cakes/Cupcakes in box.png", alt: "Box of six assorted cupcakes topped with buttercream, berries, cherries and crumbs" },
-  { name: "Cheesecakes", image: "/Video/Cheesecakes/strawberries-cream.webp", alt: "Strawberries and cream cheesecake topped with piped cream and strawberry dust", href: "/shop/all?category=Cheesecakes" },
-];
-
-// Display-only product details until the shop catalogue is connected.
-const bestsellers = [
-  { name: "Cherry Celebration Cake", image: "/Video/Banner Carosel/banner-2.webp", alt: "Pink buttercream cake with cherries and red ribbons", price: "£45.00" },
-  { name: "Floral Celebration Cake", image: "/Video/Banner Carosel/banner-1.webp", alt: "Buttercream cakes decorated with pressed flowers", price: "£45.00" },
-  { name: "Assorted Cupcake Box", image: "/Video/Cup Cakes/Cupcakes in box.png", alt: "Six cupcakes with assorted buttercream and fruit toppings", price: "£18.00" },
-  { name: "Heart Celebration Cake", image: "/Video/Banner Carosel/banner-3.webp", alt: "White celebration cake decorated with small red hearts", price: "£45.00" },
-  { name: "Tropical Fruit Cake", image: "/Video/Banner Carosel/banner-4.webp", alt: "Buttercream tray cake decorated with tropical fruit", price: "£40.00" },
+  { name: "Custom Cakes", image: "/Video/Banner Carosel/banner-3.webp", alt: "White buttercream birthday cake decorated with small red hearts", href: "/custom-cakes" },
 ];
 
 export default function Home() {
@@ -76,21 +67,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bestsellers" aria-labelledby="bestsellers-heading">
-          <h2 id="bestsellers-heading">Bestsellers</h2>
-          <div className="bestsellers-grid">
-            {bestsellers.map((product) => (
-              <article className="bestseller" key={product.name}>
-                <img src={product.image} alt={product.alt} width={480} height={480} loading="lazy" />
-                <h3>{product.name}</h3>
-                <p className="bestseller-price">{product.price}</p>
-                <button type="button" disabled aria-label={`Add ${product.name} to cart (coming soon)`}>
-                  Add to cart
-                </button>
-              </article>
-            ))}
-          </div>
-        </section>
         <EnquiryBanner />
       </main>
       <HomeFooter />

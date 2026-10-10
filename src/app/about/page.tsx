@@ -38,7 +38,7 @@ export default function AboutPage() {
             <a className="story-link" href="#bakery-today">From a kitchen to Akara <span aria-hidden="true">&rarr;</span></a>
           </div>
           <figure className="story-photo story-founder-photo">
-            <img src="/Video/Lewa.webp" alt="Lewa decorating a celebration cake at Akara Bakery" width={1120} height={1404} loading="lazy" />
+            <img src="/Video/Lewa.webp" alt="Lewa decorating a celebration cake at Akara Bakery" width={1017} height={1344} loading="lazy" />
           </figure>
         </section>
 

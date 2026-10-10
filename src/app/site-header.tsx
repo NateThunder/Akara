@@ -1,6 +1,27 @@
+"use client";
+
+import { useLayoutEffect, useRef } from "react";
 import MainNavigation from "./main-navigation";
 
-export default function SiteHeader() { return (<>
+export default function SiteHeader() {
+  const header = useRef<HTMLElement>(null);
+
+  useLayoutEffect(() => {
+    const element = header.current;
+    if (!element) return;
+    const updateHeight = () => {
+      document.documentElement.style.setProperty("--site-header-height", `${element.getBoundingClientRect().height}px`);
+    };
+    updateHeight();
+    const observer = new ResizeObserver(updateHeight);
+    observer.observe(element);
+    return () => {
+      observer.disconnect();
+      document.documentElement.style.removeProperty("--site-header-height");
+    };
+  }, []);
+
+  return (<>
       <ul className="service-strip" aria-label="Bakery services">
         <li>
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -29,7 +50,7 @@ export default function SiteHeader() { return (<>
           <span className="service-label-mobile">Vegan &amp; GF</span>
         </li>
       </ul>
-      <header className="site-header">
+      <header ref={header} className="site-header">
         <a className="wordmark" href="/" aria-label="Akara Bakery home">
           <img
             className="site-logo"

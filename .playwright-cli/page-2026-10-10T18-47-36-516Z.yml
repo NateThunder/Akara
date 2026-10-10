@@ -1,0 +1,146 @@
+- generic [active] [ref=e1]:
+  - list "Bakery services" [ref=e2]:
+    - listitem [ref=e3]:
+      - generic [ref=e8]: Handmade in Glasgow
+    - listitem [ref=e9]:
+      - text: •
+      - generic [ref=e14]: Collection & local delivery
+    - listitem [ref=e15]:
+      - text: •
+      - generic [ref=e19]: Vegan & GF available
+  - banner [ref=e20]:
+    - link "Akara Bakery home" [ref=e21] [cursor=pointer]:
+      - /url: /
+      - img "Akara Bakery" [ref=e22]
+    - navigation "Main navigation" [ref=e23]:
+      - link "Shop" [ref=e24] [cursor=pointer]:
+        - /url: /shop/all
+      - link "How to Order" [ref=e25] [cursor=pointer]:
+        - /url: /bespoke-cakes
+      - link "Custom Cakes" [ref=e26] [cursor=pointer]:
+        - /url: /custom-cakes
+      - link "About" [ref=e27] [cursor=pointer]:
+        - /url: /about
+      - link "Contact" [ref=e28] [cursor=pointer]:
+        - /url: /contact
+    - generic [ref=e29]:
+      - button "Search (coming soon)" [disabled] [ref=e30]
+      - button "Account (coming soon)" [disabled] [ref=e34]
+      - button "Shopping bag (coming soon)" [disabled] [ref=e38]
+  - main [ref=e42]:
+    - region "Celebration cakes" [ref=e43]:
+      - generic [ref=e45]:
+        - heading [level=1] [ref=e46]:
+          - text: A littleslice of
+          - emphasis [ref=e47]: joy.
+        - paragraph [ref=e48]: Big days. Small wins. Just-because Tuesdays.There’s always a reason for cake.
+        - link "Find your happy cake" [ref=e50] [cursor=pointer]:
+          - /url: /shop/all
+          - text: Find your happy cake
+          - generic [aria-hidden] [ref=e51]: ↗
+        - paragraph [ref=e52]: Handmade in Glasgow
+    - list "Made with care" [ref=e54]:
+      - listitem [ref=e55]:
+        - text: Made from scratch
+        - generic [aria-hidden] [ref=e56]: ✳
+      - listitem [ref=e57]:
+        - text: A little extra love
+        - generic [aria-hidden] [ref=e58]: ✳
+      - listitem [ref=e59]:
+        - text: Never just a cake
+        - generic [aria-hidden] [ref=e60]: ✳
+      - listitem [ref=e61]:
+        - text: Always a good idea
+        - generic [aria-hidden] [ref=e62]: ✳
+    - region [ref=e63]:
+      - generic [ref=e64]:
+        - heading "Made from scratch. Made for you." [level=2] [ref=e65]: Made from scratch.Made for you.
+        - paragraph [ref=e66]: We believe the best cakes start with the best ingredients and a whole lot of care. Whether you have a clear idea in mind or need a little inspiration, we're here to create something unforgettable.
+        - link "About Akara Bakery" [ref=e67] [cursor=pointer]:
+          - /url: /about
+          - text: About Akara Bakery
+          - generic [aria-hidden] [ref=e68]: →
+      - img "A tray of handmade cake slices with layers of sponge and buttercream" [ref=e70]
+    - region [ref=e71]:
+      - generic [ref=e72]:
+        - heading "Shop our favourites" [level=2] [ref=e73]
+        - paragraph [ref=e74]: From show-stopping celebration cakes to sweet little treats.
+      - generic [ref=e75]:
+        - article [ref=e76]:
+          - img "Pink celebration cake with piped icing, cherries and red ribbons" [ref=e78]
+          - generic [ref=e79]:
+            - heading "Celebration Cakes" [level=3] [ref=e80]
+            - link "Shop now" [ref=e81] [cursor=pointer]:
+              - /url: /shop/all
+              - text: Shop now
+              - generic [aria-hidden] [ref=e82]: →
+        - article [ref=e83]:
+          - img "Two-tier wedding cake decorated with flowers and gold leaf" [ref=e85]
+          - generic [ref=e86]:
+            - heading "Wedding Cakes" [level=3] [ref=e87]
+            - link "Shop now" [ref=e88] [cursor=pointer]:
+              - /url: /shop/all
+              - text: Shop now
+              - generic [aria-hidden] [ref=e89]: →
+        - article [ref=e90]:
+          - img "Box of six assorted cupcakes topped with buttercream, berries, cherries and crumbs" [ref=e92]
+          - generic [ref=e93]:
+            - heading "Cupcakes" [level=3] [ref=e94]
+            - link "Shop now" [ref=e95] [cursor=pointer]:
+              - /url: /shop/all
+              - text: Shop now
+              - generic [aria-hidden] [ref=e96]: →
+        - article [ref=e97]:
+          - img "White buttercream birthday cake decorated with small red hearts" [ref=e99]
+          - generic [ref=e100]:
+            - heading "Custom Cakes" [level=3] [ref=e101]
+            - link "Shop now" [ref=e102] [cursor=pointer]:
+              - /url: /custom-cakes
+              - text: Shop now
+              - generic [aria-hidden] [ref=e103]: →
+    - region [ref=e104]:
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - heading "Planning something special?" [level=2] [ref=e107]
+          - paragraph [ref=e108]: We'd love to create the perfect cake for your occasion.Get in touch to discuss your ideas.
+        - link "Enquire now" [ref=e109] [cursor=pointer]:
+          - /url: /contact
+          - text: Enquire now
+          - generic [aria-hidden] [ref=e110]: →
+  - contentinfo [ref=e111]:
+    - generic [ref=e112]:
+      - link "Akara Bakery home" [ref=e113] [cursor=pointer]:
+        - /url: /
+        - img "Akara Bakery" [ref=e114]
+      - navigation "Quick links" [ref=e115]:
+        - heading "Quick links" [level=2] [ref=e116]
+        - list [ref=e117]:
+          - listitem [ref=e118]:
+            - link "Shop" [disabled] [ref=e119]
+          - listitem [ref=e120]:
+            - link "About" [ref=e121] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e122]:
+            - link "Contact" [ref=e123] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=e124]:
+            - link "FAQs" [disabled] [ref=e125]
+      - navigation "Information" [ref=e126]:
+        - heading "Info" [level=2] [ref=e127]
+        - list [ref=e128]:
+          - listitem [ref=e129]:
+            - link "Collection & Delivery" [disabled] [ref=e130]
+          - listitem [ref=e131]:
+            - link "Ingredients & Allergens" [disabled] [ref=e132]
+          - listitem [ref=e133]:
+            - link "Terms & Conditions" [disabled] [ref=e134]
+          - listitem [ref=e135]:
+            - link "Privacy Policy" [disabled] [ref=e136]
+      - generic [ref=e137]:
+        - heading "Follow us" [level=2] [ref=e138]
+        - generic [ref=e139]:
+          - link "Instagram (coming soon)" [disabled] [ref=e140]
+          - link "Facebook (coming soon)" [disabled] [ref=e145]
+          - link "TikTok (coming soon)" [disabled] [ref=e148]
+    - paragraph [ref=e151]: © 2026 Akara Bakery. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=e157] [cursor=pointer]
