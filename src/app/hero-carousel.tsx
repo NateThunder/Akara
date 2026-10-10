@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import JoyStrip from "./joy-strip";
 
 const slides = Array.from({ length: 6 }, (_, index) => `/Carosel3/carousel-${index + 1}.webp`);
 
@@ -42,18 +43,15 @@ export default function HeroCarousel() {
       </div>
       <div className="hero-copy-blur" aria-hidden="true" />
       <div className="hero-copy">
-        <p className="hero-eyebrow">Your neighbourhood bakery, Glasgow</p>
         <h1>A little<br />slice of <em>joy.</em></h1>
         <p className="hero-description">Big days. Small wins. Just-because Tuesdays.<br />There’s always a reason for cake.</p>
         <div className="hero-actions">
           <a className="hero-button hero-button-primary" href="/shop/all">Find your happy cake <span aria-hidden="true">↗</span></a>
         </div>
-        <p className="hero-handmade"><span aria-hidden="true">✳</span> Handmade with love in Dennistoun.</p>
+        <p className="hero-handmade">Handmade in Glasgow</p>
       </div>
     </section>
-    <ul className="hero-joy-strip" aria-label="Made with care">
-      {["Made from scratch", "A little extra love", "Never just a cake", "Always a good idea"].map((message) => <li key={message}>{message}<span aria-hidden="true">✳</span></li>)}
-    </ul>
+    <JoyStrip />
     </>
   );
 }

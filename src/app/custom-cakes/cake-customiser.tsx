@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, type CSSProperties, type FormEvent, type ReactNode } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type FormEvent, type ReactNode } from "react";
 import { cakeColours as colours } from "../cake-colours";
 
 // Sample prices only. Replace with the bakery's confirmed price list before ordering goes live.
@@ -33,14 +33,45 @@ function Icon({ name }: { name: string }) {
 }
 
 function Slice({ crumb, icing }: { crumb: string; icing: string }) {
-  return <svg className="custom-cake-slice" viewBox="0 0 120 96" aria-hidden="true">
+  const ref = useRef<SVGSVGElement>(null);
+  useEffect(() => {
+    const svg = ref.current;
+    const choice = svg?.closest(".custom-choice");
+    if (!svg || !choice) return;
+    const motion = matchMedia("(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)");
+    let hovered = false;
+    const enter = () => {
+      hovered = true;
+      if (motion.matches) svg.dataset.bobbing = "true";
+    };
+    const leave = () => { hovered = false; };
+    const settle = (event: AnimationEvent) => {
+      if (event.animationName === "custom-slice-bob" && !hovered) delete svg.dataset.bobbing;
+    };
+    const preferenceChanged = () => {
+      if (!motion.matches) delete svg.dataset.bobbing;
+    };
+    choice.addEventListener("pointerenter", enter);
+    choice.addEventListener("pointerleave", leave);
+    svg.addEventListener("animationiteration", settle);
+    motion.addEventListener("change", preferenceChanged);
+    return () => {
+      choice.removeEventListener("pointerenter", enter);
+      choice.removeEventListener("pointerleave", leave);
+      svg.removeEventListener("animationiteration", settle);
+      motion.removeEventListener("change", preferenceChanged);
+    };
+  }, []);
+  return <svg ref={ref} className="custom-cake-slice" viewBox="0 0 120 96" aria-hidden="true">
     <ellipse cx="61" cy="85" rx="44" ry="5" fill="#e8dfd0" />
+    <g className="custom-cake-slice-body">
     <path d="M23 30 78 18l19 17v44L42 89 23 72Z" fill={crumb} />
     <path d="m23 30 55-12 19 17-55 13Z" fill={icing} />
     <path d="m24 43 18 15 54-12v7L42 66 24 51Zm0 18 18 15 54-12v7L42 84 24 69Z" fill={icing} />
     <path d="m42 48 55-13v44L42 89Z" fill="#422a16" opacity=".09" />
     <path d="m32 28 8-2m7-2 8-2m7-1 8-2" stroke="#fffaf0" strokeWidth="5" strokeLinecap="round" />
     <path d="m49 53 2-1m15 1 2-1m13-9 2-1M49 72l2-1m25 4 2-1" stroke={icing} strokeWidth="2" opacity=".65" />
+    </g>
   </svg>;
 }
 
@@ -116,7 +147,7 @@ export default function CakeCustomiser() {
       </Step>
     </div>
     <section className="custom-summary" aria-labelledby="custom-summary-title">
-      <div className="custom-summary-cake"><img src="/Video/Banner Carosel/banner-5.webp" alt="Floral buttercream cake inspiration" width={160} height={160} /><div><h2 id="custom-summary-title">Your cake</h2><p>{flavour.name} · {size.inches}″ (serves {size.serves})</p><p>{colours[selection.colour].name} · {selection.writing}</p>{selection.message && <p>“{selection.message}”</p>}<p>{selection.extras.length ? selection.extras.join(" · ") : "No extras"}</p><p>{selection.delivery}{selection.date && ` · ${selection.date}`}{selection.time && ` · ${selection.time}`}</p><small>Photo for inspiration; your cake will be made to your choices.</small></div></div>
+      <div className="custom-summary-cake"><div><h2 id="custom-summary-title">Your cake</h2><p>{flavour.name} · {size.inches}″ (serves {size.serves})</p><p>{colours[selection.colour].name} · {selection.writing}</p>{selection.message && <p>“{selection.message}”</p>}<p>{selection.extras.length ? selection.extras.join(" · ") : "No extras"}</p><p>{selection.delivery}{selection.date && ` · ${selection.date}`}{selection.time && ` · ${selection.time}`}</p></div></div>
       <div className="custom-summary-action"><div className="custom-total" aria-live="polite" aria-atomic="true"><span>Sample total</span><strong>{money(total)}</strong></div><button type="submit">Save my cake <span aria-hidden="true">→</span></button></div>
       <p className="custom-pricing-note">Sample prices for planning only. Save your selection on this device; this does not place an order.</p>
       <p className="custom-save-status" role="status">{status}</p>
