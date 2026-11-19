@@ -6,10 +6,11 @@ import { usePathname, useSearchParams } from "next/navigation";
 // New links inherit URL matching and the shared selected style automatically.
 const navigation = [
   { label: "Shop", href: "/shop/all", matchPath: "/shop" },
-  { label: "How to Order", href: "/bespoke-cakes" },
+  { label: "Signature Flavours", href: "/#signature-flavours" },
   { label: "Custom Cakes", href: "/custom-cakes" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "Weddings", href: "/#weddings" },
+  { label: "Our Story", href: "/about" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 function NavigationLinks({ activeIndex = -1 }: { activeIndex?: number }) {
@@ -23,13 +24,20 @@ function NavigationLinks({ activeIndex = -1 }: { activeIndex?: number }) {
 function CurrentNavigation() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const [hash, setHash] = useState("");
+  useEffect(() => {
+    const update = () => setHash(window.location.hash);
+    update();
+    window.addEventListener("hashchange", update);
+    return () => window.removeEventListener("hashchange", update);
+  }, [pathname]);
   let activeIndex = -1;
   let bestScore = -1;
 
   navigation.forEach((item, index) => {
     const target = new URL(item.href, "https://www.akarabakery.co.uk");
     const path = (item.matchPath ?? target.pathname).replace(/\/$/, "") || "/";
-    const matchesPath = pathname === path || (path !== "/" && pathname.startsWith(`${path}/`));
+    const matchesPath = (!target.hash || target.hash === hash) && (pathname === path || (path !== "/" && pathname.startsWith(`${path}/`)));
     const matchesQuery = Array.from(target.searchParams).every(([key, value]) => searchParams.get(key) === value);
     // Prefer a specific category or child route over its parent section.
     const score = path.length + Array.from(target.searchParams).length * 1000;

@@ -1,6 +1,6 @@
 import { siteSettings } from "./site-settings";
 
-const quickLinks = ["Shop", "About", "Contact", "FAQs"];
+const quickLinks = [{ label: "Shop", href: "/shop/all" }, { label: "Our Story", href: "/about" }, { label: "Contact", href: "/contact" }, { label: "FAQs", href: "/#faqs" }];
 const information = ["Collection & Delivery", "Ingredients & Allergens", "Terms & Conditions", "Privacy Policy"];
 
 function BotanicalBranch({ className }: { className: string }) {
@@ -48,11 +48,11 @@ export default function HomeFooter() {
     <footer className="site-footer">
       <div className="footer-inner">
         <a className="footer-brand" href="/" aria-label="Akara Bakery home">
-          <img src="/Video/logo white.png" alt="Akara Bakery" width={160} height={120} loading="lazy" />
+          <img src="/Video/logo3.webp" alt="Akara Bakery" width={160} height={120} loading="lazy" />
         </a>
         <nav className="footer-links" aria-label="Quick links">
           <h2>Quick links</h2>
-          <ul>{quickLinks.map((label) => <li key={label}>{label === "Contact" || label === "About" ? <a href={`/${label.toLowerCase()}`}>{label}</a> : <a role="link" aria-disabled="true">{label}</a>}</li>)}</ul>
+          <ul>{quickLinks.map(({ label, href }) => <li key={href}><a href={href}>{label}</a></li>)}</ul>
         </nav>
         <nav className="footer-links" aria-label="Information">
           <h2>Info</h2>

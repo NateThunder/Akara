@@ -1,0 +1,159 @@
+- generic [active] [ref=e1]:
+  - text: • •
+  - banner [ref=e2]:
+    - link "Akara Bakery home" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "Akara Bakery" [ref=e4]
+    - navigation "Main navigation" [ref=e5]:
+      - link "Shop" [ref=e6] [cursor=pointer]:
+        - /url: /shop/all
+      - link "Signature Flavours" [ref=e7] [cursor=pointer]:
+        - /url: /#signature-flavours
+      - link "Custom Cakes" [ref=e8] [cursor=pointer]:
+        - /url: /custom-cakes
+      - link "Weddings" [ref=e9] [cursor=pointer]:
+        - /url: /#weddings
+      - link "Our Story" [ref=e10] [cursor=pointer]:
+        - /url: /about
+      - link "Contact Us" [ref=e11] [cursor=pointer]:
+        - /url: /contact
+  - main [ref=e12]:
+    - region "Our cake philosophy is joy." [ref=e13]:
+      - generic [ref=e14]:
+        - heading [level=1] [ref=e15]:
+          - text: Our cakephilosophyis
+          - emphasis [ref=e16]: joy.
+        - paragraph [ref=e17]: Extraordinary cakes. Unexpected flavours.Made with a little imagination.
+        - link "Explore our cakes" [ref=e18] [cursor=pointer]:
+          - /url: /shop/all
+      - img "Nine handmade celebration cakes with chocolate, berry and vanilla buttercream, fruit and piped decorations" [ref=e20]
+    - region "Welcome to Akara" [ref=e21]:
+      - heading [level=2] [ref=e22]:
+        - text: Because life’s sweetest moments deserve extraordinary flavour, effortless beauty
+        - emphasis [ref=e23]: "& overflowing joy."
+      - paragraph [ref=e24]: We are based in the heart of Dennistoun in Glasgow. Here, you can order your celebration cakes, enquire about wedding cakes or come by the bakery for a slice of our cake specials and a cup of coffee.
+    - region "It’s what’s inside that counts." [ref=e25]:
+      - generic [ref=e26]:
+        - paragraph [ref=e27]: Signature flavours
+        - heading [level=2] [ref=e28]:
+          - text: It’s what’s
+          - emphasis [ref=e29]: inside
+          - text: that counts.
+        - paragraph [ref=e30]: Beautiful on the outside. A little extraordinary within.
+      - link "Explore our signature cake flavours" [ref=e31] [cursor=pointer]:
+        - /url: /shop/all?category=Cakes
+        - img "An assortment of cake slices showing colourful sponge, fruit and buttercream layers" [ref=e32]
+        - generic [ref=e33]:
+          - text: Discover the flavours
+          - generic [aria-hidden] [ref=e34]: ↗
+      - navigation "Explore signature flavours" [ref=e35]:
+        - link "Lemon, lavender & blueberry" [ref=e36] [cursor=pointer]:
+          - /url: /shop/lemonlavenderblueberry
+          - text: Lemon, lavender & blueberry
+          - generic [aria-hidden] [ref=e37]: "?"
+        - link "Earl Grey & mixed berry" [ref=e38] [cursor=pointer]:
+          - /url: /shop/earlgreyberry
+          - text: Earl Grey & mixed berry
+          - generic [aria-hidden] [ref=e39]: "?"
+        - link "Coconut, cardamom & passionfruit" [ref=e40] [cursor=pointer]:
+          - /url: /shop/passionfruitcoconutcake
+          - text: Coconut, cardamom & passionfruit
+          - generic [aria-hidden] [ref=e41]: "?"
+      - link "Find your favourite flavour" [ref=e42] [cursor=pointer]:
+        - /url: /shop/all?category=Cakes
+        - text: Find your favourite flavour
+        - generic [aria-hidden] [ref=e43]: →
+    - region "Joy comes in all sizes." [ref=e44]:
+      - generic [ref=e45]:
+        - paragraph [ref=e46]: Little reasons to celebrate
+        - heading [level=2] [ref=e47]:
+          - text: Joy comes in
+          - emphasis [ref=e48]: all sizes.
+        - paragraph [ref=e49]: A box to share. A little something just for you.
+      - generic [ref=e50]:
+        - link [ref=e51] [cursor=pointer]:
+          - /url: /shop/all?category=Cupcakes
+          - img "Assorted cupcakes topped with buttercream, berries and cherries" [ref=e53]
+          - heading "Cupcakes" [level=3] [ref=e54]
+          - generic [ref=e55]:
+            - text: Shop little treats
+            - generic [aria-hidden] [ref=e56]: →
+        - link [ref=e57] [cursor=pointer]:
+          - /url: /shop/all?category=Cheesecakes
+          - img "Strawberries and cream cheesecake topped with fresh strawberries" [ref=e59]
+          - heading "Cheesecakes" [level=3] [ref=e60]
+          - generic [ref=e61]:
+            - text: Find your slice
+            - generic [aria-hidden] [ref=e62]: →
+      - paragraph [ref=e63]:
+        - text: A little joy for more of us. Explore our
+        - link "vegan" [ref=e64] [cursor=pointer]:
+          - /url: /shop/all?category=Vegan%20Cakes
+        - text: and
+        - link "gluten-free cakes" [ref=e65] [cursor=pointer]:
+          - /url: /shop/all?category=Gluten%20Free%20Cakes
+        - text: .
+    - region "Made for your kind of love." [ref=e66]:
+      - img "Two-tier wedding cake with green buttercream, fresh flowers and gold leaf" [ref=e68]
+      - generic [ref=e69]:
+        - paragraph [ref=e70]: For your sweetest day
+        - heading [level=2] [ref=e71]:
+          - text: Made for your
+          - emphasis [ref=e72]: kind of love.
+        - paragraph [ref=e73]: Extraordinary flavour, thoughtful details and a cake that feels like you. Let’s make something beautiful for your wedding day.
+        - link "Let’s talk wedding cakes" [ref=e74] [cursor=pointer]:
+          - /url: /contact
+          - text: Let’s talk wedding cakes
+          - generic [aria-hidden] [ref=e75]: ↗
+        - link "Another occasion? Explore custom cakes" [ref=e76] [cursor=pointer]:
+          - /url: /custom-cakes
+          - text: Another occasion? Explore custom cakes
+          - generic [aria-hidden] [ref=e77]: →
+    - region "Good things to know." [ref=e78]:
+      - paragraph [ref=e79]: A little help
+      - heading "Good things to know." [level=2] [ref=e80]
+      - group [ref=e81]:
+        - generic "Where can I find you?" [ref=e82] [cursor=pointer]
+      - group [ref=e83]:
+        - generic "How do I order a cake?" [ref=e84] [cursor=pointer]
+      - group [ref=e85]:
+        - generic "Do you offer vegan and gluten-free cakes?" [ref=e86] [cursor=pointer]
+  - contentinfo [ref=e87]:
+    - generic [ref=e88]:
+      - link "Akara Bakery home" [ref=e89] [cursor=pointer]:
+        - /url: /
+        - img "Akara Bakery" [ref=e90]
+      - navigation "Quick links" [ref=e91]:
+        - heading "Quick links" [level=2] [ref=e92]
+        - list [ref=e93]:
+          - listitem [ref=e94]:
+            - link "Shop" [ref=e95] [cursor=pointer]:
+              - /url: /shop/all
+          - listitem [ref=e96]:
+            - link "Our Story" [ref=e97] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e98]:
+            - link "Contact" [ref=e99] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=e100]:
+            - link "FAQs" [ref=e101] [cursor=pointer]:
+              - /url: /#faqs
+      - navigation "Information" [ref=e102]:
+        - heading "Info" [level=2] [ref=e103]
+        - list [ref=e104]:
+          - listitem [ref=e105]:
+            - link "Collection & Delivery" [disabled] [ref=e106]
+          - listitem [ref=e107]:
+            - link "Ingredients & Allergens" [disabled] [ref=e108]
+          - listitem [ref=e109]:
+            - link "Terms & Conditions" [disabled] [ref=e110]
+          - listitem [ref=e111]:
+            - link "Privacy Policy" [disabled] [ref=e112]
+      - generic [ref=e113]:
+        - heading "Follow us" [level=2] [ref=e114]
+        - generic [ref=e115]:
+          - link "Instagram (coming soon)" [disabled] [ref=e116]
+          - link "Facebook (coming soon)" [disabled] [ref=e121]
+          - link "TikTok (coming soon)" [disabled] [ref=e124]
+    - paragraph [ref=e127]: © 2026 Akara Bakery. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=e133] [cursor=pointer]

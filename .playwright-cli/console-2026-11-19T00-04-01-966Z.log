@@ -1,0 +1,5 @@
+[     856ms] [INFO] k-web-pixel-version 4 @ https://bernicebakery.com/web-pixels/strict/app/web-pixel-1905262789@3fe25e975c30cd2a9af38a04798704c0.js:1
+[    1004ms] [WARNING] Klaviyo tracking is disabled. To enable, set the cookie "__kla_off" to false. {is_robot: true, __kla_off: } @ https://static-tracking.klaviyo.com/onsite/js/fender_analytics.56ba7dd992120.js?cb=2:1
+[    1035ms] [ERROR] Framing 'https://shop.app/' violates the following Content Security Policy directive: "frame-ancestors 'self' https://shop.app https://admin.shopify.com". The request has been blocked.
+ @ :1
+[    1039ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ chrome-error://chromewebdata/:1
