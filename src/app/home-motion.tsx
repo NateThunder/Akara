@@ -3,6 +3,7 @@
 import { useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
 import Lenis from "lenis";
 
 /** One scroll clock for the homepage. All animation styles revert on cleanup. */
@@ -14,7 +15,7 @@ export default function HomeMotion() {
     const image = photo?.querySelector("img");
     if (!root || !hero || !photo || !image) return;
 
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger, SplitText);
     const media = gsap.matchMedia();
     let disposed = false;
     media.add({
@@ -53,29 +54,40 @@ export default function HomeMotion() {
         defaults: { ease: "none" },
         scrollTrigger: {
           id: "home-hero",
-          trigger: desktop ? hero : photo,
-          start: desktop ? "top top" : "top bottom",
+          trigger: hero,
+          start: "top top",
           end: "bottom top",
           scrub: true,
           invalidateOnRefresh: true,
         },
       });
-      heroTimeline.fromTo(image, { scale: 1 }, { scale: desktop ? 1.2 : 1.06 }, 0);
-      if (desktop) {
-        heroTimeline.fromTo(photo, { y: 0 }, { y: () => hero.offsetHeight * 0.34 }, 0);
-        heroTimeline.fromTo(root.querySelector(".editorial-hero-copy"), { y: 0 }, {
-          y: () => -hero.offsetHeight * 0.1,
-        }, 0);
-      }
+      heroTimeline.fromTo(image, { scale: 1 }, { scale: desktop ? 1.2 : 1.14 }, 0);
+      heroTimeline.fromTo(photo, { y: 0 }, {
+        y: () => hero.offsetHeight * (desktop ? 0.34 : 0.2),
+      }, 0);
+      heroTimeline.fromTo(root.querySelector(".editorial-hero-copy"), { y: 0 }, {
+        y: () => -hero.offsetHeight * (desktop ? 0.1 : 0.06),
+      }, 0);
 
       const intro = root.querySelector<HTMLElement>(".editorial-intro");
-      if (intro) {
-        gsap.fromTo(intro, { y: desktop ? 28 : 14, opacity: 0.7 }, {
-          y: 0, opacity: 1, ease: "none",
-          scrollTrigger: {
-            id: "home-intro", trigger: intro, start: "top bottom", end: "top 65%",
-            scrub: true, invalidateOnRefresh: true,
-          },
+      const heading = intro?.querySelector("h2");
+      let headingSplit: SplitText | undefined;
+      if (intro && heading) {
+        headingSplit = SplitText.create(heading, {
+          type: "lines", mask: "lines", autoSplit: true,
+          linesClass: "intro-reveal-line",
+          onSplit: (split) => gsap.from(split.lines, {
+            yPercent: 101, rotation: 12, transformOrigin: "left center",
+            duration: 1.2, delay: 0.15, stagger: { amount: 0.3 }, ease: "expo.out",
+            scrollTrigger: {
+              id: "home-intro-heading", trigger: intro, start: "top 85%",
+              once: true,
+            },
+          }),
+        });
+        gsap.from(intro.querySelector("p"), {
+          y: 20, opacity: 0, duration: 0.9, delay: 0.3, ease: "power2.out",
+          scrollTrigger: { id: "home-intro-copy", trigger: intro, start: "top 85%", once: true },
         });
       }
       const slices = root.querySelector<HTMLElement>(".editorial-slice-image");
@@ -90,6 +102,7 @@ export default function HomeMotion() {
       }
       // GSAP's matchMedia context reverts all timelines, triggers and inline transforms.
       return () => {
+        headingSplit?.revert();
         if (syncAnchor) window.removeEventListener("hashchange", syncAnchor);
         if (tick) gsap.ticker.remove(tick);
         lenis?.off("scroll", ScrollTrigger.update);
