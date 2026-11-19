@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from "react";
 import MainNavigation from "./main-navigation";
 
-export default function SiteHeader() {
+export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
   const header = useRef<HTMLElement>(null);
 
   useLayoutEffect(() => {
@@ -22,7 +22,7 @@ export default function SiteHeader() {
   }, []);
 
   return (<>
-      <ul className="service-strip" aria-label="Bakery services">
+      <ul className={`service-strip${overlay ? " service-strip-hidden" : ""}`} aria-label="Bakery services">
         <li>
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M18 9c0 4.5-6 9-6 9S6 13.5 6 9a6 6 0 1 1 12 0Z" />
@@ -50,11 +50,11 @@ export default function SiteHeader() {
           <span className="service-label-mobile">Vegan &amp; GF</span>
         </li>
       </ul>
-      <header ref={header} className="site-header">
+      <header ref={header} className={`site-header${overlay ? " site-header-overlay" : ""}`}>
         <a className="wordmark" href="/" aria-label="Akara Bakery home">
           <img
             className="site-logo"
-            src="/Video/logo white.png"
+            src="/Video/logo3.webp"
             alt="Akara Bakery"
           />
         </a>

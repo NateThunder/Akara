@@ -1,15 +1,32 @@
 # Design rules
 
-- Use `#f8f7f4` as the global site background colour. Define it once as `--site-background` in `src/app/globals.css` and use `var(--site-background)` for shared page backgrounds and their paper-texture overlays.
-- Use `#004B4B` for all teal on the site. Define it once as `--brand-teal` in `src/app/globals.css` and use `var(--brand-teal)` for teal text, backgrounds, borders, icons, logo tints, and focus indicators. Do not introduce other teal shades.
+- Use `#fffaeb` as the global site background colour. Define it once as `--site-background` in `src/app/globals.css` and use `var(--site-background)` for shared page backgrounds and their paper-texture overlays.
+- Use `#178486` for all teal on the site. Define it once as `--brand-teal` in `src/app/globals.css` and use `var(--brand-teal)` for teal text, backgrounds, borders, icons, logo tints, and focus indicators. Do not introduce other teal shades.
+- Match the PDF's sampled cream background `#fffaeb` across the shared site surfaces. Keep the composition airy with generous whitespace; use `var(--site-background)` rather than duplicating the colour value.
 - Keep shared visual styles in `src/app/globals.css`, rather than individual page files.
 - Compress raster images before adding or updating them on the site, and convert them to WebP only if they are not already in WebP format. Avoid unnecessary re-encoding of existing WebP images. Resize images to appropriate display dimensions, preserve visual quality and transparency where needed, and update image references to use the optimised `.webp` files. Keep vector assets such as SVGs in their original format.
 
+## Client brief and precedence
+
+- The owner?s homepage hero reference supersedes the earlier split hero: use full-width photography with an overlaid masthead, cream left-aligned headline and supporting copy, a teal logo block, and a transparent outlined shop button on desktop. Keep the mobile hero stacked and readable. Apply this treatment only to the top of the homepage.
+
+- `public/Website ideas.pdf` is the client-approved design brief and takes precedence over older visual rules where they conflict. The owner has authorised desktop design changes needed to follow this brief; desktop preservation applies to unrelated work.
+- Use the PDF's teal `#178486`, Instrument Serif and DM Sans. Use the PDF's sampled cream `#fffaeb` as the global background, as explicitly requested by the owner. Keep the composition airy.
+- Prioritise signature flavours, simple good flavours and elegant flavour-led designs over highly custom cakes.
+- Homepage order: hero with ?Our cake philosophy is joy?; a short supporting statement and Dennistoun introduction; signature flavours with ?It?s what?s inside that counts?; a quieter cupcake and cheesecake shopping section; a wedding feature or three-category row for weddings, cupcakes and custom cakes; footer.
+- Navigation order: Shop, Signature Flavours, Custom Cakes, Weddings, About/Our Story, Contact Us. Determine working destinations during planning; do not create placeholder links.
+- Use Bernice Bakery only as a motion reference. Keep homepage scroll effects in one GSAP/ScrollTrigger system, with restrained Lenis wheel smoothing on fine-pointer desktop devices. Hero zoom, desktop parallax, the introduction transition and selected image scaling must follow continuous scroll progress rather than timed entrance animations. Preserve native touch scrolling, keyboard and anchor behaviour, square corners and the established layout. Disable smoothing and scroll effects for reduced motion. Clean up tickers, listeners and animation contexts on navigation. Flavour labels and arrows may appear on cake-slice hover, with equivalent keyboard and touch access. Keep interactions restrained.
+- The PDF's page-three mockup is a content-priority reference only, explicitly not a visual design reference. Avoid its crowded layout and overbearing use of colour.
+- Remove ?How to order? as a standalone page/navigation destination; provide ordering guidance through footer FAQs. A dedicated cafe page remains undecided; a small vegan/GF mention is optional.
+- The wedding feature versus three-category row, final imagery and a possible alternative button colour remain design decisions, not fixed requirements.
+
 ## Visual direction
 
+- Homepage introduction exception: follow the owner's blurb-format reference with a heavy uppercase DM Sans 900 statement on the left and smaller teal DM Sans supporting copy on the right. Keep existing Akara wording; stack the columns on phones. Other headings retain Instrument Serif.
+
 - Aim for warm editorial luxury: a refined, inviting artisan bakery with softly romantic details.
-- Use cream, ivory, and oatmeal surfaces, dark neutral text, and restrained muted gold accents. Keep the existing brand teal `#004B4B` exactly as specified above, including when interpreting reference images.
-- Use Fraunces at weight 900 for headings, paired with clean sans-serif body text. Use small, widely spaced uppercase text for navigation, labels, and calls to action; reserve handwritten lettering for branding.
+- Use cream, ivory, and oatmeal surfaces, dark neutral text, and restrained muted gold accents. Use the client-approved brand teal `#178486` exactly as specified above, including when interpreting reference images.
+- Use Instrument Serif in regular and italic styles for headings, paired with DM Sans for body text, including regular and bold weights. Use small, widely spaced uppercase text for navigation, labels, and calls to action; reserve handwritten lettering for branding.
 - Use generous whitespace, orderly grids, and balanced section spacing. Center collection headings; left-align hero and story copy.
 - Do not add decorative underlines or short accent rules beneath headings, even when a photo or design reference includes them. Omit them when translating references into the site. This does not prohibit functional link underlines, active navigation indicators, or focus indicators.
 - Prefer softly lit cake photography with warm neutral backgrounds, linen, ceramics, and flowers. Keep image crops and lighting consistent across each collection.
@@ -23,6 +40,8 @@
 - Use a full-width brand teal enquiry banner with light text, restrained botanical decoration, and a muted gold rectangular call-to-action button.
 - Style buttons as compact square-cornered rectangles with uppercase, letter-spaced labels. Use solid brand teal for primary actions and transparent or cream surfaces with thin borders for secondary actions.
 - Give every teal-filled call-to-action button the shared `rough texture.webp` background with a translucent `var(--brand-teal)` overlay, matching the home hero button. On hover-capable devices, fade it to 80% opacity like the home hero button while keeping its light text; disable the transition for reduced motion. Keep this treatment in `src/app/globals.css` and leave outlined and muted gold buttons distinct.
+
+- Signature flavours on the homepage: use an adjoining cream copy panel and tightly cropped cake-slice photograph on desktop, with the phrase "It's what's inside that counts". Reveal linked flavour names and restrained arrows on photograph hover or keyboard focus. Keep these links visible below the photograph on touch devices and narrow screens. Use verified catalogue flavour names; do not claim that unidentified individual slices match specific flavours.
 
 ## Cards
 

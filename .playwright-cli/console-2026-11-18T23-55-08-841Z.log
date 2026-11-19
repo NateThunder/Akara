@@ -1,0 +1,2 @@
+[     965ms] [INFO] k-web-pixel-version 4 @ https://bernicebakery.com/web-pixels/strict/app/web-pixel-1905262789@3fe25e975c30cd2a9af38a04798704c0.js:1
+[    1046ms] [WARNING] Klaviyo tracking is disabled. To enable, set the cookie "__kla_off" to false. {is_robot: true, __kla_off: } @ https://static-tracking.klaviyo.com/onsite/js/fender_analytics.56ba7dd992120.js?cb=2:1

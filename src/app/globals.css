@@ -10,12 +10,12 @@
   font-display: swap;
 }
 
-:root { --font-display: "Archia", Arial, sans-serif; --hero-gold: #e9c34b; }
+:root { --font-display: var(--font-heading), Georgia, serif; --support-yellow: var(--site-background); --hero-gold: var(--support-yellow); }
 
 /* Keep the heading typeface consistent over component font shorthands. */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading), Georgia, serif !important;
-  font-weight: 900 !important;
+  font-weight: 400 !important;
 }
 
 /* Bespoke enquiry below the cake builder. */
@@ -152,13 +152,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 :root {
-  --site-background: #f8f7f4;
+  --site-background: #fffaeb;
   --site-texture: url("/film-grain.webp");
   --site-grain-wash: color-mix(in srgb, var(--site-background) 86%, transparent);
   --site-grain-background: linear-gradient(var(--site-grain-wash), var(--site-grain-wash)), var(--site-texture);
   --greaseproof-texture: url("/Video/textures/greeseproof paper.webp?v=2");
   --rough-strip-texture: url("/Video/textures/rough texture.webp");
-  --brand-teal: #004B4B;
+  --brand-teal: #178486;
 }
 
 .menu-toggle { display: none; }
@@ -242,10 +242,10 @@ body {
 
 .site-logo {
   display: block;
-  width: 145px;
-  height: 90px;
+  width: 188.5px;
+  height: 117px;
   object-fit: contain;
-  filter: url("#brand-teal-tint");
+  filter: none;
 }
 
 .main-nav {
@@ -431,8 +431,8 @@ body {
 
 @media (max-width: 480px) {
   .site-logo {
-    width: 96px;
-    height: 72px;
+    width: 124.8px;
+    height: 93.6px;
   }
 
   .header-actions {
@@ -853,8 +853,8 @@ body {
 .footer-brand { align-self: center; justify-self: start; }
 .footer-brand img {
   display: block;
-  width: 160px;
-  height: 120px;
+  width: 208px;
+  height: 156px;
   object-fit: contain;
   filter: none;
 }
@@ -879,7 +879,7 @@ body {
   .enquiry-botanical-right { right: -36px; opacity: .2; }
   .footer-inner { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 24px; }
   .footer-brand { grid-column: 1 / -1; }
-  .footer-brand img { width: 132px; height: 96px; }
+  .footer-brand img { width: 171.6px; height: 124.8px; }
   .footer-social { grid-column: 1 / -1; }
   .footer-social-icons a { width: 44px; height: 44px; }
   .footer-links li { line-height: 2.2; }
@@ -1266,7 +1266,7 @@ a:focus-visible { outline: 2px solid var(--brand-teal); outline-offset: 4px; }
 }
 @media (max-width: 1023px) {
   .site-header { min-height: 96px; padding: 12px 24px; gap: 0 24px; }
-  .site-logo { width: 112px; height: 72px; }
+  .site-logo { width: 145.6px; height: 93.6px; }
   .header-actions { display: none; } /* These three actions are disabled placeholders. */
   .menu-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 44px; margin-left: auto; padding: 10px 0 10px 12px; border: 0; background: transparent; color: var(--brand-teal); font: inherit; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; cursor: pointer; }
   .menu-toggle svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.5; flex-shrink: 0; }
@@ -1308,7 +1308,7 @@ a:focus-visible { outline: 2px solid var(--brand-teal); outline-offset: 4px; }
   .enquiry-inner { margin-inline: 0; }
   .footer-inner { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
   .footer-brand, .footer-social { grid-column: 1 / -1; }
-  .footer-brand img { width: 132px; height: 96px; }
+  .footer-brand img { width: 171.6px; height: 124.8px; }
   .footer-links { min-width: 0; }
   .footer-links li { font-size: 14px; overflow-wrap: anywhere; }
   .footer-links a { display: inline-flex; align-items: center; min-height: 44px; }
@@ -1515,4 +1515,132 @@ a:focus-visible { outline: 2px solid var(--brand-teal); outline-offset: 4px; }
 }
 @media (max-width: 1023px) {
   :root { --site-header-height: 96px; }
+}
+
+/* Client brief: quiet, flavour-led editorial homepage. */
+body { font-family: var(--font-navigation), Arial, sans-serif; }
+.editorial-home { color: #303632; }
+.editorial-home :is(h1,h2,h3) { color: var(--brand-teal); letter-spacing: -.035em; }
+.editorial-home p { font-size: 16px; line-height: 1.8; }
+.editorial-home .editorial-label { margin: 0 0 20px; font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+.editorial-home h2 { margin: 0 0 24px; font-size: clamp(40px, 5vw, 66px); line-height: 1.08; }
+.editorial-home img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.editorial-home :is(section, a) { scroll-margin-top: 24px; }
+.editorial-hero { display: grid; position: relative; background: var(--site-background); }
+.editorial-hero-copy { padding: 40px 24px; }
+.editorial-hero h1 { margin: 0; font-size: clamp(52px, 8vw, 104px); line-height: .98; }
+.editorial-hero-copy > p:not(.editorial-label) { margin: 24px 0; }
+.editorial-hero .hero-button, .editorial-weddings .hero-button { display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 48px; max-width: 100%; padding: 16px 22px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; }
+.editorial-hero-photo { min-width: 0; aspect-ratio: 4/3; overflow: hidden; }
+.editorial-hero-photo img { object-position: 76% center; }
+.editorial-intro { display: grid; gap: 24px; width: min(100% - 48px, 1200px); margin: auto; padding-block: 64px; }
+.editorial-home .editorial-intro h2 { max-width: 27ch; margin: 0; font-family: var(--font-navigation), Arial, sans-serif !important; font-size: clamp(26px, 3vw, 40px); font-weight: 900 !important; line-height: 1.08; letter-spacing: -.025em; text-transform: uppercase; }
+.editorial-intro h2 em { font-style: normal; }
+.editorial-intro > p { max-width: 42ch; min-width: 0; margin: 0; color: var(--brand-teal); font-size: 16px; line-height: 1.5; }
+.editorial-signatures { display: grid; width: min(100% - 48px, 1200px); margin: auto; gap: 32px; padding-block: 32px 64px; text-align: left; }
+.editorial-signatures header { min-width: 0; align-self: center; }
+.editorial-signatures h2 { max-width: 12ch; }
+.editorial-signatures header > p:not(.editorial-label) { max-width: 30ch; }
+.editorial-flavour-feature { position: relative; min-width: 0; }
+
+.editorial-slice-image { position: relative; display: block; width: 100%; aspect-ratio: 4/3; overflow: hidden; }
+.editorial-slice-image img { object-position: center; transition: transform .6s ease; }
+.editorial-image-link { display: flex; justify-content: space-between; gap: 24px; position: absolute; bottom: 20px; right: 20px; left: 20px; padding: 16px 20px; background: var(--site-background); color: var(--brand-teal); font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+.editorial-text-link { display: inline-flex; align-items: center; gap: 18px; min-height: 44px; padding-block: 12px; color: var(--brand-teal); font-size: 11px; font-weight: 600; line-height: 1.6; letter-spacing: .1em; text-transform: uppercase; text-decoration: none; }
+.editorial-signatures > .editorial-text-link { margin-top: 20px; }
+.editorial-treats { padding: 64px 24px; background: var(--support-yellow); text-align: center; }
+.editorial-treats header > p:last-child { margin: 0 0 40px; }
+.editorial-treat-grid { display: grid; gap: 40px; max-width: 1020px; margin: auto; }
+.editorial-treat { min-width: 0; color: inherit; text-decoration: none; }
+.editorial-treat > div { aspect-ratio: 1; overflow: hidden; }
+.editorial-treat img { transition: transform .6s; }
+.editorial-treat h3 { margin: 20px 0 0; font-size: 38px; }
+.editorial-dietary { max-width: 50ch; margin: 40px auto 0; }
+.editorial-dietary a, .editorial-faq a { color: var(--brand-teal); text-underline-offset: 4px; }
+.editorial-weddings { display: grid; max-width: 1320px; margin: auto; padding: 64px 24px; }
+.editorial-wedding-photo { aspect-ratio: 4/5; min-width: 0; overflow: hidden; }
+.editorial-wedding-copy { padding: 40px 0 0; align-self: center; }
+.editorial-wedding-copy > p:not(.editorial-label) { max-width: 39ch; margin-bottom: 28px; }
+.editorial-wedding-copy > .editorial-text-link { display: flex; margin-top: 16px; max-width: 40ch; }
+.editorial-faq { width: min(100% - 48px, 900px); margin: 0 auto; padding: 24px 0 80px; }
+.editorial-faq h2 { font-size: clamp(38px, 4vw, 52px); }
+.editorial-faq details { border-top: 1px solid #d9d8cf; padding: 8px 0; }
+.editorial-faq details:last-child { border-bottom: 1px solid #d9d8cf; }
+.editorial-faq summary { padding: 16px 0; min-height: 48px; cursor: pointer; font-size: 16px; }
+.editorial-faq details p { max-width: 65ch; margin: 0 0 16px; }
+.editorial-faq summary:focus-visible { outline: 2px solid var(--brand-teal); outline-offset: 4px; }
+@media (min-width: 700px) {
+  .editorial-treat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; }
+  .editorial-intro { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); align-items: start; gap: 48px; padding-block: 64px; }
+  .editorial-signatures { padding-block: 40px 80px; }
+  .editorial-slice-image { aspect-ratio: 16/10; }
+  .editorial-weddings { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; padding-block: 80px; }
+  .editorial-wedding-copy { padding: 0; }
+}
+@media (min-width: 1024px) {
+  .site-header { grid-template-columns: auto minmax(0, 1fr); gap: 32px; padding-inline: 4%; }
+  .site-header .header-actions { display: none; }
+  .site-header .main-nav { justify-content: flex-end; gap: clamp(14px, 2vw, 32px); margin: 0; }
+  .site-header .main-nav a { font-size: 11px; letter-spacing: .1em; }
+  .editorial-hero { grid-template-columns: minmax(0, 43fr) minmax(0, 57fr); min-height: 570px; }
+  .editorial-hero-copy { z-index: 1; align-self: center; padding: 56px 0 64px clamp(48px, 6.7vw, 100px); }
+  .editorial-hero h1 { font-size: clamp(70px, 7.2vw, 110px); }
+  .editorial-hero-photo { aspect-ratio: auto; }
+  .editorial-hero-photo img { object-position: 82% center; }
+  .editorial-intro { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 100px; align-items: start; padding-block: 64px; }
+  .editorial-treats { padding-block: 80px; }
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .editorial-treat:hover img { transform: scale(1.035); }
+  .editorial-image-link { opacity: 0; transform: translateY(8px); transition: opacity .3s, transform .3s; }
+  .editorial-slice-image:hover .editorial-image-link, .editorial-slice-image:focus-visible .editorial-image-link { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .editorial-home *, .editorial-home *::after { animation: none !important; transition: none !important; }
+}
+.editorial-flavour-links { display: grid; margin: 0; gap: 0; }
+.editorial-flavour-links a { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 52px; padding: 14px 0; border-bottom: 1px solid #d9d8cf; color: var(--brand-teal); font-size: 14px; line-height: 1.5; text-align: left; text-decoration: none; }
+.editorial-flavour-links a span { flex-shrink: 0; font-size: 20px; transition: transform .25s; }
+@media (min-width: 1024px) {
+  .editorial-signatures { grid-template-columns: minmax(0, 1fr) minmax(0, 1.8fr); gap: 48px; }
+  .editorial-signatures h2 { font-size: clamp(44px, 4.6vw, 66px); }
+  .editorial-flavour-links { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 16px; }
+  .editorial-flavour-links a { font-size: 13px; }
+}
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+  .editorial-flavour-links { position: absolute; right: 20px; bottom: 20px; left: 20px; padding: 8px 16px; background: var(--site-background); opacity: 0; translate: 0 8px; transition: opacity .3s ease, translate .3s ease; }
+  .editorial-flavour-links a { border: 0; }
+  .editorial-flavour-feature:hover .editorial-flavour-links, .editorial-flavour-feature:focus-within .editorial-flavour-links { opacity: 1; translate: 0 0; }
+  .editorial-flavour-links a:hover span { transform: translate(2px, -2px); }
+}
+@media (prefers-reduced-motion: reduce) { .editorial-flavour-links, .editorial-flavour-links a span { transition: none; } }
+
+/* Reference-led homepage top: photography beneath the masthead and cream copy. */
+.service-strip-hidden { display: none; }
+.site-header-overlay .wordmark { padding: 0; background: transparent; }
+.site-header-overlay .site-logo { filter: none; }
+.editorial-hero .editorial-hero-outline { border: 1px solid currentColor; background: transparent; color: inherit; transition: background-color .2s; }
+.editorial-hero .editorial-hero-outline:hover { background: #fff7e51a; }
+@media (min-width: 1024px) {
+  .site-header-overlay { position: absolute; inset: 0 0 auto; min-height: 140px; align-items: start; padding-top: 24px; }
+  .site-header-overlay .site-logo { width: 143px; height: 132.6px; }
+  .site-header-overlay .main-nav a { color: var(--site-background); min-height: 64px; }
+  .site-header-overlay .main-nav { padding-top: 8px; }
+  .site-header-overlay .main-nav a:focus-visible { outline-color: var(--site-background); }
+  .editorial-hero { display: grid; grid-template-columns: minmax(0, 1fr); min-height: min(850px, max(660px, 56vw)); isolation: isolate; background: #47382e; }
+  .editorial-hero-photo { position: absolute; inset: 0; z-index: -2; }
+  .editorial-hero-photo img { object-position: center; }
+  .editorial-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(90deg, #291c14b8, #291c1460 36%, transparent 70%), linear-gradient(#291c144d, transparent 30%); }
+  .editorial-hero-copy { align-self: center; width: min(52%, 650px); padding: 158px 0 64px clamp(48px, 7vw, 108px); color: var(--site-background); }
+  .editorial-hero h1 { color: var(--site-background); font-size: clamp(72px, 7.3vw, 108px); line-height: .94; }
+  .editorial-hero-copy > p:not(.editorial-label) { font-size: 16px; line-height: 1.55; margin: 26px 0; max-width: 29ch; }
+}
+@media (prefers-reduced-motion: reduce) { .editorial-hero .editorial-hero-outline { transition: none; } }
+
+/* Homepage scroll effects are owned by HomeMotion's GSAP context. */
+html.lenis, html.lenis body { height: auto; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+.editorial-home[data-scroll-motion] .editorial-slice-image img { transition: none; }
+@media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+  .editorial-hero { overflow: clip; }
 }

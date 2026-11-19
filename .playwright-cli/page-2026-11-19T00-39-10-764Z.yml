@@ -1,0 +1,159 @@
+- generic [active] [ref=f1e1]:
+  - text: • •
+  - banner [ref=f1e2]:
+    - link "Akara Bakery home" [ref=f1e3] [cursor=pointer]:
+      - /url: /
+      - img "Akara Bakery" [ref=f1e4]
+    - navigation "Main navigation" [ref=f1e5]:
+      - link "Shop" [ref=f1e6] [cursor=pointer]:
+        - /url: /shop/all
+      - link "Signature Flavours" [ref=f1e7] [cursor=pointer]:
+        - /url: /#signature-flavours
+      - link "Custom Cakes" [ref=f1e8] [cursor=pointer]:
+        - /url: /custom-cakes
+      - link "Weddings" [ref=f1e9] [cursor=pointer]:
+        - /url: /#weddings
+      - link "Our Story" [ref=f1e10] [cursor=pointer]:
+        - /url: /about
+      - link "Contact Us" [ref=f1e11] [cursor=pointer]:
+        - /url: /contact
+  - main [ref=f1e12]:
+    - region "Our cake philosophy is joy." [ref=f1e13]:
+      - generic [ref=f1e14]:
+        - heading [level=1] [ref=f1e15]:
+          - text: Our cakephilosophyis
+          - emphasis [ref=f1e16]: joy.
+        - paragraph [ref=f1e17]: Extraordinary cakes. Unexpected flavours.Made with a little imagination.
+        - link "Explore our cakes" [ref=f1e18] [cursor=pointer]:
+          - /url: /shop/all
+      - img "Nine handmade celebration cakes with chocolate, berry and vanilla buttercream, fruit and piped decorations" [ref=f1e20]
+    - region "Welcome to Akara" [ref=f1e21]:
+      - heading [level=2] [ref=f1e22]:
+        - text: Because life’s sweetest moments deserve extraordinary flavour, effortless beauty
+        - emphasis [ref=f1e23]: "& overflowing joy."
+      - paragraph [ref=f1e24]: We are based in the heart of Dennistoun in Glasgow. Here, you can order your celebration cakes, enquire about wedding cakes or come by the bakery for a slice of our cake specials and a cup of coffee.
+    - region "It’s what’s inside that counts." [ref=f1e25]:
+      - generic [ref=f1e26]:
+        - paragraph [ref=f1e27]: Signature flavours
+        - heading [level=2] [ref=f1e28]:
+          - text: It’s what’s
+          - emphasis [ref=f1e29]: inside
+          - text: that counts.
+        - paragraph [ref=f1e30]: Beautiful on the outside. A little extraordinary within.
+      - link "Explore our signature cake flavours" [ref=f1e31] [cursor=pointer]:
+        - /url: /shop/all?category=Cakes
+        - img "An assortment of cake slices showing colourful sponge, fruit and buttercream layers" [ref=f1e32]
+        - generic [ref=f1e33]:
+          - text: Discover the flavours
+          - generic [aria-hidden] [ref=f1e34]: ↗
+      - navigation "Explore signature flavours" [ref=f1e35]:
+        - link "Lemon, lavender & blueberry" [ref=f1e36] [cursor=pointer]:
+          - /url: /shop/lemonlavenderblueberry
+          - text: Lemon, lavender & blueberry
+          - generic [aria-hidden] [ref=f1e37]: "?"
+        - link "Earl Grey & mixed berry" [ref=f1e38] [cursor=pointer]:
+          - /url: /shop/earlgreyberry
+          - text: Earl Grey & mixed berry
+          - generic [aria-hidden] [ref=f1e39]: "?"
+        - link "Coconut, cardamom & passionfruit" [ref=f1e40] [cursor=pointer]:
+          - /url: /shop/passionfruitcoconutcake
+          - text: Coconut, cardamom & passionfruit
+          - generic [aria-hidden] [ref=f1e41]: "?"
+      - link "Find your favourite flavour" [ref=f1e42] [cursor=pointer]:
+        - /url: /shop/all?category=Cakes
+        - text: Find your favourite flavour
+        - generic [aria-hidden] [ref=f1e43]: →
+    - region "Joy comes in all sizes." [ref=f1e44]:
+      - generic [ref=f1e45]:
+        - paragraph [ref=f1e46]: Little reasons to celebrate
+        - heading [level=2] [ref=f1e47]:
+          - text: Joy comes in
+          - emphasis [ref=f1e48]: all sizes.
+        - paragraph [ref=f1e49]: A box to share. A little something just for you.
+      - generic [ref=f1e50]:
+        - link [ref=f1e51] [cursor=pointer]:
+          - /url: /shop/all?category=Cupcakes
+          - img "Assorted cupcakes topped with buttercream, berries and cherries" [ref=f1e53]
+          - heading "Cupcakes" [level=3] [ref=f1e54]
+          - generic [ref=f1e55]:
+            - text: Shop little treats
+            - generic [aria-hidden] [ref=f1e56]: →
+        - link [ref=f1e57] [cursor=pointer]:
+          - /url: /shop/all?category=Cheesecakes
+          - img "Strawberries and cream cheesecake topped with fresh strawberries" [ref=f1e59]
+          - heading "Cheesecakes" [level=3] [ref=f1e60]
+          - generic [ref=f1e61]:
+            - text: Find your slice
+            - generic [aria-hidden] [ref=f1e62]: →
+      - paragraph [ref=f1e63]:
+        - text: A little joy for more of us. Explore our
+        - link "vegan" [ref=f1e64] [cursor=pointer]:
+          - /url: /shop/all?category=Vegan%20Cakes
+        - text: and
+        - link "gluten-free cakes" [ref=f1e65] [cursor=pointer]:
+          - /url: /shop/all?category=Gluten%20Free%20Cakes
+        - text: .
+    - region "Made for your kind of love." [ref=f1e66]:
+      - img "Two-tier wedding cake with green buttercream, fresh flowers and gold leaf" [ref=f1e68]
+      - generic [ref=f1e69]:
+        - paragraph [ref=f1e70]: For your sweetest day
+        - heading [level=2] [ref=f1e71]:
+          - text: Made for your
+          - emphasis [ref=f1e72]: kind of love.
+        - paragraph [ref=f1e73]: Extraordinary flavour, thoughtful details and a cake that feels like you. Let’s make something beautiful for your wedding day.
+        - link "Let’s talk wedding cakes" [ref=f1e74] [cursor=pointer]:
+          - /url: /contact
+          - text: Let’s talk wedding cakes
+          - generic [aria-hidden] [ref=f1e75]: ↗
+        - link "Another occasion? Explore custom cakes" [ref=f1e76] [cursor=pointer]:
+          - /url: /custom-cakes
+          - text: Another occasion? Explore custom cakes
+          - generic [aria-hidden] [ref=f1e77]: →
+    - region "Good things to know." [ref=f1e78]:
+      - paragraph [ref=f1e79]: A little help
+      - heading "Good things to know." [level=2] [ref=f1e80]
+      - group [ref=f1e81]:
+        - generic "Where can I find you?" [ref=f1e82] [cursor=pointer]
+      - group [ref=f1e83]:
+        - generic "How do I order a cake?" [ref=f1e84] [cursor=pointer]
+      - group [ref=f1e85]:
+        - generic "Do you offer vegan and gluten-free cakes?" [ref=f1e86] [cursor=pointer]
+  - contentinfo [ref=f1e87]:
+    - generic [ref=f1e88]:
+      - link "Akara Bakery home" [ref=f1e89] [cursor=pointer]:
+        - /url: /
+        - img "Akara Bakery" [ref=f1e90]
+      - navigation "Quick links" [ref=f1e91]:
+        - heading "Quick links" [level=2] [ref=f1e92]
+        - list [ref=f1e93]:
+          - listitem [ref=f1e94]:
+            - link "Shop" [ref=f1e95] [cursor=pointer]:
+              - /url: /shop/all
+          - listitem [ref=f1e96]:
+            - link "Our Story" [ref=f1e97] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=f1e98]:
+            - link "Contact" [ref=f1e99] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=f1e100]:
+            - link "FAQs" [ref=f1e101] [cursor=pointer]:
+              - /url: /#faqs
+      - navigation "Information" [ref=f1e102]:
+        - heading "Info" [level=2] [ref=f1e103]
+        - list [ref=f1e104]:
+          - listitem [ref=f1e105]:
+            - link "Collection & Delivery" [disabled] [ref=f1e106]
+          - listitem [ref=f1e107]:
+            - link "Ingredients & Allergens" [disabled] [ref=f1e108]
+          - listitem [ref=f1e109]:
+            - link "Terms & Conditions" [disabled] [ref=f1e110]
+          - listitem [ref=f1e111]:
+            - link "Privacy Policy" [disabled] [ref=f1e112]
+      - generic [ref=f1e113]:
+        - heading "Follow us" [level=2] [ref=f1e114]
+        - generic [ref=f1e115]:
+          - link "Instagram (coming soon)" [disabled] [ref=f1e116]
+          - link "Facebook (coming soon)" [disabled] [ref=f1e121]
+          - link "TikTok (coming soon)" [disabled] [ref=f1e124]
+    - paragraph [ref=f1e127]: © 2026 Akara Bakery. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=f1e133] [cursor=pointer]
