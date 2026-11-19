@@ -1,0 +1,29 @@
+[    1677ms] [INFO] k-web-pixel-version 4 @ https://bernicebakery.com/web-pixels/strict/app/web-pixel-1905262789@3fe25e975c30cd2a9af38a04798704c0.js:1
+[   22371ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://shop.app/pay/session?v=1&token=13a329e2-7473-4cb1-9b1c-b97ff092e557&shop_id=65161199813:1
+[   22842ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://use.typekit.net/af/dcca1d/00000000000000007735f06d/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3:1
+[   22843ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://use.typekit.net/af/40c775/00000000000000007735f06a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3:1
+[   22843ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://use.typekit.net/af/8d5095/00000000000000007735f069/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3:1
+[   23174ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://otlp-http-production.shopifysvc.com/v1/metrics:1
+[   23175ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://otlp-http-production.shopifysvc.com/v1/metrics:1
+[   23179ms] TypeError: Failed to fetch
+    at b.exportTo (https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.utils_Cjeq_SSZ.esm.js:1:6141)
+    at b.exportBatches (https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.utils_Cjeq_SSZ.esm.js:1:6966)
+    at b.exportMetrics (https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.utils_Cjeq_SSZ.esm.js:1:5353)
+    at M.exportMetrics (https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.utils_Cjeq_SSZ.esm.js:1:8005)
+    at https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.utils_Cjeq_SSZ.esm.js:1:2160
+    at Me.exportByKeepalive (https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.utils_Cjeq_SSZ.esm.js:1:4231)
+    at Me.exportMetrics (https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.utils_Cjeq_SSZ.esm.js:1:2119)
+    at Me.counter (https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.register_Cnn1s0Rw.esm.js:1:12840)
+    at https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.register_Cnn1s0Rw.esm.js:1:46009
+    at https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/client.shop-cart-sync_DIh0hGg2.en.esm.js:1:6021
+[   23178ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://otlp-http-production.shopifysvc.com/v1/metrics:1
+[   23451ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://static.klaviyo.com/onsite/js/runtime.2c5ee76ff858f.js?cb=2:1
+[   23690ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://static.klaviyo.com/onsite/js/sharedUtils.62069612d88bc.js?cb=2:1
+[   23755ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://static.klaviyo.com/onsite/js/vendors~telemetry~static~in_app_forms~signup_forms~fender_analytics~post_identification_sync~web_personalization~client_identity~server_side_cookies~reviews~atlas~.d5cbaf75a1dc8.js?cb=2:1
+[   23755ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://static.klaviyo.com/onsite/js/event_adapter.3e4ac49b9784b.js?cb=2:1
+[   23755ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://static.klaviyo.com/onsite/js/vendors~signup_forms~telemetry~client_identity~~onsite-personalization~onsite-triggering-v2~in_app_forms.452e299a9c841.js?cb=2:1
+[   23755ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://static.klaviyo.com/onsite/js/vendors~in_app_forms~signup_forms~reviews~atlas~product_recommendations.2275e937808a4.js?cb=2:1
+[   24515ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static-tracking.klaviyo.com/onsite/js/telemetry.273d495b3aec7.js?cb=2:1
+[   24516ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static-tracking.klaviyo.com/onsite/js/static.a34ac6ae9581b.js?cb=2:1
+[   24516ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static-tracking.klaviyo.com/onsite/js/fender_analytics.56ba7dd992120.js?cb=2:1
+[   24516ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static-tracking.klaviyo.com/onsite/js/post_identification_sync.18ffd667c7fa3.js?cb=2:1

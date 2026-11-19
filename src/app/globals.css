@@ -1534,9 +1534,9 @@ body { font-family: var(--font-navigation), Arial, sans-serif; }
 .editorial-hero-photo { min-width: 0; aspect-ratio: 4/3; overflow: hidden; }
 .editorial-hero-photo img { object-position: 76% center; }
 .editorial-intro { display: grid; gap: 24px; width: min(100% - 48px, 1200px); margin: auto; padding-block: 64px; }
-.editorial-home .editorial-intro h2 { max-width: 27ch; margin: 0; font-family: var(--font-navigation), Arial, sans-serif !important; font-size: clamp(26px, 3vw, 40px); font-weight: 900 !important; line-height: 1.08; letter-spacing: -.025em; text-transform: uppercase; }
+.editorial-home .editorial-intro h2 { max-width: 27ch; margin: 0; font-family: var(--font-navigation), Arial, sans-serif !important; font-size: clamp(29.9px, 3.45vw, 46px); font-weight: 900 !important; line-height: 1.08; letter-spacing: -.025em; text-transform: uppercase; }
 .editorial-intro h2 em { font-style: normal; }
-.editorial-intro > p { max-width: 42ch; min-width: 0; margin: 0; color: var(--brand-teal); font-size: 16px; line-height: 1.5; }
+.editorial-home .editorial-intro > p { max-width: 42ch; min-width: 0; margin: 0; color: var(--brand-teal); font-size: 20.8px; line-height: 1.5; }
 .editorial-signatures { display: grid; width: min(100% - 48px, 1200px); margin: auto; gap: 32px; padding-block: 32px 64px; text-align: left; }
 .editorial-signatures header { min-width: 0; align-self: center; }
 .editorial-signatures h2 { max-width: 12ch; }
@@ -1581,7 +1581,7 @@ body { font-family: var(--font-navigation), Arial, sans-serif; }
   .site-header { grid-template-columns: auto minmax(0, 1fr); gap: 32px; padding-inline: 4%; }
   .site-header .header-actions { display: none; }
   .site-header .main-nav { justify-content: flex-end; gap: clamp(14px, 2vw, 32px); margin: 0; }
-  .site-header .main-nav a { font-size: 11px; letter-spacing: .1em; }
+  .site-header .main-nav a { font-size: clamp(14px, calc(2vw - 6.48px), 22px); letter-spacing: .1em; }
   .editorial-hero { grid-template-columns: minmax(0, 43fr) minmax(0, 57fr); min-height: 570px; }
   .editorial-hero-copy { z-index: 1; align-self: center; padding: 56px 0 64px clamp(48px, 6.7vw, 100px); }
   .editorial-hero h1 { font-size: clamp(70px, 7.2vw, 110px); }
@@ -1643,4 +1643,51 @@ html.lenis, html.lenis body { height: auto; }
 .editorial-home[data-scroll-motion] .editorial-slice-image img { transition: none; }
 @media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
   .editorial-hero { overflow: clip; }
+}
+/* Compact mobile treatment for the signature-flavour editorial panel. */
+@media (max-width: 1023px) {
+  .editorial-signatures { gap: 24px; padding-block: 24px 56px; }
+  .editorial-signatures header { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 16px; align-items: end; }
+  .editorial-signatures header .editorial-label { grid-column: 1 / -1; margin-bottom: 14px; }
+  .editorial-signatures h2 { grid-column: 1 / -1; max-width: 20ch; margin-bottom: 16px; font-size: clamp(36px, 7vw, 52px); line-height: 1.05; }
+  .editorial-signatures header > p:not(.editorial-label) { grid-column: 1 / -1; max-width: 36ch; margin: 0 0 8px; font-size: 16px; line-height: 1.5; }
+  .editorial-signatures header > .editorial-text-link { grid-column: 1 / -1; justify-self: start; padding-block: 10px; }
+  .editorial-slice-image { aspect-ratio: 16/10; }
+  .editorial-flavour-links { padding: 8px 16px; background: var(--site-background); border: 1px solid #ded8ce; border-top: 0; }
+  .editorial-flavour-links a { min-height: 52px; padding-block: 12px; }
+  .editorial-flavour-links a:last-child { border-bottom: 0; }
+}
+@media (min-width: 700px) and (max-width: 1023px) {
+  .editorial-signatures { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 32px; }
+  .editorial-signatures h2 { max-width: 12ch; font-size: 44px; }
+  .editorial-slice-image { aspect-ratio: 4/3; }
+}
+/* Mobile homepage keeps the photographic desktop hero composition. */
+@media (max-width: 1023px) {
+  .site-header-overlay { position: absolute; inset: 0 0 auto; align-items: center; background: transparent; }
+  .site-header-overlay .menu-toggle { color: var(--site-background); }
+  .site-header-overlay .menu-toggle:focus-visible, .site-header-overlay .wordmark:focus-visible { outline-color: var(--site-background); }
+  .editorial-hero { grid-template-columns: minmax(0, 1fr); min-height: min(820px, 100svh); isolation: isolate; overflow: clip; background: #47382e; }
+  .editorial-hero-photo { position: absolute; inset: 0; z-index: -2; aspect-ratio: auto; }
+  .editorial-hero-photo img { object-position: 53% center; }
+  .editorial-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(90deg, #291c14b8, #291c1450 75%, #291c1420), linear-gradient(#291c1440, transparent 35%, #291c1450); }
+  .editorial-hero-copy { align-self: end; padding: 160px 24px 48px; color: var(--site-background); }
+  .editorial-hero h1 { color: var(--site-background); font-size: clamp(52px, 12vw, 80px); line-height: .98; }
+  .editorial-hero-copy > p:not(.editorial-label) { max-width: 29ch; margin: 24px 0; font-size: 16px; line-height: 1.55; }
+}
+@media (min-width: 700px) and (max-width: 1023px) {
+  .editorial-hero-copy { padding: 170px 48px 64px; }
+  .editorial-hero-photo img { object-position: center; }
+}
+
+/* Restored design6 story panel, immediately after the introduction. */
+.editorial-home .bakery-story-copy h2 { color: var(--hero-gold); font-size: clamp(42px, 5vw, 76px); line-height: 1.08; }
+
+/* Three balanced categories from the client favourites reference. */
+.favourites-three .favourites-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+.favourites-three .favourite-image { display: block; }
+.favourites-three .favourite-caption h3 { font-size: clamp(26px, 2.4vw, 36px); }
+.favourites-three .favourite-shop { min-height: 44px; font-size: 12px; }
+@media (min-width: 700px) {
+  .favourites-three .favourites-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 2vw, 36px); }
 }

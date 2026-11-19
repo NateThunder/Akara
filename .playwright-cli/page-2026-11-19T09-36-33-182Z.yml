@@ -1,0 +1,452 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - banner [ref=e3]:
+        - link [ref=e4] [cursor=pointer]:
+          - /url: https://bernicebakery.com
+        - navigation [ref=e7]:
+          - list [ref=e8]:
+            - listitem [ref=e9]:
+              - link "Cookies" [ref=e10] [cursor=pointer]:
+                - /url: /collections/cookies
+                - generic [aria-hidden] [ref=e11]:
+                  - generic [ref=e12]: C
+                  - generic [ref=e13]: o
+                  - generic [ref=e14]: o
+                  - generic [ref=e15]: k
+                  - generic [ref=e16]: i
+                  - generic [ref=e17]: e
+                  - generic [ref=e18]: s
+            - listitem [ref=e19]:
+              - link "Cakes" [ref=e20] [cursor=pointer]:
+                - /url: /collections/cakes
+                - generic [aria-hidden] [ref=e21]:
+                  - generic [ref=e22]: C
+                  - generic [ref=e23]: a
+                  - generic [ref=e24]: k
+                  - generic [ref=e25]: e
+                  - generic [ref=e26]: s
+            - listitem [ref=e27]:
+              - link "About" [ref=e28] [cursor=pointer]:
+                - /url: /pages/about
+                - generic [aria-hidden] [ref=e29]:
+                  - generic [ref=e30]: A
+                  - generic [ref=e31]: b
+                  - generic [ref=e32]: o
+                  - generic [ref=e33]: u
+                  - generic [ref=e34]: t
+            - listitem [ref=e35]:
+              - link "Wholesale" [ref=e36] [cursor=pointer]:
+                - /url: /pages/wholesale
+                - generic [aria-hidden] [ref=e37]:
+                  - generic [ref=e38]: W
+                  - generic [ref=e39]: h
+                  - generic [ref=e40]: o
+                  - generic [ref=e41]: l
+                  - generic [ref=e42]: e
+                  - generic [ref=e43]: s
+                  - generic [ref=e44]: a
+                  - generic [ref=e45]: l
+                  - generic [ref=e46]: e
+            - listitem [ref=e47]:
+              - link "Contact" [ref=e48] [cursor=pointer]:
+                - /url: /pages/contact
+                - generic [aria-hidden] [ref=e49]:
+                  - generic [ref=e50]: C
+                  - generic [ref=e51]: o
+                  - generic [ref=e52]: "n"
+                  - generic [ref=e53]: t
+                  - generic [ref=e54]: a
+                  - generic [ref=e55]: c
+                  - generic [ref=e56]: t
+            - listitem [ref=e57]:
+              - link "Français" [ref=e58] [cursor=pointer]:
+                - /url: /fr/
+          - generic [ref=e59]:
+            - link [ref=e60] [cursor=pointer]:
+              - /url: /cart
+            - link [ref=e62] [cursor=pointer]:
+              - /url: /search
+        - generic:
+          - generic:
+            - generic:
+              - textbox "Product, collection, page..."
+              - generic:
+                - button "Search"
+            - button "close-search"
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - heading "Cart" [level=2] [ref=e68]
+          - button "close-cart" [ref=e69] [cursor=pointer]
+        - button "Checkout $0.00" [ref=e74] [cursor=pointer]
+      - generic:
+        - generic:
+          - generic:
+            - heading "Day and time for pickup" [level=2]
+            - button "close-date-picker"
+          - paragraph: Orders will be available for pick-up from 11am until 5:00pm on the day specified by the customer (no pick-ups on Sundays or Mondays). We hold cakes for up to 48 hours, but cannot guarantee the quality of our products that are not picked up at the day and time desired.
+          - generic: "Pickup date:"
+          - textbox "Pickup date:": 2026-11-19
+          - generic: "Pickup time:"
+          - textbox "Pickup time:": 11:00
+          - generic: "Phone Number:"
+          - textbox "Phone Number:":
+            - /placeholder: +1 416-555-1234
+          - generic: "Additional information:"
+          - textbox "Additional information:"
+          - generic:
+            - button "Checkout"
+      - generic:
+        - generic:
+          - generic:
+            - heading "Delivery Options" [level=2]
+            - button "close-date-picker"
+          - generic:
+            - generic:
+              - paragraph: Enter the delivery postal code
+              - generic:
+                - textbox "M5V 3L9"
+                - button "Submit" [disabled]
+      - generic:
+        - generic:
+          - link:
+            - /url: https://bernicebakery.com
+          - button "close-side-menu"
+        - generic:
+          - list:
+            - listitem:
+              - link "Cookies":
+                - /url: /collections/cookies
+            - listitem:
+              - link "Cakes":
+                - /url: /collections/cakes
+            - listitem:
+              - link "About":
+                - /url: /pages/about
+            - listitem:
+              - link "Wholesale":
+                - /url: /pages/wholesale
+            - listitem:
+              - link "Contact":
+                - /url: /pages/contact
+            - listitem:
+              - link "Français":
+                - /url: /fr/
+        - generic:
+          - list:
+            - listitem:
+              - link:
+                - /url: https://www.instagram.com/bernicemontreal/
+  - main [ref=e76]:
+    - generic [ref=e82]:
+      - heading [level=1] [ref=e83]:
+        - generic [ref=e85]: A
+        - generic [ref=e87]: Baking
+        - generic [ref=e89]: Love
+        - generic [ref=e91]: Affair
+      - link "Indulge" [ref=e94] [cursor=pointer]:
+        - /url: "#hero-anchor"
+    - generic [ref=e96]:
+      - heading "Good food should both comfort and nourish the soul." [level=2] [ref=e98]:
+        - generic [ref=e100]:
+          - generic [ref=e101]: Good
+          - generic [ref=e102]: food
+        - generic [ref=e104]:
+          - generic [ref=e105]: should
+          - generic [ref=e106]: both
+        - generic [ref=e108]:
+          - generic [ref=e109]: comfort
+          - generic [ref=e110]: and
+        - generic [ref=e112]:
+          - generic [ref=e113]: nourish
+          - generic [ref=e114]: the
+          - generic [ref=e115]: soul.
+      - paragraph [ref=e117]: We are centrally located in the neighborhood of St-Henri. Stop by for a coffee, catch up on work, or grab some of our delicious goodies to go. With cookies and cakes available for online order, there’s something for everyone, and every occasion.
+    - generic [ref=e120]:
+      - generic [ref=e121]:
+        - generic [ref=e123]:
+          - link "White chocolate Sprinkles" [ref=e124] [cursor=pointer]:
+            - /url: /products/birthday-cookie-4oz
+            - generic: White chocolate
+            - generic: Sprinkles
+          - link [ref=e126] [cursor=pointer]:
+            - /url: /products/birthday-cookie-4oz
+            - heading "Birthday Cookie" [level=3] [ref=e127]
+            - text: Box of 6 4oz
+          - generic [ref=e129]:
+            - generic [ref=e130]: 29$
+            - generic [ref=e132]:
+              - generic [ref=e133] [cursor=pointer]: "-"
+              - spinbutton "Quantity": "1"
+              - generic [ref=e135] [cursor=pointer]: +
+          - button "Add To Cart" [ref=e138] [cursor=pointer]
+        - generic [ref=e140]:
+          - link "Marshmallows Dark chocolate Graham crackers" [ref=e141] [cursor=pointer]:
+            - /url: /products/smores-cookie-4oz
+            - generic: Marshmallows
+            - generic: Dark chocolate
+            - generic: Graham crackers
+          - link [ref=e143] [cursor=pointer]:
+            - /url: /products/smores-cookie-4oz
+            - heading "S'mores Cookie" [level=3] [ref=e144]
+            - text: Box of 6 4oz
+          - generic [ref=e146]:
+            - generic [ref=e147]: 29$
+            - generic [ref=e149]:
+              - generic [ref=e150] [cursor=pointer]: "-"
+              - spinbutton "Quantity": "1"
+              - generic [ref=e152] [cursor=pointer]: +
+          - button "Add To Cart" [ref=e155] [cursor=pointer]
+        - generic [ref=e157]:
+          - link "White chocolate Dark chocolate Chunks" [ref=e158] [cursor=pointer]:
+            - /url: /products/white-dark-chocolate-chunk-cookie-4oz
+            - generic: White chocolate
+            - generic: Dark chocolate
+            - generic: Chunks
+          - link [ref=e160] [cursor=pointer]:
+            - /url: /products/white-dark-chocolate-chunk-cookie-4oz
+            - heading "White & Dark Chocolate Chunk Cookie" [level=3] [ref=e161]
+            - text: Box of 6 4oz
+          - generic [ref=e163]:
+            - generic [ref=e164]: 29$
+            - generic [ref=e166]:
+              - generic [ref=e167] [cursor=pointer]: "-"
+              - spinbutton "Quantity": "1"
+              - generic [ref=e169] [cursor=pointer]: +
+          - button "Add To Cart" [ref=e172] [cursor=pointer]
+      - generic [ref=e173]:
+        - generic [ref=e175]:
+          - generic [ref=e176]: Bestsellers
+          - generic [ref=e177]: Bestsellers
+          - generic [ref=e178]: Bestsellers
+          - generic [ref=e179]: Bestsellers
+          - generic [ref=e180]: Bestsellers
+          - generic [ref=e181]: Bestsellers
+          - generic [ref=e182]: Bestsellers
+          - generic [ref=e183]: Bestsellers
+        - generic [ref=e185]:
+          - generic [ref=e186]: Bestsellers
+          - generic [ref=e187]: Bestsellers
+          - generic [ref=e188]: Bestsellers
+          - generic [ref=e189]: Bestsellers
+          - generic [ref=e190]: Bestsellers
+          - generic [ref=e191]: Bestsellers
+          - generic [ref=e192]: Bestsellers
+          - generic [ref=e193]: Bestsellers
+        - generic [ref=e195]:
+          - generic [ref=e196]: Bestsellers
+          - generic [ref=e197]: Bestsellers
+          - generic [ref=e198]: Bestsellers
+          - generic [ref=e199]: Bestsellers
+          - generic [ref=e200]: Bestsellers
+          - generic [ref=e201]: Bestsellers
+          - generic [ref=e202]: Bestsellers
+          - generic [ref=e203]: Bestsellers
+        - generic [ref=e205]:
+          - generic [ref=e206]: Bestsellers
+          - generic [ref=e207]: Bestsellers
+          - generic [ref=e208]: Bestsellers
+          - generic [ref=e209]: Bestsellers
+          - generic [ref=e210]: Bestsellers
+          - generic [ref=e211]: Bestsellers
+          - generic [ref=e212]: Bestsellers
+          - generic [ref=e213]: Bestsellers
+    - heading "The best things in life are sweet" [level=2] [ref=e217]:
+      - generic [ref=e219]:
+        - generic [ref=e220]: The
+        - generic [ref=e221]: best
+        - generic [ref=e222]: things
+        - generic [ref=e223]: in
+      - generic [ref=e225]:
+        - generic [ref=e226]: life
+        - generic [ref=e227]: are
+        - generic [ref=e228]: sweet
+    - generic [ref=e256]:
+      - generic [ref=e257]:
+        - generic [ref=e258] [cursor=pointer]: Cookies
+        - generic [ref=e261] [cursor=pointer]: Cakes
+      - generic [ref=e266]:
+        - generic [ref=e271] [cursor=pointer]
+        - link "View All" [ref=e274] [cursor=pointer]:
+          - /url: /collections/cookies
+          - generic [aria-hidden] [ref=e275]:
+            - generic [ref=e276]: V
+            - generic [ref=e277]: i
+            - generic [ref=e278]: e
+            - generic [ref=e279]: w
+          - generic [aria-hidden] [ref=e280]:
+            - generic [ref=e281]: A
+            - generic [ref=e282]: l
+            - generic [ref=e283]: l
+    - generic [ref=e287]:
+      - generic [ref=e288]:
+        - heading "‘’" [level=3] [ref=e289]
+        - paragraph [ref=e290]: Bernice puts forth the kind of sweets that take you back to childhood. Nothing too complex, but everything is well done. The tiered cakes are nicely displayed on the counter, enjoy a single serving or an entire cakes.
+      - generic [ref=e292]:
+        - heading "‘’" [level=3] [ref=e293]
+        - paragraph [ref=e294]: On the western edge of St-Henri lies bakery-café Bernice, specializing in layered cakes and some of the most decadent cookies around.
+      - generic [ref=e296]:
+        - heading "‘’" [level=3] [ref=e297]
+        - paragraph [ref=e298]: Home is where the heart is—or is that cookies? Because many times our home has been at Bernice’s, where the cookies are what all cookies should be.
+      - generic [ref=e300]:
+        - heading "‘’" [level=3] [ref=e301]
+        - paragraph [ref=e302]: "Why You Need To Go: This is one of those bakeries that's like stepping into a little oasis. Not only is the decor so beautiful and so serene, but the pastries themselves are incredible, too. Whether you're feeling an almond scone, a caramel cookie or more like a funfetti cake, Bernice has got you covered."
+      - generic [ref=e304]:
+        - heading "‘’" [level=3] [ref=e305]
+        - paragraph [ref=e306]: I still remember that bite. A moist crumb which caresses here and which does not take long to melt, releasing its aromas of spices, and which does not saturate the palate with sugar. A brown butter icing, a bitter caramel. Bernice's Pumpkin, Carrot and Spice Layer Cake is sinful!
+      - generic [ref=e308]:
+        - heading "‘’" [level=3] [ref=e309]
+        - paragraph [ref=e310]: Bernice puts forth the kind of sweets that take you back to childhood. Nothing too complex, but everything is well done. The tiered cakes are nicely displayed on the counter, enjoy a single serving or an entire cakes.
+      - generic [ref=e312]:
+        - heading "‘’" [level=3] [ref=e313]
+        - paragraph [ref=e314]: On the western edge of St-Henri lies bakery-café Bernice, specializing in layered cakes and some of the most decadent cookies around.
+      - generic [ref=e316]:
+        - heading "‘’" [level=3] [ref=e317]
+        - paragraph [ref=e318]: Home is where the heart is—or is that cookies? Because many times our home has been at Bernice’s, where the cookies are what all cookies should be.
+      - generic [ref=e320]:
+        - heading "‘’" [level=3] [ref=e321]
+        - paragraph [ref=e322]: "Why You Need To Go: This is one of those bakeries that's like stepping into a little oasis. Not only is the decor so beautiful and so serene, but the pastries themselves are incredible, too. Whether you're feeling an almond scone, a caramel cookie or more like a funfetti cake, Bernice has got you covered."
+      - generic [ref=e324]:
+        - heading "‘’" [level=3] [ref=e325]
+        - paragraph [ref=e326]: I still remember that bite. A moist crumb which caresses here and which does not take long to melt, releasing its aromas of spices, and which does not saturate the palate with sugar. A brown butter icing, a bitter caramel. Bernice's Pumpkin, Carrot and Spice Layer Cake is sinful!
+      - generic [ref=e328]:
+        - heading "‘’" [level=3] [ref=e329]
+        - paragraph [ref=e330]: Bernice puts forth the kind of sweets that take you back to childhood. Nothing too complex, but everything is well done. The tiered cakes are nicely displayed on the counter, enjoy a single serving or an entire cakes.
+      - generic [ref=e332]:
+        - heading "‘’" [level=3] [ref=e333]
+        - paragraph [ref=e334]: On the western edge of St-Henri lies bakery-café Bernice, specializing in layered cakes and some of the most decadent cookies around.
+      - generic [ref=e336]:
+        - heading "‘’" [level=3] [ref=e337]
+        - paragraph [ref=e338]: Home is where the heart is—or is that cookies? Because many times our home has been at Bernice’s, where the cookies are what all cookies should be.
+      - generic [ref=e340]:
+        - heading "‘’" [level=3] [ref=e341]
+        - paragraph [ref=e342]: "Why You Need To Go: This is one of those bakeries that's like stepping into a little oasis. Not only is the decor so beautiful and so serene, but the pastries themselves are incredible, too. Whether you're feeling an almond scone, a caramel cookie or more like a funfetti cake, Bernice has got you covered."
+      - generic [ref=e344]:
+        - heading "‘’" [level=3] [ref=e345]
+        - paragraph [ref=e346]: I still remember that bite. A moist crumb which caresses here and which does not take long to melt, releasing its aromas of spices, and which does not saturate the palate with sugar. A brown butter icing, a bitter caramel. Bernice's Pumpkin, Carrot and Spice Layer Cake is sinful!
+      - generic [ref=e348]:
+        - heading "‘’" [level=3] [ref=e349]
+        - paragraph [ref=e350]: Bernice puts forth the kind of sweets that take you back to childhood. Nothing too complex, but everything is well done. The tiered cakes are nicely displayed on the counter, enjoy a single serving or an entire cakes.
+      - generic [ref=e352]:
+        - heading "‘’" [level=3] [ref=e353]
+        - paragraph [ref=e354]: On the western edge of St-Henri lies bakery-café Bernice, specializing in layered cakes and some of the most decadent cookies around.
+      - generic [ref=e356]:
+        - heading "‘’" [level=3] [ref=e357]
+        - paragraph [ref=e358]: Home is where the heart is—or is that cookies? Because many times our home has been at Bernice’s, where the cookies are what all cookies should be.
+      - generic [ref=e360]:
+        - heading "‘’" [level=3] [ref=e361]
+        - paragraph [ref=e362]: "Why You Need To Go: This is one of those bakeries that's like stepping into a little oasis. Not only is the decor so beautiful and so serene, but the pastries themselves are incredible, too. Whether you're feeling an almond scone, a caramel cookie or more like a funfetti cake, Bernice has got you covered."
+      - generic [ref=e364]:
+        - heading "‘’" [level=3] [ref=e365]
+        - paragraph [ref=e366]: I still remember that bite. A moist crumb which caresses here and which does not take long to melt, releasing its aromas of spices, and which does not saturate the palate with sugar. A brown butter icing, a bitter caramel. Bernice's Pumpkin, Carrot and Spice Layer Cake is sinful!
+    - generic [ref=e369]:
+      - generic [ref=e370]:
+        - link "Order" [ref=e375] [cursor=pointer]:
+          - /url: /collections/cakes
+        - img [ref=e377]:
+          - generic [ref=e379]: Celebrate with cake
+      - generic [ref=e380]:
+        - paragraph [ref=e381]: Ordering a cake at Bernice Bakery is a seamless and personalized experience. Customers can either visit the bakery in person, over the phone or more conveniently, place an order online.
+        - paragraph [ref=e382]: The process begins with selecting from our seasonal variety of cake flavors and then choosing your selected day and time for pickup. Keep in mind that our cakes are baked to order, and we require at least 24-hour advance notice. Our cake will most certainly be the delicious ending to any of your celebrations!
+  - generic [ref=e383]:
+    - generic [ref=e385]:
+      - heading "Join Our Newsletter" [level=2] [ref=e386]:
+        - generic [ref=e388]:
+          - generic [ref=e389]: Join
+          - generic [ref=e390]: Our
+        - generic [ref=e392]: Newsletter
+      - paragraph [ref=e394]: Join our newsletter to stay informed of our specials and events.
+      - generic [ref=e396]:
+        - textbox "Email" [ref=e397]:
+          - /placeholder: email
+        - button "Join" [ref=e399] [cursor=pointer]
+    - contentinfo [ref=e403]:
+      - generic [ref=e404]:
+        - generic [ref=e405]:
+          - heading "Bernice Bakery" [level=3] [ref=e406]
+          - paragraph [ref=e407]: 5135 Notre-Dame OuestMontréal, QC H4C 1T4
+          - link "bonjour@bernicebakery.com" [ref=e408] [cursor=pointer]:
+            - /url: mailto:bonjour@bernicebakery.com
+          - link "(514) 931-8444" [ref=e409] [cursor=pointer]:
+            - /url: tel:+15149318444
+          - generic [ref=e410]:
+            - link [ref=e411] [cursor=pointer]:
+              - /url: https://www.ubereats.com/ca/store/bernice/wclTTKCwTU6-h0fGombVjw
+            - link [ref=e412] [cursor=pointer]:
+              - /url: https://www.doordash.com/fr-CA/store/bernice-montr%C3%A9al-2609893/
+          - link "Follow us on Instagram" [ref=e414] [cursor=pointer]:
+            - /url: https://www.instagram.com/bernicemontreal
+        - list [ref=e416]:
+          - listitem [ref=e417]:
+            - link "Cookies" [ref=e418] [cursor=pointer]:
+              - /url: /collections/cookies
+              - generic [aria-hidden] [ref=e419]:
+                - generic [ref=e420]: C
+                - generic [ref=e421]: o
+                - generic [ref=e422]: o
+                - generic [ref=e423]: k
+                - generic [ref=e424]: i
+                - generic [ref=e425]: e
+                - generic [ref=e426]: s
+          - listitem [ref=e427]:
+            - link "Cakes" [ref=e428] [cursor=pointer]:
+              - /url: /collections/cakes
+              - generic [aria-hidden] [ref=e429]:
+                - generic [ref=e430]: C
+                - generic [ref=e431]: a
+                - generic [ref=e432]: k
+                - generic [ref=e433]: e
+                - generic [ref=e434]: s
+        - list [ref=e436]:
+          - listitem [ref=e437]:
+            - link "About" [ref=e438] [cursor=pointer]:
+              - /url: /pages/about
+              - generic [aria-hidden] [ref=e439]:
+                - generic [ref=e440]: A
+                - generic [ref=e441]: b
+                - generic [ref=e442]: o
+                - generic [ref=e443]: u
+                - generic [ref=e444]: t
+          - listitem [ref=e445]:
+            - link "Contact" [ref=e446] [cursor=pointer]:
+              - /url: /pages/contact
+              - generic [aria-hidden] [ref=e447]:
+                - generic [ref=e448]: C
+                - generic [ref=e449]: o
+                - generic [ref=e450]: "n"
+                - generic [ref=e451]: t
+                - generic [ref=e452]: a
+                - generic [ref=e453]: c
+                - generic [ref=e454]: t
+          - listitem [ref=e455]:
+            - link "Wholesale" [ref=e456] [cursor=pointer]:
+              - /url: /pages/wholesale
+              - generic [aria-hidden] [ref=e457]:
+                - generic [ref=e458]: W
+                - generic [ref=e459]: h
+                - generic [ref=e460]: o
+                - generic [ref=e461]: l
+                - generic [ref=e462]: e
+                - generic [ref=e463]: s
+                - generic [ref=e464]: a
+                - generic [ref=e465]: l
+                - generic [ref=e466]: e
+        - generic [ref=e467]:
+          - heading "Join Our Newsletter" [level=3] [ref=e468]
+          - generic [ref=e470]:
+            - textbox "Email" [ref=e471]:
+              - /placeholder: email
+            - button "Join" [ref=e473] [cursor=pointer]
+      - generic [ref=e474]: Bernice
+      - generic [ref=e476]:
+        - generic [ref=e477]: Copyright 2026 | Bernice Bakery
+        - generic [ref=e479]:
+          - link "Terms of use" [ref=e480] [cursor=pointer]:
+            - /url: ""
+          - text: "|"
+          - link "Privacy policy" [ref=e481] [cursor=pointer]:
+            - /url: ""
+        - generic [ref=e483]:
+          - text: Made by
+          - link "Casa Media" [ref=e484] [cursor=pointer]:
+            - /url: https://casamedia.com/

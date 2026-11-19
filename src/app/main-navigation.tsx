@@ -6,9 +6,9 @@ import { usePathname, useSearchParams } from "next/navigation";
 // New links inherit URL matching and the shared selected style automatically.
 const navigation = [
   { label: "Shop", href: "/shop/all", matchPath: "/shop" },
-  { label: "Signature Flavours", href: "/#signature-flavours" },
+  { label: "Signature Flavours", href: "/shop/all?category=Cakes" },
   { label: "Custom Cakes", href: "/custom-cakes" },
-  { label: "Weddings", href: "/#weddings" },
+  { label: "Weddings", href: "/contact?enquiry=wedding-cake" },
   { label: "Our Story", href: "/about" },
   { label: "Contact Us", href: "/contact" },
 ];
