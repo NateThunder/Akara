@@ -13,10 +13,17 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
       document.documentElement.style.setProperty("--site-header-height", `${element.getBoundingClientRect().height}px`);
     };
     updateHeight();
+    const updateContrast = () => {
+      const hero = document.querySelector(".editorial-hero");
+      element.toggleAttribute("data-past-hero", Boolean(hero && hero.getBoundingClientRect().bottom <= element.getBoundingClientRect().bottom));
+    };
+    updateContrast();
+    window.addEventListener("scroll", updateContrast, { passive: true });
     const observer = new ResizeObserver(updateHeight);
     observer.observe(element);
     return () => {
       observer.disconnect();
+      window.removeEventListener("scroll", updateContrast);
       document.documentElement.style.removeProperty("--site-header-height");
     };
   }, []);
