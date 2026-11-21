@@ -1,26 +1,19 @@
 "use client";
 
 import { useEffect, useRef, useState, type CSSProperties, type FormEvent, type ReactNode } from "react";
-import { cakeColours as colours } from "../cake-colours";
+import { customCakeColours as colours, flavourMenus, categories, sizes, dietarySupplement } from "./cake-options";
 
 // Sample prices only. Replace with the bakery's confirmed price list before ordering goes live.
-const flavours = [
-  { name: "Vanilla Sponge", crumb: "#e6bb78", icing: "#fff6df", price: 0 },
-  { name: "Chocolate Sponge", crumb: "#684029", icing: "#a46e49", price: 5 },
-  { name: "Red Velvet", crumb: "#943f3b", icing: "#fff2dc", price: 5 },
-  { name: "Lemon Sponge", crumb: "#eac96e", icing: "#fff9db", price: 3 },
-  { name: "Carrot Cake", crumb: "#ac713d", icing: "#fff2dc", price: 5 },
-];
-const sizes = [{ inches: 6, serves: 10, price: 85 }, { inches: 8, serves: 20, price: 110 }, { inches: 10, serves: 30, price: 140 }, { inches: 12, serves: 40, price: 170 }];
-const extras = [{ name: "Candles", price: 3, icon: "candle" }, { name: "Flowers", price: 15, icon: "flower" }, { name: "Fruit", price: 8, icon: "fruit" }, { name: "Sprinkles", price: 4, icon: "sprinkles" }];
+const extras = [{ name: "Pack of Candles", price: 3, icon: "candle" }, { name: "Flowers", price: 15, icon: "flower" }, { name: "Fruit", price: 8, icon: "fruit" }, { name: "Maraschino Cherries", price: 4, icon: "cherries" }];
 const money = (value: number) => new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP" }).format(value);
-const storageKey = "akara-custom-cake-v1";
-type Selection = { flavour: number; size: number; colour: number; writing: string; message: string; extras: string[]; delivery: string; date: string; time: string };
-const initial: Selection = { flavour: 0, size: 0, colour: 0, writing: "Hand piped", message: "", extras: [], delivery: "Collection", date: "", time: "" };
+const storageKey = "akara-custom-cake-v2";
+type Selection = { category: "standard" | "vegan"; glutenFree: boolean; inscription: boolean; flavour: number; size: number; colour: number; message: string; extras: string[]; delivery: string; date: string; time: string };
+const initial: Selection = { category: "standard", glutenFree: false, inscription: false, flavour: 0, size: 1, colour: 0, message: "", extras: [], delivery: "Collection", date: "", time: "" };
 const timeSlots = ["10:00–12:00", "12:00–14:00", "14:00–16:00"];
 
 function Icon({ name }: { name: string }) {
   const paths: Record<string, string> = {
+    cherries: "M8 12c-5-1-7 7-2 9s9-4 5-7M17 12c-4-1-6 6-2 8s8-4 5-7M9 13c0-6 3-9 8-11m0 0c-1 5 0 8 1 11",
     candle: "M10 10h4v12h-4zM12 2c-4 5-2 6 0 6s4-1 0-6ZM12 12v7",
     flower: "M12 8c-7-10-12 1-5 4-8 5 1 12 5 5 4 7 13 0 5-5 7-3 2-14-5-4ZM12 17v6m0-3 6-2",
     fruit: "M12 7C3 4 2 12 6 19c4 7 8 2 12-4 4-7-1-10-6-8ZM12 7V2m0 5 5-4M8 11h.1m6 0h.1m-4 4h.1m5 0h.1",
@@ -79,11 +72,15 @@ function Step({ number, title, hint, children }: { number: number; title: string
   return <fieldset className="custom-step"><legend><span className="custom-step-number">{number}</span><span>{title}</span></legend><p className="custom-step-hint">{hint}</p>{children}</fieldset>;
 }
 
+function menuKey(selection: Selection): keyof typeof flavourMenus {
+  return selection.glutenFree ? (selection.category === "vegan" ? "veganGf" : "gf") : selection.category;
+}
+
 function validSaved(value: unknown): value is Selection {
   if (!value || typeof value !== "object") return false;
   const s = value as Selection;
-  return Number.isInteger(s.flavour) && !!flavours[s.flavour] && Number.isInteger(s.size) && !!sizes[s.size] && Number.isInteger(s.colour) && !!colours[s.colour]
-    && ["Hand piped", "Handwritten"].includes(s.writing) && typeof s.message === "string" && s.message.length <= 30
+  return ["standard", "vegan"].includes(s.category) && typeof s.glutenFree === "boolean" && Number.isInteger(s.flavour) && !!flavourMenus[menuKey(s)][s.flavour] && Number.isInteger(s.size) && !!sizes[s.size] && Number.isInteger(s.colour) && !!colours[s.colour]
+    && typeof s.inscription === "boolean" && typeof s.message === "string" && s.message.length <= 30 && (s.inscription || s.message === "")
     && Array.isArray(s.extras) && s.extras.every(name => extras.some(extra => extra.name === name))
     && ["Collection", "Local delivery"].includes(s.delivery) && typeof s.date === "string" && /^\d{4}-\d{2}-\d{2}$/.test(s.date) && timeSlots.includes(s.time);
 }
@@ -99,7 +96,11 @@ export default function CakeCustomiser() {
     try {
       const stored = localStorage.getItem(storageKey);
       if (stored) {
-        const saved: unknown = JSON.parse(stored);
+        const parsed = JSON.parse(stored);
+        // Retain selections saved before Gluten-Free became an independent option.
+        const saved: unknown = parsed && typeof parsed === "object" && !("glutenFree" in parsed)
+          ? { ...parsed, category: parsed.category === "gf" ? "standard" : parsed.category, glutenFree: parsed.category === "gf" }
+          : parsed;
         if (validSaved(saved)) { setSelection(saved); setStatus("Your saved cake has been restored. You can keep editing below."); }
       }
     } catch { setStatus("Browser storage is unavailable. You can still customise your cake."); }
@@ -108,24 +109,32 @@ export default function CakeCustomiser() {
     setSelection(previous => ({ ...previous, [key]: value }));
     setStatus("");
   }
+  const flavours = flavourMenus[menuKey(selection)];
+  const categoryName = `${selection.category === "vegan" ? "Vegan" : "Standard"}${selection.glutenFree ? " + Gluten-Free" : ""}`;
   const flavour = flavours[selection.flavour];
   const size = sizes[selection.size];
-  const total = size.price + flavour.price + extras.filter(extra => selection.extras.includes(extra.name)).reduce((sum, extra) => sum + extra.price, 0) + (selection.delivery === "Local delivery" ? 4 : 0);
+  const supplement = selection.category === "standard" && !selection.glutenFree ? 0 : dietarySupplement[size.inches];
+  const total = !flavour || size.price === null ? null : size.price + supplement + (selection.inscription ? 3.5 : 0) + extras.filter(extra => selection.extras.includes(extra.name)).reduce((sum, extra) => sum + extra.price, 0) + (selection.delivery === "Local delivery" ? 4 : 0);
   function save(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (!flavour) { setStatus("Vegan + Gluten-Free flavours are coming soon. Please choose another combination to save your cake."); return; }
     try { localStorage.setItem(storageKey, JSON.stringify(selection)); setStatus("Your cake is saved in this browser. No order has been placed."); }
     catch { setStatus("Your browser could not save this cake. Please allow local storage and try again."); }
   }
   return <form className="custom-cake-form" onSubmit={save}>
     <div className="custom-cake-steps">
       <Step number={1} title="Cake flavour" hint="Choose your favourite flavour.">
-        <div className="custom-flavours">{flavours.map((item, index) => <label className="custom-choice custom-flavour" key={item.name}>
+        <fieldset className="custom-categories"><legend>Cake category</legend><div>{categories.map(item => <label className="custom-choice" key={item.id}><input type={item.id === "gf" ? "checkbox" : "radio"} name={item.id === "gf" ? "glutenFree" : "category"} checked={item.id === "gf" ? selection.glutenFree : selection.category === item.id} onChange={() => { setSelection(previous => item.id === "gf" ? { ...previous, glutenFree: !previous.glutenFree, flavour: 0 } : { ...previous, category: item.id, flavour: 0 }); setStatus(""); }} /><span className="custom-choice-face">{item.name}</span></label>)}</div></fieldset>
+        <p className="custom-category-note">Choose Standard or Vegan. Add Gluten-Free to either.</p>
+        {!flavour ? <p className="custom-flavour-description" role="status">Vegan + Gluten-Free flavours are coming soon. Please choose another combination for now.</p> : <p className="custom-category-note">{!supplement ? "Our ten signature flavours." : `${categoryName} flavours. Supplement: +£2 for 4″, +£5 for 6″ and 8″, +£7 for 10″.`}</p>}
+        <div className="custom-flavours" data-count={flavours.length}>{flavours.map((item, index) => <label className="custom-choice custom-flavour" key={item.name}>
           <input type="radio" name="flavour" checked={selection.flavour === index} onChange={() => update("flavour", index)} />
-          <span className="custom-choice-face"><Slice {...item} /><strong>{item.name}</strong><small>{item.price ? `+${money(item.price)}` : "Included"}</small></span>
+          <span className="custom-choice-face"><Slice {...item} /><strong>{item.name}</strong><small>{supplement ? `+${money(supplement)} for ${size.inches}″` : "Included"}</small></span>
         </label>)}</div>
+        {flavour && <p className="custom-flavour-description" aria-live="polite"><strong>{flavour.name}</strong> — {flavour.description}</p>}
       </Step>
       <Step number={2} title="Size" hint="Select the perfect size.">
-        <div className="custom-sizes">{sizes.map((item, index) => <label className="custom-choice" key={item.inches}><input type="radio" name="size" checked={selection.size === index} onChange={() => update("size", index)} /><span className="custom-choice-face"><strong>{item.inches}″</strong><span>Serves {item.serves}</span><small>{money(item.price)}</small></span></label>)}</div>
+        <div className="custom-sizes">{sizes.map((item, index) => <label className="custom-choice" key={item.inches}><input type="radio" name="size" checked={selection.size === index} onChange={() => update("size", index)} /><span className="custom-choice-face"><strong>{item.inches}″</strong><span>Serves {item.serves}</span><small>{!flavour || item.price === null ? "Price on enquiry" : money(item.price + (selection.category === "standard" && !selection.glutenFree ? 0 : dietarySupplement[item.inches]))}</small></span></label>)}</div>
       </Step>
       <Step number={3} title="Colour theme" hint={`Pick your perfect colour. ${colours[selection.colour].name} selected · included.`}>
         <div className="custom-colours">{colours.map((item, index) => <label className="custom-colour" key={item.name} style={{ "--cake-swatch": item.colour } as CSSProperties}><input type="radio" name="colour" checked={selection.colour === index} onChange={() => update("colour", index)} /><span className="custom-swatch" /><span>{item.name}</span></label>)}</div>
@@ -133,8 +142,8 @@ export default function CakeCustomiser() {
       <Step number={4} title="Personalisation" hint="Add your personal touches.">
         <div className="custom-personalisation">
           <div className="custom-personalisation-top">
-            <fieldset className="custom-writing"><legend>Writing style</legend><div>{["Hand piped", "Handwritten"].map(item => <label className="custom-choice" key={item}><input type="radio" name="writing" checked={selection.writing === item} onChange={() => update("writing", item)} /><span className="custom-choice-face">{item}</span></label>)}</div></fieldset>
-            <label className="custom-field">Message (optional)<span className="custom-message"><input name="message" maxLength={30} placeholder="e.g. Happy Birthday Akara!" value={selection.message} onChange={event => update("message", event.target.value)} /><span aria-hidden="true">{selection.message.length}/30</span></span></label>
+            <label className="custom-choice custom-inscription"><input type="checkbox" name="inscription" checked={selection.inscription} onChange={event => { setSelection(previous => ({ ...previous, inscription: event.target.checked, message: event.target.checked ? previous.message : "" })); setStatus(""); }} /><span className="custom-choice-face"><strong>Hand piped inscription</strong><small>+{money(3.5)}</small></span></label>
+            {selection.inscription && <label className="custom-field">Message (optional)<span className="custom-message"><input name="message" maxLength={30} placeholder="e.g. Happy Birthday Akara!" value={selection.message} onChange={event => update("message", event.target.value)} /><span aria-hidden="true">{selection.message.length}/30</span></span></label>}
           </div>
           <fieldset className="custom-extras"><legend>Add extras <span>(choose as many as you like)</span></legend><div>{extras.map(item => <label className="custom-choice" key={item.name}><input type="checkbox" name="extras" value={item.name} checked={selection.extras.includes(item.name)} onChange={event => update("extras", event.target.checked ? [...selection.extras, item.name] : selection.extras.filter(name => name !== item.name))} /><span className="custom-choice-face"><Icon name={item.icon} /><span>{item.name}</span><small>+{money(item.price)}</small></span></label>)}</div></fieldset>
           <p className="custom-decoration-note"><Icon name="cake" />Your {size.inches}″ cake will be decorated to suit the size.</p>
@@ -147,8 +156,9 @@ export default function CakeCustomiser() {
       </Step>
     </div>
     <section className="custom-summary" aria-labelledby="custom-summary-title">
-      <div className="custom-summary-cake"><div><h2 id="custom-summary-title">Your cake</h2><p>{flavour.name} · {size.inches}″ (serves {size.serves})</p><p>{colours[selection.colour].name} · {selection.writing}</p>{selection.message && <p>“{selection.message}”</p>}<p>{selection.extras.length ? selection.extras.join(" · ") : "No extras"}</p><p>{selection.delivery}{selection.date && ` · ${selection.date}`}{selection.time && ` · ${selection.time}`}</p></div></div>
-      <div className="custom-summary-action"><div className="custom-total" aria-live="polite" aria-atomic="true"><span>Sample total</span><strong>{money(total)}</strong></div><button type="submit">Save my cake <span aria-hidden="true">→</span></button></div>
+      <div className="custom-summary-cake"><div><h2 id="custom-summary-title">Your cake</h2><p>{categoryName} · {flavour?.name ?? "Flavours coming soon"} · {size.inches}″ (serves {size.serves})</p><p>{colours[selection.colour].name} · {selection.inscription ? "Hand piped inscription (+£3.50)" : "No inscription"}</p>{selection.message && <p>“{selection.message}”</p>}<p>{selection.extras.length ? selection.extras.join(" · ") : "No extras"}</p><p>{selection.delivery}{selection.date && ` · ${selection.date}`}{selection.time && ` · ${selection.time}`}</p>{flavour && supplement > 0 && <p className="custom-summary-supplement">{categoryName} supplement: +{money(supplement)}{total === null ? ". Base cake price to be confirmed." : " (included in total)."}</p>}</div></div>
+
+      <div className="custom-summary-action"><div className="custom-total" aria-live="polite" aria-atomic="true"><span>{total === null ? "Cake price" : "Sample total"}</span><strong>{!flavour ? "Coming soon" : total === null ? "On enquiry" : money(total)}</strong></div><button type="submit" disabled={!flavour}>Save my cake <span aria-hidden="true">→</span></button></div>
       <p className="custom-pricing-note">Sample prices for planning only. Save your selection on this device; this does not place an order.</p>
       <p className="custom-save-status" role="status">{status}</p>
     </section>

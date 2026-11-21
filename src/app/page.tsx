@@ -21,16 +21,17 @@ export default function Home() {
         <p>We are based in the heart of Dennistoun in Glasgow. Here, you can order your celebration cakes, enquire about wedding cakes or come by the bakery for a slice of our cake specials and a cup of coffee.</p>
       </section>
 
-        <section className="bakery-story" aria-labelledby="bakery-story-heading">
+        <section className="bakery-story signature-feature" aria-labelledby="bakery-story-heading">
           <div className="bakery-story-copy">
-            <h2 id="bakery-story-heading">Made from scratch.<br />Made for you.</h2>
+            <p className="signature-feature-label">Signature flavours</p>
+            <h2 id="bakery-story-heading">It&apos;s what&apos;s <em>inside</em> that counts.</h2>
+            <p className="signature-feature-subtitle">Made from scratch. Made for you.</p>
             <p>
-              We believe the best cakes start with the best ingredients and a
-              whole lot of care. Whether you have a clear idea in mind or need a
-              little inspiration, we&apos;re here to create something unforgettable.
+              Thoughtfully crafted cakes, where unexpected flavours meet beautiful
+              design. Made for moments worth remembering.
             </p>
-            <a className="bakery-story-about" href="/shop/all?category=Cakes">
-              Explore signature flavours <span aria-hidden="true">&rarr;</span>
+            <a className="bakery-story-about hero-button hero-button-primary" href="/shop/all?category=Cakes">
+              Explore our flavours <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
           <a className="bakery-story-image" href="/shop/all?category=Cakes" aria-label="Explore signature flavours">
@@ -56,7 +57,7 @@ export default function Home() {
             { name: "Custom Cakes", image: "/Video/Banner Carosel/banner-3.webp", alt: "White birthday cake decorated with small red hearts", href: "/custom-cakes" },
           ].map((category) => <article className="favourite" key={category.name}>
             <a className="favourite-image" href={category.href} aria-label={`Explore ${category.name}`}>
-              <img src={category.image} alt={category.alt} width={640} height={640} loading="lazy" />
+              <span className="favourite-image-crop"><img src={category.image} alt={category.alt} width={640} height={640} loading="lazy" /></span>
             </a>
             <div className="favourite-caption"><h3>{category.name}</h3><a className="favourite-shop" href={category.href}>Shop now <span aria-hidden="true">&rarr;</span></a></div>
           </article>)}
