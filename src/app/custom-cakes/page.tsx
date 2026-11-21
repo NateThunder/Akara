@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function CustomCakesPage() {
-  return <><SiteHeader /><main className="custom-cakes-page">
+  return <><SiteHeader /><main id="main-content" tabIndex={-1} className="custom-cakes-page">
     <header className="custom-cakes-heading"><p>Akara Bakery · Made for you</p><h1>Custom Cakes</h1></header>
     <CakeCustomiser />
     <BespokeEnquiry />

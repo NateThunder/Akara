@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function ShopAll() {
   return <>
     <SiteHeader />
-    <main className="shop-page">
+    <main id="main-content" tabIndex={-1} className="shop-page">
       <Suspense fallback={<p className="shop-loading">Loading the collection…</p>}><Catalogue /></Suspense>
       <section className="enquiry-banner shop-enquiry"><div className="enquiry-inner"><div><h2>A cake as special as the occasion.</h2><p>Tell us what you have in mind. We’ll help bring it to life.</p></div><a className="enquiry-button" href="https://www.akarabakery.co.uk/contact">Enquire now <span aria-hidden="true">→</span></a></div></section>
     </main>

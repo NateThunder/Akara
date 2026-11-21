@@ -5,7 +5,7 @@ import HomeFooter from "./home-footer";
 export default function Home() {
   return <>
     <SiteHeader overlay />
-    <main className="editorial-home">
+    <main id="main-content" tabIndex={-1} className="editorial-home">
       <HomeMotion />
       <section className="editorial-hero" aria-labelledby="joy-heading">
         <div className="editorial-hero-copy">

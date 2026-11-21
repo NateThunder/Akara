@@ -20,6 +20,8 @@ export default function BespokeEnquiry({ eyebrow = "Something beyond the builder
       <h2 id="bespoke-enquiry-heading">Tell us about your dream cake</h2>
       <p>Share your ideas and we can make a design and quote for your celebration.</p>
     </div>
+    <details className="bespoke-enquiry-disclosure">
+      <summary><span className="bespoke-enquiry-open-label">Open enquiry form</span><span className="bespoke-enquiry-close-label">Close enquiry form</span><span className="bespoke-enquiry-toggle-icon" aria-hidden="true" /></summary>
     <form className="bespoke-enquiry-form" onSubmit={preview}>
       <div className="bespoke-enquiry-grid">
         <label>Full name <span>*</span><input name="name" autoComplete="name" required maxLength={120} /></label>
@@ -39,5 +41,6 @@ export default function BespokeEnquiry({ eyebrow = "Something beyond the builder
       <button type="submit">Preview enquiry <span aria-hidden="true">→</span></button>
       <p className="bespoke-enquiry-status" role="status">{status}</p>
     </form>
+    </details>
   </section>;
 }

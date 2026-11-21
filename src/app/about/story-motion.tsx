@@ -73,5 +73,5 @@ export default function StoryMotion({ children }: { children: ReactNode }) {
     };
   }, []);
 
-  return <main ref={root} className="akara-story">{children}</main>;
+  return <main id="main-content" tabIndex={-1} ref={root} className="akara-story">{children}</main>;
 }
