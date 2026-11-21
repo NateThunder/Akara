@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dmSans.className} ${instrumentSerif.variable} ${dmSans.variable}`}>
+        <a className="skip-link" href="#main-content">Skip to main content</a>
         <svg width="0" height="0" aria-hidden="true" focusable="false" style={{ position: "absolute" }}>
           <defs>
             <filter id="brand-teal-tint" colorInterpolationFilters="sRGB">

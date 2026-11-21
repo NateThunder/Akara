@@ -42,8 +42,8 @@ export default function Catalogue() {
     </div>
     <div className="shop-product-grid">{products.map((product,index) => <article className="shop-product" key={product.id}>
       <a className="shop-product-image" href={`/shop/${product.href.split("/").pop()}`} aria-label={`View ${product.name}`}><img src={product.image} alt={product.name} width={750} height={750} loading={index < 4 ? "eager" : "lazy"} /><span className="shop-image-action">Discover more <span aria-hidden="true">→</span></span></a>
-      <div className="shop-product-copy"><h3><a href={`/shop/${product.href.split("/").pop()}`}>{product.name}</a></h3><p>{product.from && <span>From </span>}{money.format(product.price)}</p><a className="shop-product-button" href={`/shop/${product.href.split("/").pop()}`}>Choose options <span className="shop-sr-only">for {product.name}</span></a></div>
+      <div className="shop-product-copy"><h2><a href={`/shop/${product.href.split("/").pop()}`}>{product.name}</a></h2><p>{product.from && <span>From </span>}{money.format(product.price)}</p><a className="shop-product-button" href={`/shop/${product.href.split("/").pop()}`}>Choose options <span className="shop-sr-only">for {product.name}</span></a></div>
     </article>)}</div>
-    {products.length === 0 && <div className="shop-empty"><h3>No treats found this time.</h3><p>Try another flavour or browse the whole collection.</p><button type="button" className="shop-product-button" onClick={() => { setSearch(""); selectCategory("All"); }}>Clear filters</button></div>}
+    {products.length === 0 && <div className="shop-empty"><h2>No treats found this time.</h2><p>Try another flavour or browse the whole collection.</p><button type="button" className="shop-product-button" onClick={() => { setSearch(""); selectCategory("All"); }}>Clear filters</button></div>}
   </section>;
 }

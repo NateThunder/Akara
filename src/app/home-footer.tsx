@@ -48,7 +48,7 @@ export default function HomeFooter() {
     <footer className="site-footer">
       <div className="footer-inner">
         <a className="footer-brand" href="/" aria-label="Akara Bakery home">
-          <img src="/Video/logo3.webp" alt="Akara Bakery" width={160} height={120} loading="lazy" />
+          <img src="/Video/About/wordmark-white.webp" alt="Akara Bakery" width={1000} height={667} loading="lazy" />
         </a>
         <nav className="footer-links" aria-label="Quick links">
           <h2>Quick links</h2>

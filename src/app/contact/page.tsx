@@ -12,7 +12,7 @@ export default function ContactPage() {
   return (
     <>
       <SiteHeader />
-      <main className="contact-page">
+      <main id="main-content" tabIndex={-1} className="contact-page">
         <section className="contact-layout" aria-labelledby="contact-heading">
           <div className="contact-copy">
             <h1 id="contact-heading">Contact Us</h1>
