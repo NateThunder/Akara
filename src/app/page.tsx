@@ -13,7 +13,7 @@ export default function Home() {
           <p>Extraordinary cakes. Unexpected flavours.<br />Made with a little imagination.</p>
           <a className="hero-button editorial-hero-outline" href="/shop/all">Explore our cakes</a>
         </div>
-        <div className="editorial-hero-photo"><img src="/Video/Carosel2/banner1.webp" alt="Nine handmade celebration cakes with chocolate, berry and vanilla buttercream, fruit and piped decorations" width={1600} height={1200} fetchPriority="high" /></div>
+        <div className="editorial-hero-photo"><img src="/Video/Carosel2/banner-cakes-3.webp" alt="Handmade celebration cakes with chocolate and berry buttercream, fresh fruit and piped decorations" width={1600} height={1200} fetchPriority="high" /></div>
       </section>
 
       <section className="editorial-intro" aria-label="Welcome to Akara">
@@ -29,11 +29,11 @@ export default function Home() {
               whole lot of care. Whether you have a clear idea in mind or need a
               little inspiration, we&apos;re here to create something unforgettable.
             </p>
-            <a className="bakery-story-about" href="/about">
-              About Akara Bakery <span aria-hidden="true">&rarr;</span>
+            <a className="bakery-story-about" href="/shop/all?category=Cakes">
+              Explore signature flavours <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
-          <div className="bakery-story-image">
+          <a className="bakery-story-image" href="/shop/all?category=Cakes" aria-label="Explore signature flavours">
             <img
               src="/Video/Banner Carosel/banner-6.webp"
               alt="A tray of handmade cake slices with layers of sponge and buttercream"
@@ -41,7 +41,7 @@ export default function Home() {
               height={1200}
               loading="lazy"
             />
-          </div>
+          </a>
         </section>
 
       <section className="favourites favourites-three" aria-labelledby="favourites-heading">
