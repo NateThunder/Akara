@@ -90,6 +90,22 @@ export default function HomeMotion() {
           scrollTrigger: { id: "home-intro-copy", trigger: intro, start: "top 85%", once: true },
         });
       }
+      const signatureCopy = root.querySelector<HTMLElement>(".signature-feature .bakery-story-copy");
+      if (signatureCopy) {
+        const entrance = gsap.fromTo(signatureCopy.children, { y: 12, opacity: 0 }, {
+          y: 0, opacity: 1, duration: 0.45, stagger: 0.07, ease: "power2.out",
+          clearProps: "transform,opacity",
+          scrollTrigger: {
+            id: "home-signature-copy", trigger: signatureCopy, start: "top 85%", once: true,
+          },
+        });
+        // Keyboard users should never focus an action that is still hidden.
+        const revealOnFocus = () => entrance.progress(1);
+        signatureCopy.addEventListener("focusin", revealOnFocus);
+        context.add(() => {
+          return () => signatureCopy.removeEventListener("focusin", revealOnFocus);
+        });
+      }
       const slices = root.querySelector<HTMLElement>(".editorial-slice-image");
       if (slices) {
         gsap.fromTo(slices.querySelector("img"), { scale: desktop ? 1.1 : 1.04 }, {
