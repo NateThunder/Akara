@@ -59,6 +59,21 @@ h1, h2, h3, h4, h5, h6 {
 .custom-step-number { display: inline-grid; place-items: center; width: 28px; height: 28px; flex: 0 0 28px; border-radius: 50%; background: #b88636; color: #fff; font-size: 16px; letter-spacing: 0; }
 .custom-step-hint { margin: 3px 0 20px 42px; }
 .custom-flavours, .custom-sizes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.custom-categories { min-width: 0; margin: 0; padding: 0; border: 0; }
+.custom-categories legend { margin-bottom: 12px; font-size: 16px; }
+.custom-categories > div { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+.custom-categories .custom-choice-face { min-height: 48px; padding: 12px; color: var(--brand-teal); font-weight: 600; }
+.custom-category-note, .custom-flavour-description { max-width: 70ch; margin: 16px 0 20px; font-size: 16px; }
+.custom-flavour-description { margin-bottom: 0; }
+.custom-inscription { align-self: start; }
+.custom-summary-supplement { color: var(--brand-teal); }
+.custom-summary button:disabled { opacity: .55; cursor: not-allowed; }
+@media (min-width: 375px) { .custom-categories > div { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 700px) and (max-width: 1023px) { .custom-cake-form .custom-flavours { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 700px) { .custom-cake-form .custom-flavours[data-count="8"] { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 699px) {
+  .custom-cake-form .custom-colour, .custom-cake-form .custom-field, .custom-cake-form .custom-extras legend, .custom-cake-form .custom-decoration-note, .custom-cake-form .custom-availability { font-size: 16px; }
+}
 .custom-choice { position: relative; display: block; min-width: 0; cursor: pointer; }
 .custom-choice:has(> input:checked), .custom-choice:focus-within { z-index: 1; }
 .custom-choice > input, .custom-colour > input { position: absolute; width: 1px; height: 1px; opacity: 0; }

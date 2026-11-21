@@ -1,0 +1,325 @@
+- generic [active] [ref=e1]:
+  - text: • •
+  - banner [ref=e2]:
+    - link "Akara Bakery home" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "Akara Bakery" [ref=e4]
+    - navigation "Main navigation" [ref=e5]:
+      - link "Shop" [ref=e6] [cursor=pointer]:
+        - /url: /shop/all
+      - link "Signature Flavours" [ref=e7] [cursor=pointer]:
+        - /url: /shop/all?category=Cakes
+      - link "Custom Cakes" [ref=e8] [cursor=pointer]:
+        - /url: /custom-cakes
+      - link "Weddings" [ref=e9] [cursor=pointer]:
+        - /url: /contact?enquiry=wedding-cake
+      - link "Our Story" [ref=e10] [cursor=pointer]:
+        - /url: /about
+      - link "Contact Us" [ref=e11] [cursor=pointer]:
+        - /url: /contact
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - paragraph [ref=e14]: Akara Bakery · Made for you
+      - heading "Custom Cakes" [level=1] [ref=e15]
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - group "1 Cake flavour" [ref=e18]:
+          - generic [ref=e19]:
+            - generic [ref=e20]: "1"
+            - generic [ref=e21]: Cake flavour
+          - paragraph [ref=e22]: Choose your favourite flavour.
+          - generic [ref=e23]:
+            - generic [ref=e24] [cursor=pointer]:
+              - radio "Vanilla Sponge Included ✓" [checked] [ref=e25]
+              - generic [ref=e26]:
+                - strong [ref=e36]: Vanilla Sponge
+                - generic [ref=e37]: Included
+                - text: ✓
+            - generic [ref=e38] [cursor=pointer]:
+              - radio "Chocolate Sponge +£5.00" [ref=e39]
+              - generic [ref=e40]:
+                - strong [ref=e50]: Chocolate Sponge
+                - generic [ref=e51]: +£5.00
+            - generic [ref=e52] [cursor=pointer]:
+              - radio "Red Velvet +£5.00" [ref=e53]
+              - generic [ref=e54]:
+                - strong [ref=e64]: Red Velvet
+                - generic [ref=e65]: +£5.00
+            - generic [ref=e66] [cursor=pointer]:
+              - radio "Lemon Sponge +£3.00" [ref=e67]
+              - generic [ref=e68]:
+                - strong [ref=e78]: Lemon Sponge
+                - generic [ref=e79]: +£3.00
+            - generic [ref=e80] [cursor=pointer]:
+              - radio "Carrot Cake +£5.00" [ref=e81]
+              - generic [ref=e82]:
+                - strong [ref=e92]: Carrot Cake
+                - generic [ref=e93]: +£5.00
+        - group "2 Size" [ref=e94]:
+          - generic [ref=e95]:
+            - generic [ref=e96]: "2"
+            - generic [ref=e97]: Size
+          - paragraph [ref=e98]: Select the perfect size.
+          - generic [ref=e99]:
+            - generic [ref=e100] [cursor=pointer]:
+              - radio "6″ Serves 10 £85.00 ✓" [checked] [ref=e101]
+              - generic [ref=e102]:
+                - strong [ref=e103]: 6″
+                - generic [ref=e104]: Serves 10
+                - generic [ref=e105]: £85.00
+                - text: ✓
+            - generic [ref=e106] [cursor=pointer]:
+              - radio "8″ Serves 20 £110.00" [ref=e107]
+              - generic [ref=e108]:
+                - strong [ref=e109]: 8″
+                - generic [ref=e110]: Serves 20
+                - generic [ref=e111]: £110.00
+            - generic [ref=e112] [cursor=pointer]:
+              - radio "10″ Serves 30 £140.00" [ref=e113]
+              - generic [ref=e114]:
+                - strong [ref=e115]: 10″
+                - generic [ref=e116]: Serves 30
+                - generic [ref=e117]: £140.00
+            - generic [ref=e118] [cursor=pointer]:
+              - radio "12″ Serves 40 £170.00" [ref=e119]
+              - generic [ref=e120]:
+                - strong [ref=e121]: 12″
+                - generic [ref=e122]: Serves 40
+                - generic [ref=e123]: £170.00
+        - group "3 Colour theme" [ref=e124]:
+          - generic [ref=e125]:
+            - generic [ref=e126]: "3"
+            - generic [ref=e127]: Colour theme
+          - paragraph [ref=e128]: Pick your perfect colour. Ivory selected · included.
+          - generic [ref=e129]:
+            - generic [ref=e130] [cursor=pointer]:
+              - radio "Ivory" [checked] [ref=e131]
+              - generic [ref=e133]: Ivory
+            - generic [ref=e134] [cursor=pointer]:
+              - radio "Blush" [ref=e135]
+              - generic [ref=e137]: Blush
+            - generic [ref=e138] [cursor=pointer]:
+              - radio "Sage" [ref=e139]
+              - generic [ref=e141]: Sage
+            - generic [ref=e142] [cursor=pointer]:
+              - radio "Dusty blue" [ref=e143]
+              - generic [ref=e145]: Dusty blue
+            - generic [ref=e146] [cursor=pointer]:
+              - radio "Oatmeal" [ref=e147]
+              - generic [ref=e149]: Oatmeal
+            - generic [ref=e150] [cursor=pointer]:
+              - radio "Terracotta" [ref=e151]
+              - generic [ref=e153]: Terracotta
+            - generic [ref=e154] [cursor=pointer]:
+              - radio "Charcoal" [ref=e155]
+              - generic [ref=e157]: Charcoal
+        - group "4 Personalisation" [ref=e158]:
+          - generic [ref=e159]:
+            - generic [ref=e160]: "4"
+            - generic [ref=e161]: Personalisation
+          - paragraph [ref=e162]: Add your personal touches.
+          - generic [ref=e163]:
+            - generic [ref=e164]:
+              - group "Writing style" [ref=e165]:
+                - generic [ref=e167]:
+                  - generic [ref=e168] [cursor=pointer]:
+                    - radio "Hand piped ✓" [checked] [ref=e169]
+                    - generic [ref=e170]: Hand piped ✓
+                  - generic [ref=e171] [cursor=pointer]:
+                    - radio "Handwritten" [ref=e172]
+                    - generic [ref=e173]: Handwritten
+              - generic [ref=e174]:
+                - text: Message (optional)
+                - generic [ref=e175]:
+                  - textbox "Message (optional)" [ref=e176]:
+                    - /placeholder: e.g. Happy Birthday Akara!
+                  - generic [aria-hidden] [ref=e177]: 0/30
+            - group "Add extras (choose as many as you like)" [ref=e178]:
+              - generic [ref=e180]:
+                - generic [ref=e181] [cursor=pointer]:
+                  - checkbox "Candles +£3.00" [ref=e182]
+                  - generic [ref=e183]:
+                    - generic [ref=e186]: Candles
+                    - generic [ref=e187]: +£3.00
+                - generic [ref=e188] [cursor=pointer]:
+                  - checkbox "Flowers +£15.00" [ref=e189]
+                  - generic [ref=e190]:
+                    - generic [ref=e193]: Flowers
+                    - generic [ref=e194]: +£15.00
+                - generic [ref=e195] [cursor=pointer]:
+                  - checkbox "Fruit +£8.00" [ref=e196]
+                  - generic [ref=e197]:
+                    - generic [ref=e200]: Fruit
+                    - generic [ref=e201]: +£8.00
+                - generic [ref=e202] [cursor=pointer]:
+                  - checkbox "Sprinkles +£4.00" [ref=e203]
+                  - generic [ref=e204]:
+                    - generic [ref=e207]: Sprinkles
+                    - generic [ref=e208]: +£4.00
+            - paragraph [ref=e209]: Your 6″ cake will be decorated to suit the size.
+        - group "5 Delivery or collection" [ref=e212]:
+          - generic [ref=e213]:
+            - generic [ref=e214]: "5"
+            - generic [ref=e215]: Delivery or collection
+          - paragraph [ref=e216]: Choose when and how you’d like your cake.
+          - generic [ref=e217]:
+            - generic [ref=e218] [cursor=pointer]:
+              - radio "Collection Collect from Akara Bakery · free ✓" [checked] [ref=e219]
+              - generic [ref=e220]:
+                - generic [ref=e223]:
+                  - strong [ref=e224]: Collection
+                  - generic [ref=e225]: Collect from Akara Bakery · free
+                - text: ✓
+            - generic [ref=e226] [cursor=pointer]:
+              - radio "Local delivery +£4.00 sample delivery fee" [ref=e227]
+              - generic [ref=e231]:
+                - strong [ref=e232]: Local delivery
+                - generic [ref=e233]: +£4.00 sample delivery fee
+          - generic [ref=e234]:
+            - generic [ref=e235]:
+              - text: Preferred date
+              - textbox "Preferred date" [ref=e236]
+            - generic [ref=e237]:
+              - text: Preferred time
+              - combobox "Preferred time" [ref=e238]:
+                - option "Select time" [selected]
+                - option "10:00–12:00"
+                - option "12:00–14:00"
+                - option "14:00–16:00"
+          - paragraph [ref=e239]: Please allow at least 4 days. Dates, time slots and delivery availability need to be confirmed with the bakery.
+      - region "Your cake" [ref=e240]:
+        - generic [ref=e242]:
+          - heading "Your cake" [level=2] [ref=e243]
+          - paragraph [ref=e244]: Vanilla Sponge · 6″ (serves 10)
+          - paragraph [ref=e245]: Ivory · Hand piped
+          - paragraph [ref=e246]: No extras
+          - paragraph [ref=e247]: Collection
+        - generic [ref=e248]:
+          - generic [ref=e249]:
+            - generic [ref=e250]: Sample total
+            - strong [ref=e251]: £85.00
+          - button "Save my cake" [ref=e252] [cursor=pointer]:
+            - text: Save my cake
+            - generic [aria-hidden] [ref=e253]: →
+        - paragraph [ref=e254]: Sample prices for planning only. Save your selection on this device; this does not place an order.
+    - region "Tell us about your dream cake" [ref=e255]:
+      - generic [ref=e256]:
+        - paragraph [ref=e257]: Something beyond the builder?
+        - heading "Tell us about your dream cake" [level=2] [ref=e258]
+        - paragraph [ref=e259]: Share your ideas and we can make a design and quote for your celebration.
+      - generic [ref=e260]:
+        - generic [ref=e261]:
+          - generic [ref=e262]:
+            - text: Full name
+            - generic [ref=e263]: "*"
+            - textbox "Full name *" [ref=e264]
+          - generic [ref=e265]:
+            - text: Telephone number
+            - generic [ref=e266]: "*"
+            - textbox "Telephone number *" [ref=e267]
+          - generic [ref=e268]:
+            - text: Email address
+            - generic [ref=e269]: "*"
+            - textbox "Email address *" [ref=e270]
+          - generic [ref=e271]:
+            - text: Date of event
+            - generic [ref=e272]: "*"
+            - textbox "Date of event *" [ref=e273]
+          - generic [ref=e274]:
+            - text: Number of servings or guests
+            - generic [ref=e275]: "*"
+            - spinbutton "Number of servings or guests *" [ref=e276]
+          - generic [ref=e277]:
+            - text: Flavour choice
+            - generic [ref=e278]: "*"
+            - combobox "Flavour choice *" [ref=e279]:
+              - option "Choose a flavour" [selected]
+              - option "Vanilla Sponge"
+              - option "Chocolate Sponge"
+              - option "Red Velvet"
+              - option "Lemon Sponge"
+              - option "Carrot Cake"
+              - option "Something else / please advise"
+        - group "Dietary requirements or allergens" [ref=e280]:
+          - paragraph [ref=e282]: Select any that apply and add details below. We will confirm suitability with you.
+          - generic [ref=e283]:
+            - generic [ref=e284] [cursor=pointer]:
+              - checkbox "Gluten free" [ref=e285]
+              - text: Gluten free
+            - generic [ref=e286] [cursor=pointer]:
+              - checkbox "Vegan" [ref=e287]
+              - text: Vegan
+            - generic [ref=e288] [cursor=pointer]:
+              - checkbox "Nuts" [ref=e289]
+              - text: Nuts
+            - generic [ref=e290] [cursor=pointer]:
+              - checkbox "Soya" [ref=e291]
+              - text: Soya
+            - generic [ref=e292] [cursor=pointer]:
+              - checkbox "Other" [ref=e293]
+              - text: Other
+        - generic [ref=e294]:
+          - text: Dietary details (optional)
+          - textbox "Dietary details (optional)" [ref=e295]:
+            - /placeholder: Tell us about any allergies or other requirements
+        - group "Collection or delivery *" [ref=e296]:
+          - generic [ref=e298]:
+            - generic [ref=e299] [cursor=pointer]:
+              - radio "Collection" [checked] [ref=e300]
+              - text: Collection
+            - generic [ref=e301] [cursor=pointer]:
+              - radio "Delivery" [ref=e302]
+              - text: Delivery
+        - generic [ref=e303]:
+          - text: Design details (optional)
+          - textbox "Design details (optional)" [ref=e304]:
+            - /placeholder: Colours, decorations, occasion, or anything you would like us to know
+        - generic [ref=e305]:
+          - text: Inspiration image (optional)
+          - button "Inspiration image (optional) Choose a JPG, PNG, WebP or AVIF image." [ref=e306]
+          - generic [ref=e307]: Choose a JPG, PNG, WebP or AVIF image.
+        - paragraph [ref=e308]:
+          - text: Online enquiries are coming soon. This form does not send or store your details or image. For now, email
+          - link "orders@akarabakery.co.uk" [ref=e309] [cursor=pointer]:
+            - /url: mailto:orders@akarabakery.co.uk
+          - text: .
+        - button "Preview enquiry" [ref=e310] [cursor=pointer]: Preview enquiry →
+  - contentinfo [ref=e311]:
+    - generic [ref=e312]:
+      - link "Akara Bakery home" [ref=e313] [cursor=pointer]:
+        - /url: /
+        - img "Akara Bakery" [ref=e314]
+      - navigation "Quick links" [ref=e315]:
+        - heading "Quick links" [level=2] [ref=e316]
+        - list [ref=e317]:
+          - listitem [ref=e318]:
+            - link "Shop" [ref=e319] [cursor=pointer]:
+              - /url: /shop/all
+          - listitem [ref=e320]:
+            - link "Our Story" [ref=e321] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e322]:
+            - link "Contact" [ref=e323] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=e324]:
+            - link "FAQs" [ref=e325] [cursor=pointer]:
+              - /url: /#faqs
+      - navigation "Information" [ref=e326]:
+        - heading "Info" [level=2] [ref=e327]
+        - list [ref=e328]:
+          - listitem [ref=e329]:
+            - link "Collection & Delivery" [disabled] [ref=e330]
+          - listitem [ref=e331]:
+            - link "Ingredients & Allergens" [disabled] [ref=e332]
+          - listitem [ref=e333]:
+            - link "Terms & Conditions" [disabled] [ref=e334]
+          - listitem [ref=e335]:
+            - link "Privacy Policy" [disabled] [ref=e336]
+      - generic [ref=e337]:
+        - heading "Follow us" [level=2] [ref=e338]
+        - generic [ref=e339]:
+          - link "Instagram (coming soon)" [disabled] [ref=e340]
+          - link "Facebook (coming soon)" [disabled] [ref=e345]
+          - link "TikTok (coming soon)" [disabled] [ref=e348]
+    - paragraph [ref=e351]: © 2026 Akara Bakery. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=e357] [cursor=pointer]
